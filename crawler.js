@@ -89,13 +89,14 @@ function isVideoDateValid(video, matchDate) {
     return false;
 }
 
-// Prüfe ob das Video lang genug ist (mindestens 90 Sekunden)
-// Filtert Tor-Clips und kurze Interviews aus
-const MIN_DURATION_MS = 90 * 1000; // 90 Sekunden in Millisekunden
+// Prüfe ob das Video die richtige Länge hat
+// Mindestens 90 Sekunden (filtert Tor-Clips), maximal 20 Minuten (filtert ganze Sendungen)
+const MIN_DURATION_MS = 90 * 1000; // 90 Sekunden
+const MAX_DURATION_MS = 20 * 60 * 1000; // 20 Minuten
 
-function isVideoLongEnough(video) {
+function isVideoDurationValid(video) {
     const duration = video.duration || 0;
-    return duration >= MIN_DURATION_MS;
+    return duration >= MIN_DURATION_MS && duration <= MAX_DURATION_MS;
 }
 
 // Blacklist: Videos mit diesen Wörtern im Titel sind keine Spielberichte
@@ -293,10 +294,10 @@ async function crawl() {
                 const dateValid = isVideoDateValid(video, match.date);
                 
                 // Prüfe Mindestlänge (90 Sekunden) und Blacklist
-                const longEnough = isVideoLongEnough(video);
+                const durationValid = isVideoDurationValid(video);
                 const notBlacklisted = isNotBlacklisted(video);
                 
-                if ((homeFound || awayFound) && dateValid && longEnough && notBlacklisted) {
+                if ((homeFound || awayFound) && dateValid && durationValid && notBlacklisted) {
                     // Sport-Clip = Standalone Highlight (bevorzugt)
                     if (showTitle === 'Sport-Clip' && !standaloneMatch) {
                         standaloneMatch = video;

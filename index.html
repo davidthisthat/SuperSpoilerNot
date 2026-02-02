@@ -37,65 +37,53 @@
             text-transform: uppercase;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        /* Info-Trigger oben */
-        .info-trigger {
+        /* Desktop: Einfacher Hinweis-Text */
+        .hint-desktop {
             margin: 15px 0 20px 0;
+            color: rgba(255,255,255,0.85);
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+        }
+        /* Mobile: Klickbarer Trigger */
+        .hint-mobile-trigger {
+            display: none;
+            margin: 15px 0 10px 0;
             cursor: pointer;
             color: rgba(255,255,255,0.8);
             font-size: 16px;
             font-family: Arial, sans-serif;
         }
-        .info-trigger:hover {
+        .hint-mobile-trigger:hover {
             color: white;
         }
-        .info-trigger .arrow {
+        .hint-mobile-trigger .arrow {
             display: inline-block;
             transition: transform 0.2s;
         }
-        .info-trigger:hover .arrow {
-            transform: translateX(3px);
+        .hint-mobile-trigger.open .arrow {
+            transform: rotate(90deg);
         }
-        /* Overlay */
-        .overlay {
+        /* Mobile: Hinweis-Box unterhalb */
+        .hint-mobile-content {
             display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-        .overlay.active {
-            display: flex;
-        }
-        .overlay-content {
-            background: rgba(0, 0, 0, 0.9);
-            padding: 30px 40px;
-            border-radius: 10px;
-            max-width: 500px;
-            margin: 20px;
+            background: rgba(0, 0, 0, 0.75);
+            padding: 15px 20px;
+            border-radius: 8px;
+            margin: 0 0 15px 0;
             color: white;
             font-family: Arial, sans-serif;
-            line-height: 1.8;
-            font-size: 16px;
+            font-size: 15px;
+            line-height: 1.6;
             text-align: left;
         }
-        .overlay-content h2 {
-            margin-top: 0;
-            text-align: center;
-            font-family: 'Arial Black', Arial, sans-serif;
-        }
-        .mobile-only {
-            display: none;
+        .hint-mobile-content.active {
+            display: block;
         }
         @media (max-width: 768px) {
-            .desktop-only {
+            .hint-desktop {
                 display: none;
             }
-            .mobile-only {
+            .hint-mobile-trigger {
                 display: block;
             }
         }
@@ -205,24 +193,21 @@
 </head>
 <body>
 
-    <!-- Overlay für Info -->
-    <div class="overlay" id="info-overlay" onclick="closeOverlay(event)">
-        <div class="overlay-content" onclick="event.stopPropagation()">
-            <h2>So funktioniert's</h2>
-            <div class="desktop-only">
-                <strong>Super League Zusammenfassungen ohne Spoiler schauen:</strong><br><br>
-                Link anklicken, nicht in die URL-Zeile schauen, rechts unten Bildschirm vergrössern.
-            </div>
-            <div class="mobile-only">
-                <div style="margin-bottom: 12px;"><strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.</div>
-                <div><strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.</div>
-            </div>
-        </div>
-    </div>
-
     <div class="container">
-        <div class="info-trigger" onclick="openOverlay()">
+        <!-- Desktop: Einfacher Text -->
+        <div class="hint-desktop">
+            No Spoiler, so geht's: Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
+        </div>
+        
+        <!-- Mobile: Klickbarer Trigger -->
+        <div class="hint-mobile-trigger" id="hint-trigger" onclick="toggleMobileHint()">
             No Spoiler – so geht's <span class="arrow">→</span>
+        </div>
+        
+        <!-- Mobile: Hinweis-Box -->
+        <div class="hint-mobile-content" id="hint-content">
+            <div style="margin-bottom: 10px;"><strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.</div>
+            <div><strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.</div>
         </div>
         
         <h1 id="matchday-title">Spieltag</h1>
@@ -361,24 +346,13 @@
             }
         });
 
-        // Overlay öffnen
-        function openOverlay() {
-            document.getElementById('info-overlay').classList.add('active');
+        // Mobile Hint ein-/ausklappen
+        function toggleMobileHint() {
+            const trigger = document.getElementById('hint-trigger');
+            const content = document.getElementById('hint-content');
+            trigger.classList.toggle('open');
+            content.classList.toggle('active');
         }
-
-        // Overlay schliessen (nur bei Klick ausserhalb)
-        function closeOverlay(event) {
-            if (event.target.id === 'info-overlay') {
-                document.getElementById('info-overlay').classList.remove('active');
-            }
-        }
-
-        // ESC-Taste schliesst Overlay
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                document.getElementById('info-overlay').classList.remove('active');
-            }
-        });
 
         // Beim Laden starten
         loadData();

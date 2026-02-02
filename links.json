@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-02T17:15:15.587Z",
+  "lastUpdated": "2026-02-02T18:41:12.752Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -167,13 +167,6 @@
       "foundAt": "2026-02-02T16:46:52.126Z",
       "title": "Nach verrückter Wende: Sion bezwingt den FCZ auswärts",
       "urn": "urn:srf:video:d41aad4d-f359-4ef2-8174-1510a6e66901",
-      "type": "Standalone"
-    },
-    "1_Grasshoppers - FC Luzern": {
-      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c3deafad-1aca-4efe-91dc-b2a326bd989b",
-      "foundAt": "2026-02-02T16:46:56.255Z",
-      "title": "Zwei Innerschweizer sind gewappnet für die Heldenreise",
-      "urn": "urn:srf:video:c3deafad-1aca-4efe-91dc-b2a326bd989b",
       "type": "Standalone"
     },
     "1_FC St. Gallen - FC Basel": {
@@ -437,7 +430,7 @@
     },
     "9_FC Basel - FC Winterthur": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e4fd5b47-c31e-4ed3-816e-a4562bc246c0",
-      "foundAt": "2026-02-02T17:14:36.797Z",
+      "foundAt": "2026-02-02T18:28:33.010Z",
       "title": "Thun überrascht weiter, Basel gegen FCW souverän, Lugano bodigt FCZ",
       "urn": "urn:srf:video:e4fd5b47-c31e-4ed3-816e-a4562bc246c0",
       "type": "Sendung"
@@ -548,10 +541,10 @@
       "type": "Standalone"
     },
     "11_Grasshoppers - BSC Young Boys": {
-      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:9d90a849-2fee-470f-93b1-db022054f788",
-      "foundAt": "2026-02-02T17:14:43.666Z",
-      "title": "WSL: YB, GC und der FCZ gewinnen",
-      "urn": "urn:srf:video:9d90a849-2fee-470f-93b1-db022054f788",
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:f2da6e29-9b8c-4d22-9b67-4e7b107e3aef",
+      "foundAt": "2026-02-02T18:28:33.044Z",
+      "title": "Spektakel-Remis im Letzigrund – Lugano überholt Luzern",
+      "urn": "urn:srf:video:f2da6e29-9b8c-4d22-9b67-4e7b107e3aef",
       "type": "Sendung"
     },
     "11_FC Lugano - FC Luzern": {
@@ -563,21 +556,21 @@
     },
     "12_FC Thun - FC Sion": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:365a2586-335e-4c00-b480-dcb057eb3582",
-      "foundAt": "2026-02-02T17:14:44.554Z",
+      "foundAt": "2026-02-02T18:28:33.044Z",
       "title": "Leader Thun gewinnt zum 5. Mal in Folge",
       "urn": "urn:srf:video:365a2586-335e-4c00-b480-dcb057eb3582",
       "type": "Sendung"
     },
     "12_FC Winterthur - Servette FC": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:31458112-ccb6-414d-8d32-ed78f83364fa",
-      "foundAt": "2026-02-02T17:14:45.071Z",
-      "title": "Das Warten hat ein Ende: «Winti» feiert den 1. Saisonsieg",
+      "foundAt": "2026-02-02T18:28:33.044Z",
+      "title": "Das Warten hat ein Ende: Winti feiert den 1. Saisonsieg",
       "urn": "urn:srf:video:31458112-ccb6-414d-8d32-ed78f83364fa",
       "type": "Sendung"
     },
     "12_FC Zürich - Lausanne-Sport": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:b1752d53-7514-4304-9038-e711226719fd",
-      "foundAt": "2026-02-02T17:14:45.607Z",
+      "foundAt": "2026-02-02T18:28:33.044Z",
       "title": "Lausanne stürzt den FCZ noch tiefer in die Tiefe",
       "urn": "urn:srf:video:b1752d53-7514-4304-9038-e711226719fd",
       "type": "Standalone"
@@ -660,10 +653,10 @@
       "type": "Sendung"
     },
     "15_FC Zürich - Grasshoppers": {
-      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:a2bdb640-038d-4ff1-91bf-ca656c7122e4",
-      "foundAt": "2026-02-02T17:15:02.685Z",
-      "title": "Rückblick auf den Super-League-Samstag",
-      "urn": "urn:srf:video:a2bdb640-038d-4ff1-91bf-ca656c7122e4",
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0a78ece8-fc52-4ccb-a4d6-5ece1c419d11",
+      "foundAt": "2026-02-02T18:41:12.752Z",
+      "title": "FCZ gewinnt Derby, Winterthur mit Befreiungsschlag",
+      "urn": "urn:srf:video:0a78ece8-fc52-4ccb-a4d6-5ece1c419d11",
       "type": "Sendung"
     },
     "15_FC Luzern - FC Winterthur": {
@@ -812,6 +805,90 @@
       "title": "Lausanne siegt glücklich in Genf",
       "urn": "urn:srf:video:3bc44bb4-1810-48c4-921f-ac658737aff3",
       "type": "Standalone"
+    },
+    "2_FC Basel - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:5890a4fd-5080-48dc-9b94-4fc7ac098990",
+      "foundAt": "2026-02-02T18:07:36.874Z",
+      "title": "Basel schlägt GC verdient",
+      "urn": "urn:srf:video:5890a4fd-5080-48dc-9b94-4fc7ac098990",
+      "type": "Sendung"
+    },
+    "1_Grasshoppers - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0d01f0e7-539c-40c4-b673-b594ecb6465f",
+      "foundAt": "2026-02-02T18:10:26.979Z",
+      "title": "Der Meister stolpert – YB fährt erste drei Punkte ein",
+      "urn": "urn:srf:video:0d01f0e7-539c-40c4-b673-b594ecb6465f",
+      "type": "Sendung"
+    },
+    "3_FC Lugano - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c9d731d2-32bd-4b90-87d0-d06a7c22b64f",
+      "foundAt": "2026-02-02T18:15:09.173Z",
+      "title": "Lugano und FCZ kommen zum ersten Saisonsieg",
+      "urn": "urn:srf:video:c9d731d2-32bd-4b90-87d0-d06a7c22b64f",
+      "type": "Sendung"
+    },
+    "5_FC Sion - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:cbc618e6-c8fe-4f0e-806c-feba53e1187c",
+      "foundAt": "2026-02-02T18:17:58.542Z",
+      "title": "Der FCZ gewinnt das Derby, Basel siegt in Sitten",
+      "urn": "urn:srf:video:cbc618e6-c8fe-4f0e-806c-feba53e1187c",
+      "type": "Sendung"
+    },
+    "6_FC Thun - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:ce80919f-6e9f-468e-bb4e-64064f060eff",
+      "foundAt": "2026-02-02T18:17:58.560Z",
+      "title": "Immer wieder Shaqiri: Thun kassiert gegen Basel erste Niederlage",
+      "urn": "urn:srf:video:ce80919f-6e9f-468e-bb4e-64064f060eff",
+      "type": "Sendung"
+    },
+    "6_FC St. Gallen - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:6bcfca04-e3b6-476a-b99e-22c9ed79b88e",
+      "foundAt": "2026-02-02T18:17:58.560Z",
+      "title": "Boukhalfa schiesst St. Gallen auf den Leaderthron",
+      "urn": "urn:srf:video:6bcfca04-e3b6-476a-b99e-22c9ed79b88e",
+      "type": "Sendung"
+    },
+    "12_BSC Young Boys - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:63e97d32-6131-48de-9e67-dc94143e1ec1",
+      "foundAt": "2026-02-02T18:28:33.044Z",
+      "title": "Dezimierte Berner erkämpfen sich bei Seoanes Einstand einen Punkt",
+      "urn": "urn:srf:video:63e97d32-6131-48de-9e67-dc94143e1ec1",
+      "type": "Sendung"
+    },
+    "13_Servette FC - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0a92508c-ebd4-4230-a113-1f747e7b22aa",
+      "foundAt": "2026-02-02T18:41:12.739Z",
+      "title": "Siegtor in der 90. Minute: Thun-Serie hält auch in Genf an",
+      "urn": "urn:srf:video:0a92508c-ebd4-4230-a113-1f747e7b22aa",
+      "type": "Sendung"
+    },
+    "13_FC Basel - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:24163f98-6d7e-4244-ba1a-efd69d189048",
+      "foundAt": "2026-02-02T18:41:12.752Z",
+      "title": "Die ersten Thun-Verfolger patzen – YB auf dem Vormarsch",
+      "urn": "urn:srf:video:24163f98-6d7e-4244-ba1a-efd69d189048",
+      "type": "Sendung"
+    },
+    "14_FC Thun - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:aa430adf-3e64-4179-a910-2d152149edd1",
+      "foundAt": "2026-02-02T18:41:12.752Z",
+      "title": "YB deklassiert Winterthur, Thun verliert in Überzahl",
+      "urn": "urn:srf:video:aa430adf-3e64-4179-a910-2d152149edd1",
+      "type": "Sendung"
+    },
+    "14_Grasshoppers - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:33d72395-7d3d-4425-9e6b-27202ab7e766",
+      "foundAt": "2026-02-02T18:41:12.752Z",
+      "title": "Remis in Zürich und im Wallis, Heimsieg für St. Gallen",
+      "urn": "urn:srf:video:33d72395-7d3d-4425-9e6b-27202ab7e766",
+      "type": "Sendung"
+    },
+    "15_FC Basel - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:4bf5617f-1908-4310-a7a7-cf122d761c25",
+      "foundAt": "2026-02-02T18:41:12.752Z",
+      "title": "Spektakel-Remis in Genf, Lausanne schlägt Thun, keine Tore in Basel",
+      "urn": "urn:srf:video:4bf5617f-1908-4310-a7a7-cf122d761c25",
+      "type": "Sendung"
     }
   }
 }
