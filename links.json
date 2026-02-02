@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-02T14:49:38.865Z",
+  "lastUpdated": "2026-02-02T15:04:56.862Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -113,13 +113,6 @@
       "urn": "urn:srf:video:f60f1229-2657-41a0-8e1f-dde1a41e28bd",
       "type": "Standalone"
     },
-    "21_FC Zürich - FC Basel": {
-      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c2a5bf4c-00eb-49b8-ade9-79f66a7b9a7c",
-      "foundAt": "2026-02-02T14:48:21.000Z",
-      "title": "Lichtsteiners erster Auftritt als FCB-Trainer",
-      "urn": "urn:srf:video:c2a5bf4c-00eb-49b8-ade9-79f66a7b9a7c",
-      "type": "Standalone"
-    },
     "22_Servette FC - FC Sion": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:4cce6511-fe69-4f97-be2d-5f3b7234d004",
       "foundAt": "2026-02-02T14:49:34.911Z",
@@ -160,6 +153,13 @@
       "foundAt": "2026-02-02T14:49:38.865Z",
       "title": "Aufbaugegner FCZ: YB fährt ungefährdeten ersten Sieg 2026 ein",
       "urn": "urn:srf:video:99e970ea-3163-487c-9434-0056682c1c6e",
+      "type": "Standalone"
+    },
+    "21_FC Zürich - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c2a5bf4c-00eb-49b8-ade9-79f66a7b9a7c",
+      "foundAt": "2026-02-02T15:04:56.862Z",
+      "title": "Lichtsteiners erster Auftritt als FCB-Trainer",
+      "urn": "urn:srf:video:c2a5bf4c-00eb-49b8-ade9-79f66a7b9a7c",
       "type": "Standalone"
     }
   }

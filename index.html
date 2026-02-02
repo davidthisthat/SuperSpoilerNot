@@ -71,6 +71,32 @@
             text-align: left;
             padding-left: 20px;
         }
+        /* Hochformat Mobile: Datum über Paarung */
+        @media (max-width: 600px) {
+            .match {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 12px 15px;
+                font-size: 20px;
+            }
+            .date-time {
+                flex: none;
+                font-size: 16px;
+                margin-bottom: 5px;
+                color: rgba(255,255,255,0.8);
+            }
+            .pairing {
+                padding-left: 0;
+                font-size: 20px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            .matchday-nav button {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
         .link {
             color: white;
             text-decoration: none;

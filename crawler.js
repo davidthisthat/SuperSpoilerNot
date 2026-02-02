@@ -98,6 +98,19 @@ function isVideoLongEnough(video) {
     return duration >= MIN_DURATION_MS;
 }
 
+// Blacklist: Videos mit diesen Wörtern im Titel sind keine Spielberichte
+const TITLE_BLACKLIST = ['trainer', 'coach', 'interview', 'pressekonferenz', 'vorstellung', 'bilanz', 'analyse', 'vorschau', 'reaktion', 'stimmen'];
+
+function isNotBlacklisted(video) {
+    const title = (video.title || '').toLowerCase();
+    for (const word of TITLE_BLACKLIST) {
+        if (title.includes(word)) {
+            return false;
+        }
+    }
+    return true;
+}
+
 // Hole ALLE Keywords für ein Team
 function getAllKeywords(teamName, teamsData) {
     const teamInfo = teamsData.teams[teamName];
