@@ -292,10 +292,11 @@ async function crawl() {
                 // Prüfe ob das Datum passt
                 const dateValid = isVideoDateValid(video, match.date);
                 
-                // Prüfe Mindestlänge (90 Sekunden)
+                // Prüfe Mindestlänge (90 Sekunden) und Blacklist
                 const longEnough = isVideoLongEnough(video);
+                const notBlacklisted = isNotBlacklisted(video);
                 
-                if ((homeFound || awayFound) && dateValid && longEnough) {
+                if ((homeFound || awayFound) && dateValid && longEnough && notBlacklisted) {
                     // Sport-Clip = Standalone Highlight (bevorzugt)
                     if (showTitle === 'Sport-Clip' && !standaloneMatch) {
                         standaloneMatch = video;
