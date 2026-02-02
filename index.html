@@ -53,12 +53,16 @@
         .hint-mobile-trigger {
             margin: 15px 0 10px 0;
             cursor: pointer;
-            color: rgba(255,255,255,0.8);
-            font-size: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 22px;
             font-family: Arial, sans-serif;
+            padding: 12px 20px;
+            border-radius: 8px;
+            display: inline-block;
         }
         .hint-mobile-trigger:hover {
-            color: white;
+            background: rgba(0, 0, 0, 0.85);
         }
         .hint-mobile-trigger .arrow {
             display: inline-block;
@@ -199,9 +203,120 @@
             color: white;
             text-decoration: underline;
         }
+        /* Team-Filter */
+        .team-filter {
+            margin: 30px 0 10px 0;
+        }
+        .team-btn {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+        .team-btn:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .team-dropdown {
+            display: none;
+            margin-top: 10px;
+        }
+        .team-dropdown.active {
+            display: block;
+        }
+        .team-dropdown select {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            font-family: Arial, sans-serif;
+        }
+        /* Team-Overlay */
+        .team-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        .team-overlay.active {
+            display: block;
+        }
+        .team-overlay-content {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .team-overlay-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .team-overlay-title {
+            font-size: 28px;
+            font-family: 'Arial Black', Arial, sans-serif;
+        }
+        .team-overlay-close {
+            font-size: 32px;
+            cursor: pointer;
+            padding: 5px 15px;
+        }
+        .team-overlay-close:hover {
+            color: #ccc;
+        }
+        .team-match {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 8px 0;
+            padding: 12px 15px;
+            border-radius: 5px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            cursor: pointer;
+        }
+        .team-match:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .team-match.no-link {
+            color: #888;
+            cursor: default;
+        }
+        .team-match.no-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        @media (max-width: 600px) {
+            .team-overlay-title {
+                font-size: 22px;
+            }
+            .team-match {
+                font-size: 15px;
+                padding: 10px 12px;
+            }
+        }
     </style>
 </head>
 <body>
+
+    <!-- Team-Overlay -->
+    <div class="team-overlay" id="team-overlay">
+        <div class="team-overlay-content">
+            <div class="team-overlay-header">
+                <span class="team-overlay-title" id="team-overlay-title">Team</span>
+                <span class="team-overlay-close" onclick="closeTeamOverlay()">✕</span>
+            </div>
+            <div id="team-matches-list">
+                <!-- Team-Spiele werden hier eingefügt -->
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <!-- Desktop: Einfacher Text -->
@@ -230,6 +345,16 @@
         
         <div id="matches-container">
             <!-- Spiele werden hier dynamisch eingefügt -->
+        </div>
+        
+        <!-- Team-Filter -->
+        <div class="team-filter">
+            <button class="team-btn" onclick="toggleTeamDropdown()">Wähle ein Team</button>
+            <div class="team-dropdown" id="team-dropdown">
+                <select id="team-select" onchange="showTeamMatches()">
+                    <option value="">– Team wählen –</option>
+                </select>
+            </div>
         </div>
         
         <div class="footer">
@@ -364,6 +489,97 @@
             trigger.classList.toggle('open');
             content.classList.toggle('active');
         }
+
+        // Team-Filter: Dropdown ein-/ausblenden
+        function toggleTeamDropdown() {
+            const dropdown = document.getElementById('team-dropdown');
+            dropdown.classList.toggle('active');
+            
+            // Teams laden falls noch nicht geschehen
+            const select = document.getElementById('team-select');
+            if (select.options.length <= 1 && spielplan) {
+                const teams = new Set();
+                spielplan.matchdays.forEach(md => {
+                    md.matches.forEach(m => {
+                        teams.add(m.home);
+                        teams.add(m.away);
+                    });
+                });
+                const sortedTeams = Array.from(teams).sort();
+                sortedTeams.forEach(team => {
+                    const option = document.createElement('option');
+                    option.value = team;
+                    option.textContent = team;
+                    select.appendChild(option);
+                });
+            }
+        }
+
+        // Team-Spiele anzeigen
+        function showTeamMatches() {
+            const select = document.getElementById('team-select');
+            const team = select.value;
+            if (!team) return;
+            
+            // Alle Spiele dieses Teams sammeln
+            const teamMatches = [];
+            spielplan.matchdays.forEach(md => {
+                md.matches.forEach(m => {
+                    if (m.home === team || m.away === team) {
+                        teamMatches.push({
+                            matchday: md.matchday,
+                            ...m
+                        });
+                    }
+                });
+            });
+            
+            // Overlay befüllen
+            document.getElementById('team-overlay-title').textContent = team;
+            const list = document.getElementById('team-matches-list');
+            list.innerHTML = '';
+            
+            const weekdays = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+            
+            teamMatches.forEach(match => {
+                const date = new Date(match.date);
+                const weekday = weekdays[date.getDay()];
+                const day = String(date.getDate()).padStart(2, '0');
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const year = String(date.getFullYear()).slice(-2);
+                
+                const matchKey = `${match.matchday}_${match.home} - ${match.away}`;
+                const linkData = links.matches[matchKey];
+                
+                const div = document.createElement('div');
+                div.className = 'team-match' + (linkData && linkData.url ? '' : ' no-link');
+                div.textContent = `Spieltag ${match.matchday} | ${weekday}. ${day}.${month}.${year} | ${match.home} - ${match.away}`;
+                
+                if (linkData && linkData.url) {
+                    div.dataset.url = linkData.url;
+                    div.onclick = () => window.open(linkData.url, '_blank');
+                }
+                
+                list.appendChild(div);
+            });
+            
+            // Overlay öffnen
+            document.getElementById('team-overlay').classList.add('active');
+            select.value = '';
+            document.getElementById('team-dropdown').classList.remove('active');
+        }
+
+        // Team-Overlay schliessen
+        function closeTeamOverlay() {
+            document.getElementById('team-overlay').classList.remove('active');
+        }
+
+        // ESC schliesst Team-Overlay
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeTeamOverlay();
+            }
+        });
 
         // Beim Laden starten
         loadData();
