@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super League Highlights - Spoilerfrei</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <style>
         body {
             margin: 0;
@@ -133,13 +134,20 @@
         // Daten laden
         async function loadData() {
             try {
-                const [spielplanRes, linksRes] = await Promise.all([
-                    fetch('spielplan.json'),
-                    fetch('links.json')
-                ]);
-                
+                // Spielplan lokal, Links von GitHub (automatisch aktualisiert)
+                const spielplanRes = await fetch('spielplan.json');
                 spielplan = await spielplanRes.json();
-                links = await linksRes.json();
+                
+                // Links von GitHub laden (Cache-Busting mit Timestamp)
+                const linksUrl = 'https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/links.json?t=' + Date.now();
+                try {
+                    const linksRes = await fetch(linksUrl);
+                    links = await linksRes.json();
+                } catch (e) {
+                    // Fallback: lokale Datei
+                    const linksRes = await fetch('links.json');
+                    links = await linksRes.json();
+                }
                 
                 // Finde den aktuellen/nächsten Spieltag
                 findCurrentMatchday();
@@ -151,23 +159,28 @@
             }
         }
 
-        // Finde den aktuellen oder nächsten Spieltag basierend auf dem Datum
+        // Finde den aktuellen Spieltag
+        // Wechselt am Tag des ersten Spiels der Runde (ab 0:01 Uhr)
         function findCurrentMatchday() {
             const today = new Date();
             today.setHours(0, 0, 0, 0);
             
+            // Finde den letzten Spieltag, dessen erstes Spiel heute oder früher ist
+            let foundIndex = 0;
+            
             for (let i = 0; i < spielplan.matchdays.length; i++) {
                 const matchday = spielplan.matchdays[i];
-                const lastMatchDate = new Date(matchday.matches[matchday.matches.length - 1].date);
-                lastMatchDate.setHours(23, 59, 59, 999);
+                const firstMatchDate = new Date(matchday.matches[0].date);
+                firstMatchDate.setHours(0, 1, 0, 0); // 0:01 Uhr
                 
-                // Zeige den Spieltag, wenn er heute oder in der Zukunft ist
-                // oder wenn es der letzte ist und alle vergangen sind
-                if (lastMatchDate >= today || i === spielplan.matchdays.length - 1) {
-                    currentMatchdayIndex = i;
+                if (today >= firstMatchDate) {
+                    foundIndex = i;
+                } else {
                     break;
                 }
             }
+            
+            currentMatchdayIndex = foundIndex;
         }
 
         // Spieltag anzeigen
