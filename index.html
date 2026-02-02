@@ -37,12 +37,16 @@
             text-transform: uppercase;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        /* Desktop: Einfacher Hinweis-Text */
+        /* Desktop: Hinweis-Text mit Hintergrund */
         .hint-desktop {
-            margin: 15px 0 20px 0;
-            color: rgba(255,255,255,0.9);
-            font-size: 20px;
+            margin: 15px auto 20px auto;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 18px;
             font-family: Arial, sans-serif;
+            padding: 12px 25px;
+            border-radius: 8px;
+            display: inline-block;
         }
         /* Mobile: Container für Overlay-Positionierung */
         .hint-mobile-wrapper {
@@ -190,51 +194,42 @@
         }
         .footer {
             margin-top: 40px;
-            padding: 20px;
+            padding: 15px 25px;
             font-size: 14px;
             font-family: Arial, sans-serif;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            display: inline-block;
         }
         .footer a {
-            color: rgba(255,255,255,0.7);
+            color: white;
             text-decoration: none;
             margin: 0 10px;
         }
         .footer a:hover {
-            color: white;
             text-decoration: underline;
         }
-        /* Team-Filter */
+        /* Teammodus */
         .team-filter {
             margin: 30px 0 10px 0;
         }
-        .team-btn {
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 5px;
-            font-family: Arial, sans-serif;
-        }
-        .team-btn:hover {
+        .team-filter label {
             background: rgba(0, 0, 0, 0.7);
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            display: inline-block;
         }
-        .team-dropdown {
-            display: none;
-            margin-top: 10px;
-        }
-        .team-dropdown.active {
-            display: block;
-        }
-        .team-dropdown select {
-            padding: 10px 20px;
+        .team-filter select {
+            padding: 10px 15px;
             font-size: 16px;
             border-radius: 5px;
             border: none;
             font-family: Arial, sans-serif;
+            margin-left: 10px;
         }
-        /* Team-Overlay */
+        /* Team-Overlay mit Rasen-Hintergrund */
         .team-overlay {
             display: none;
             position: fixed;
@@ -242,17 +237,25 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.9);
+            background-color: #228B22;
+            background-image: url('img/rasen-desktop.jpg');
+            background-size: cover;
+            background-position: center;
             z-index: 1000;
             overflow-y: auto;
+        }
+        @media (max-width: 768px) {
+            .team-overlay {
+                background-image: url('img/rasen-mobile.jpg');
+            }
         }
         .team-overlay.active {
             display: block;
         }
         .team-overlay-content {
-            max-width: 700px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 10px;
         }
         .team-overlay-header {
             display: flex;
@@ -261,44 +264,75 @@
             margin-bottom: 20px;
         }
         .team-overlay-title {
-            font-size: 28px;
+            font-size: 36px;
             font-family: 'Arial Black', Arial, sans-serif;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
         .team-overlay-close {
-            font-size: 32px;
+            background: rgba(0, 0, 0, 0.7);
+            font-size: 28px;
             cursor: pointer;
-            padding: 5px 15px;
+            padding: 8px 18px;
+            border-radius: 8px;
         }
         .team-overlay-close:hover {
-            color: #ccc;
+            background: rgba(0, 0, 0, 0.9);
         }
+        /* Team-Match: Gleiche Balken wie normale Ansicht */
         .team-match {
-            background: rgba(255, 255, 255, 0.1);
-            margin: 8px 0;
-            padding: 12px 15px;
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.6);
+            margin: 5px 0;
+            padding: 15px 20px;
             border-radius: 5px;
-            font-size: 18px;
-            font-family: Arial, sans-serif;
-            text-align: left;
+            font-size: 22px;
             cursor: pointer;
         }
         .team-match:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(0, 0, 0, 0.75);
         }
         .team-match.no-link {
-            color: #888;
             cursor: default;
         }
         .team-match.no-link:hover {
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .team-match.no-link .team-pairing {
+            color: #aaa;
+        }
+        .team-date-time {
+            flex: 0 0 300px;
+            text-align: left;
+            font-size: 18px;
+            white-space: nowrap;
+            font-family: Arial, sans-serif;
+        }
+        .team-pairing {
+            flex: 1;
+            text-align: left;
+            padding-left: 20px;
+            font-family: 'Arial Black', Arial, sans-serif;
         }
         @media (max-width: 600px) {
             .team-overlay-title {
-                font-size: 22px;
+                font-size: 26px;
             }
             .team-match {
-                font-size: 15px;
-                padding: 10px 12px;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 12px 15px;
+                font-size: 18px;
+            }
+            .team-date-time {
+                flex: none;
+                font-size: 14px;
+                margin-bottom: 5px;
+                color: rgba(255,255,255,0.8);
+            }
+            .team-pairing {
+                padding-left: 0;
+                font-size: 18px;
             }
         }
     </style>
@@ -347,14 +381,14 @@
             <!-- Spiele werden hier dynamisch eingefügt -->
         </div>
         
-        <!-- Team-Filter -->
+        <!-- Teammodus -->
         <div class="team-filter">
-            <button class="team-btn" onclick="toggleTeamDropdown()">Wähle ein Team</button>
-            <div class="team-dropdown" id="team-dropdown">
+            <label>
+                Teammodus
                 <select id="team-select" onchange="showTeamMatches()">
                     <option value="">– Team wählen –</option>
                 </select>
-            </div>
+            </label>
         </div>
         
         <div class="footer">
@@ -389,6 +423,7 @@
                 // Finde den aktuellen/nächsten Spieltag
                 findCurrentMatchday();
                 renderMatchday();
+                populateTeamSelect();
             } catch (error) {
                 console.error('Fehler beim Laden der Daten:', error);
                 document.getElementById('matches-container').innerHTML = 
@@ -490,12 +525,8 @@
             content.classList.toggle('active');
         }
 
-        // Team-Filter: Dropdown ein-/ausblenden
-        function toggleTeamDropdown() {
-            const dropdown = document.getElementById('team-dropdown');
-            dropdown.classList.toggle('active');
-            
-            // Teams laden falls noch nicht geschehen
+        // Teams ins Dropdown laden
+        function populateTeamSelect() {
             const select = document.getElementById('team-select');
             if (select.options.length <= 1 && spielplan) {
                 const teams = new Set();
@@ -550,13 +581,18 @@
                 
                 const matchKey = `${match.matchday}_${match.home} - ${match.away}`;
                 const linkData = links.matches[matchKey];
+                const hasLink = linkData && linkData.url;
                 
                 const div = document.createElement('div');
-                div.className = 'team-match' + (linkData && linkData.url ? '' : ' no-link');
-                div.textContent = `Spieltag ${match.matchday} | ${weekday}. ${day}.${month}.${year} | ${match.home} - ${match.away}`;
+                div.className = 'team-match' + (hasLink ? '' : ' no-link');
                 
-                if (linkData && linkData.url) {
-                    div.dataset.url = linkData.url;
+                // Gleiche Struktur wie normale Ansicht
+                div.innerHTML = `
+                    <div class="team-date-time">Spieltag ${match.matchday} | ${weekday}. ${day}.${month}.${year}</div>
+                    <div class="team-pairing">${match.home} - ${match.away}</div>
+                `;
+                
+                if (hasLink) {
                     div.onclick = () => window.open(linkData.url, '_blank');
                 }
                 
@@ -566,7 +602,6 @@
             // Overlay öffnen
             document.getElementById('team-overlay').classList.add('active');
             select.value = '';
-            document.getElementById('team-dropdown').classList.remove('active');
         }
 
         // Team-Overlay schliessen
