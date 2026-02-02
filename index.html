@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>No Spoiler League</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <style>
@@ -18,6 +18,7 @@
             color: white;
             text-align: center;
             min-height: 100vh;
+            touch-action: manipulation;
         }
         @media (max-width: 768px) {
             body {
@@ -36,18 +37,65 @@
             text-transform: uppercase;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        .mobile-hint {
-            display: none;
-            background: rgba(255, 200, 0, 0.9);
-            color: #333;
-            padding: 12px 20px;
-            margin: 10px 0;
-            border-radius: 5px;
+        /* Info-Trigger oben */
+        .info-trigger {
+            margin: 15px 0 20px 0;
+            cursor: pointer;
+            color: rgba(255,255,255,0.8);
             font-size: 16px;
-            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+        .info-trigger:hover {
+            color: white;
+        }
+        .info-trigger .arrow {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+        .info-trigger:hover .arrow {
+            transform: translateX(3px);
+        }
+        /* Overlay */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay.active {
+            display: flex;
+        }
+        .overlay-content {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 30px 40px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 20px;
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            font-size: 16px;
+            text-align: left;
+        }
+        .overlay-content h2 {
+            margin-top: 0;
+            text-align: center;
+            font-family: 'Arial Black', Arial, sans-serif;
+        }
+        .mobile-only {
+            display: none;
         }
         @media (max-width: 768px) {
-            .mobile-hint {
+            .desktop-only {
+                display: none;
+            }
+            .mobile-only {
                 display: block;
             }
         }
@@ -157,9 +205,24 @@
 </head>
 <body>
 
+    <!-- Overlay für Info -->
+    <div class="overlay" id="info-overlay" onclick="closeOverlay(event)">
+        <div class="overlay-content" onclick="event.stopPropagation()">
+            <h2>So funktioniert's</h2>
+            <div class="desktop-only">
+                <strong>Super League Zusammenfassungen ohne Spoiler schauen:</strong><br><br>
+                Link anklicken, nicht in die URL-Zeile schauen, rechts unten Bildschirm vergrössern.
+            </div>
+            <div class="mobile-only">
+                <div style="margin-bottom: 12px;"><strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.</div>
+                <div><strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.</div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="mobile-hint">
-            📱 Erst das Smartphone quer drehen, dann den Link anklicken.
+        <div class="info-trigger" onclick="openOverlay()">
+            No Spoiler – so geht's <span class="arrow">→</span>
         </div>
         
         <h1 id="matchday-title">Spieltag</h1>
@@ -295,6 +358,25 @@
         document.addEventListener('click', function(e) {
             if (e.target.classList.contains('link') && e.target.dataset.url) {
                 window.open(e.target.dataset.url, '_blank');
+            }
+        });
+
+        // Overlay öffnen
+        function openOverlay() {
+            document.getElementById('info-overlay').classList.add('active');
+        }
+
+        // Overlay schliessen (nur bei Klick ausserhalb)
+        function closeOverlay(event) {
+            if (event.target.id === 'info-overlay') {
+                document.getElementById('info-overlay').classList.remove('active');
+            }
+        }
+
+        // ESC-Taste schliesst Overlay
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('info-overlay').classList.remove('active');
             }
         });
 
