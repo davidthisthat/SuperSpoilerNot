@@ -302,7 +302,7 @@
         // Spieltag anzeigen
         function renderMatchday() {
             const matchday = spielplan.matchdays[currentMatchdayIndex];
-            document.getElementById('matchday-title').textContent = `${matchday.matchday}. Spieltag`;
+            document.getElementById('matchday-title').textContent = `Saison 25/26 – Spieltag ${matchday.matchday}`;
             
             const container = document.getElementById('matches-container');
             container.innerHTML = '';
@@ -311,14 +311,14 @@
                 const matchDiv = document.createElement('div');
                 matchDiv.className = 'match';
                 
-                // Datum formatieren
+                // Datum formatieren mit kurzem Jahr
                 const date = new Date(match.date);
                 const weekdays = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
                 const weekday = weekdays[date.getDay()];
-                const dateStr = date.toLocaleDateString('de-CH', { 
-                    day: '2-digit', 
-                    month: '2-digit' 
-                });
+                const day = String(date.getDate()).padStart(2, '0');
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const year = String(date.getFullYear()).slice(-2); // "25" oder "26"
+                const dateStr = `${day}.${month}.${year}`;
                 const timeStr = match.time;
                 
                 // Link suchen (mit Spieltag, um Hin-/Rückrunde zu unterscheiden)
