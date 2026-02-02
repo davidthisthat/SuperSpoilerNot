@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-02T15:11:48.015Z",
+  "lastUpdated": "2026-02-02T17:15:15.587Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -160,6 +160,657 @@
       "foundAt": "2026-02-02T15:11:48.015Z",
       "title": "Der FCB entscheidet vogelwilden Klassiker spät",
       "urn": "urn:srf:video:5f9cd36c-2d19-446f-b097-54d8f5be5809",
+      "type": "Standalone"
+    },
+    "1_FC Zürich - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:d41aad4d-f359-4ef2-8174-1510a6e66901",
+      "foundAt": "2026-02-02T16:46:52.126Z",
+      "title": "Nach verrückter Wende: Sion bezwingt den FCZ auswärts",
+      "urn": "urn:srf:video:d41aad4d-f359-4ef2-8174-1510a6e66901",
+      "type": "Standalone"
+    },
+    "1_Grasshoppers - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c3deafad-1aca-4efe-91dc-b2a326bd989b",
+      "foundAt": "2026-02-02T16:46:56.255Z",
+      "title": "Zwei Innerschweizer sind gewappnet für die Heldenreise",
+      "urn": "urn:srf:video:c3deafad-1aca-4efe-91dc-b2a326bd989b",
+      "type": "Standalone"
+    },
+    "1_FC St. Gallen - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:770cc39d-5d41-4837-bf9c-6b761fd181d0",
+      "foundAt": "2026-02-02T16:46:56.624Z",
+      "title": "Magnins FCB-Debüt misslingt: 1:2 trotz Führung in St. Gallen",
+      "urn": "urn:srf:video:770cc39d-5d41-4837-bf9c-6b761fd181d0",
+      "type": "Standalone"
+    },
+    "1_BSC Young Boys - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:260775cf-cf9b-4eb3-b368-3318b8183f3d",
+      "foundAt": "2026-02-02T16:46:57.003Z",
+      "title": "YB bezwingt Servette verdient",
+      "urn": "urn:srf:video:260775cf-cf9b-4eb3-b368-3318b8183f3d",
+      "type": "Standalone"
+    },
+    "1_Lausanne-Sport - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:f293458f-9957-4202-add3-05a900f8a1f7",
+      "foundAt": "2026-02-02T16:46:57.527Z",
+      "title": "Lausanne siegt spät",
+      "urn": "urn:srf:video:f293458f-9957-4202-add3-05a900f8a1f7",
+      "type": "Sendung"
+    },
+    "1_FC Lugano - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0ed06cdd-eb00-401f-b262-25b708ac0941",
+      "foundAt": "2026-02-02T16:46:57.839Z",
+      "title": "Thun schockt Lugano zum Saisonauftakt",
+      "urn": "urn:srf:video:0ed06cdd-eb00-401f-b262-25b708ac0941",
+      "type": "Standalone"
+    },
+    "2_Servette FC - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:19aa4ca3-42aa-433d-8d5c-d25f85b23b23",
+      "foundAt": "2026-02-02T17:13:49.040Z",
+      "title": "Geubbels führt den FC St. Gallen zum Sieg bei Servette",
+      "urn": "urn:srf:video:19aa4ca3-42aa-433d-8d5c-d25f85b23b23",
+      "type": "Standalone"
+    },
+    "2_FC Winterthur - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:f51efcc7-4fc4-4e7d-bce6-5aa5a74fc150",
+      "foundAt": "2026-02-02T17:13:49.578Z",
+      "title": "YB mit Remis in Winterthur noch gut bedient",
+      "urn": "urn:srf:video:f51efcc7-4fc4-4e7d-bce6-5aa5a74fc150",
+      "type": "Standalone"
+    },
+    "2_FC Thun - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:232d6904-3ad2-4aad-b72b-bbd6efa3610c",
+      "foundAt": "2026-02-02T17:13:55.337Z",
+      "title": "Aufsteiger Thun feiert gegen Lausanne den zweiten Saisonsieg",
+      "urn": "urn:srf:video:232d6904-3ad2-4aad-b72b-bbd6efa3610c",
+      "type": "Standalone"
+    },
+    "2_FC Luzern - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c6cec21c-c153-42c3-9753-061a22acc522",
+      "foundAt": "2026-02-02T17:13:55.677Z",
+      "title": "Ohne Zuber: Der FCZ punktet nach Rückstand in Luzern",
+      "urn": "urn:srf:video:c6cec21c-c153-42c3-9753-061a22acc522",
+      "type": "Standalone"
+    },
+    "2_FC Sion - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:05783e2e-32a2-4e6b-833e-1358b9f2c6de",
+      "foundAt": "2026-02-02T17:13:55.986Z",
+      "title": "Sion lässt Lugano keine Chance",
+      "urn": "urn:srf:video:05783e2e-32a2-4e6b-833e-1358b9f2c6de",
+      "type": "Sendung"
+    },
+    "3_FC St. Gallen - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:5b233736-b3b6-4c98-b363-42991ed16baa",
+      "foundAt": "2026-02-02T17:13:56.759Z",
+      "title": "Überragender Vogt führt St. Gallen zum Heimsieg über Winterthur",
+      "urn": "urn:srf:video:5b233736-b3b6-4c98-b363-42991ed16baa",
+      "type": "Standalone"
+    },
+    "3_FC Luzern - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:a9a2d90a-614c-43ce-a9df-9738486cc495",
+      "foundAt": "2026-02-02T17:13:58.939Z",
+      "title": "Thun lässt sich auch von Luzern nicht stoppen",
+      "urn": "urn:srf:video:a9a2d90a-614c-43ce-a9df-9738486cc495",
+      "type": "Standalone"
+    },
+    "3_BSC Young Boys - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:21238388-a80b-4b64-8d23-999a68dd529b",
+      "foundAt": "2026-02-02T17:13:59.265Z",
+      "title": "YB beisst sich an Racioppi die Zähne aus",
+      "urn": "urn:srf:video:21238388-a80b-4b64-8d23-999a68dd529b",
+      "type": "Sendung"
+    },
+    "3_Servette FC - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:ea18bb6d-d1ea-4a94-a6c5-c105cc357c5e",
+      "foundAt": "2026-02-02T17:13:59.845Z",
+      "title": "Kein Sieger zwischen Servette und GC",
+      "urn": "urn:srf:video:ea18bb6d-d1ea-4a94-a6c5-c105cc357c5e",
+      "type": "Standalone"
+    },
+    "3_Lausanne-Sport - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0efa45d3-88be-40d0-8ab5-c855a9843682",
+      "foundAt": "2026-02-02T17:14:00.306Z",
+      "title": "Der FCZ feiert in Lausanne den ersten Saisonsieg",
+      "urn": "urn:srf:video:0efa45d3-88be-40d0-8ab5-c855a9843682",
+      "type": "Standalone"
+    },
+    "4_FC Zürich - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:4244238b-0a5f-47ff-977d-613d8f59280d",
+      "foundAt": "2026-02-02T17:14:07.815Z",
+      "title": "Thun schlägt den FCZ im Letzigrund 4:0",
+      "urn": "urn:srf:video:4244238b-0a5f-47ff-977d-613d8f59280d",
+      "type": "Standalone"
+    },
+    "4_Grasshoppers - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:74202059-e808-47cf-afcb-b8ea8260560e",
+      "foundAt": "2026-02-02T17:14:08.243Z",
+      "title": "2:0 verspielt: GC muss sich gegen Winterthur mit Remis begnügen",
+      "urn": "urn:srf:video:74202059-e808-47cf-afcb-b8ea8260560e",
+      "type": "Standalone"
+    },
+    "4_FC St. Gallen - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:a104d131-be92-492f-8b5d-cfc9601cac8d",
+      "foundAt": "2026-02-02T17:14:08.568Z",
+      "title": "Luzern siegt gegen St. Gallen dramatisch",
+      "urn": "urn:srf:video:a104d131-be92-492f-8b5d-cfc9601cac8d",
+      "type": "Standalone"
+    },
+    "5_FC Thun - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:88d0b2c3-72c8-40b9-b74e-8cc6e8074223",
+      "foundAt": "2026-02-02T17:14:13.816Z",
+      "title": "GC gleicht spät aus: Thuner Siegesserie reisst",
+      "urn": "urn:srf:video:88d0b2c3-72c8-40b9-b74e-8cc6e8074223",
+      "type": "Standalone"
+    },
+    "5_FC Winterthur - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:40f07bdf-e3e5-4363-bb3e-b08ff04842b7",
+      "foundAt": "2026-02-02T17:14:14.283Z",
+      "title": "Spätes Feuerwerk auf der Schützenwiese: FCZ bezwingt Winterthur",
+      "urn": "urn:srf:video:40f07bdf-e3e5-4363-bb3e-b08ff04842b7",
+      "type": "Standalone"
+    },
+    "5_Lausanne-Sport - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:be8d5381-af09-4ecb-b481-ccd8509fd59d",
+      "foundAt": "2026-02-02T17:14:16.763Z",
+      "title": "St. Gallen gewinnt hitziges Duell mit Lausanne",
+      "urn": "urn:srf:video:be8d5381-af09-4ecb-b481-ccd8509fd59d",
+      "type": "Standalone"
+    },
+    "5_Servette FC - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:05b487a2-d0e9-4bd3-b143-b0912e86cf36",
+      "foundAt": "2026-02-02T17:14:17.154Z",
+      "title": "Ein Punkt für die Moral: Servette kämpft sich zweimal zurück",
+      "urn": "urn:srf:video:05b487a2-d0e9-4bd3-b143-b0912e86cf36",
+      "type": "Sendung"
+    },
+    "5_BSC Young Boys - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e129de09-5c45-4d6e-87d3-ca402048cb76",
+      "foundAt": "2026-02-02T17:14:17.468Z",
+      "title": "Doppelter Bedia: YB feiert gegen Lugano 2. Saisonsieg",
+      "urn": "urn:srf:video:e129de09-5c45-4d6e-87d3-ca402048cb76",
+      "type": "Standalone"
+    },
+    "6_FC Zürich - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c403945a-f3dd-4791-972a-896afec637f1",
+      "foundAt": "2026-02-02T17:14:21.149Z",
+      "title": "FCZ mit glücklichem Sieg über Servette",
+      "urn": "urn:srf:video:c403945a-f3dd-4791-972a-896afec637f1",
+      "type": "Sendung"
+    },
+    "6_FC Winterthur - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e504be25-edda-4936-9343-7477cd0eb88c",
+      "foundAt": "2026-02-02T17:14:25.463Z",
+      "title": "Winterthur unterliegt Sion zuhause mit 2:3",
+      "urn": "urn:srf:video:e504be25-edda-4936-9343-7477cd0eb88c",
+      "type": "Standalone"
+    },
+    "6_Grasshoppers - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:a2516d0a-0986-48f7-a56b-a7f834189430",
+      "foundAt": "2026-02-02T17:14:26.055Z",
+      "title": "Erster Saisonsieg für GC",
+      "urn": "urn:srf:video:a2516d0a-0986-48f7-a56b-a7f834189430",
+      "type": "Sendung"
+    },
+    "6_FC Luzern - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:1059fbe5-bf41-4add-a0fd-13911a2fd04f",
+      "foundAt": "2026-02-02T17:14:26.367Z",
+      "title": "Di Giusto und Sanches: Königstransfers bei Luzern und YB",
+      "urn": "urn:srf:video:1059fbe5-bf41-4add-a0fd-13911a2fd04f",
+      "type": "Sendung"
+    },
+    "7_FC Lugano - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:67352c6c-dc17-4b2f-a93a-e1bceefb260c",
+      "foundAt": "2026-02-02T17:14:26.945Z",
+      "title": "Lugano schlägt GC glücklich",
+      "urn": "urn:srf:video:67352c6c-dc17-4b2f-a93a-e1bceefb260c",
+      "type": "Sendung"
+    },
+    "7_Servette FC - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:797aa020-d019-4b7d-b031-224e4e262405",
+      "foundAt": "2026-02-02T17:14:27.561Z",
+      "title": "Servette lässt Winterthur keine Chance",
+      "urn": "urn:srf:video:797aa020-d019-4b7d-b031-224e4e262405",
+      "type": "Sendung"
+    },
+    "7_FC Zürich - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:bf99f55c-32d2-4d72-aea4-90760d5d8784",
+      "foundAt": "2026-02-02T17:14:27.892Z",
+      "title": "FCZ schlägt Leader St. Gallen verdient",
+      "urn": "urn:srf:video:bf99f55c-32d2-4d72-aea4-90760d5d8784",
+      "type": "Standalone"
+    },
+    "7_BSC Young Boys - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:79cd2794-f8f4-4c72-8164-4dbd3dc4e917",
+      "foundAt": "2026-02-02T17:14:28.194Z",
+      "title": "YB fährt in wildem Kantonsderby gegen Thun einen wichtigen Sieg ein",
+      "urn": "urn:srf:video:79cd2794-f8f4-4c72-8164-4dbd3dc4e917",
+      "type": "Standalone"
+    },
+    "7_FC Basel - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e9c2366b-f47c-470a-8cf9-c7cb447950ab",
+      "foundAt": "2026-02-02T17:14:28.509Z",
+      "title": "Effizientes Luzern düpiert den FCB",
+      "urn": "urn:srf:video:e9c2366b-f47c-470a-8cf9-c7cb447950ab",
+      "type": "Standalone"
+    },
+    "7_FC Sion - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:5d6534a3-6a80-4ad1-9c8c-074477084a6d",
+      "foundAt": "2026-02-02T17:14:28.955Z",
+      "title": "Alu statt Hurra: Nullnummer im Tourbillon zwischen Sion und Lausanne",
+      "urn": "urn:srf:video:5d6534a3-6a80-4ad1-9c8c-074477084a6d",
+      "type": "Standalone"
+    },
+    "8_FC Luzern - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:f7632e9b-ff2a-4cf5-aac1-569da460ea60",
+      "foundAt": "2026-02-02T17:14:29.719Z",
+      "title": "In Unterzahl vom 1:3 zum 3:3: Sion erkämpft sich Punkt in Luzern",
+      "urn": "urn:srf:video:f7632e9b-ff2a-4cf5-aac1-569da460ea60",
+      "type": "Standalone"
+    },
+    "8_FC St. Gallen - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:ba83a175-3307-4ec4-bc0a-e3c25daa7c88",
+      "foundAt": "2026-02-02T17:14:30.055Z",
+      "title": "Thun entthront St. Gallen",
+      "urn": "urn:srf:video:ba83a175-3307-4ec4-bc0a-e3c25daa7c88",
+      "type": "Sendung"
+    },
+    "8_Grasshoppers - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:ed764852-42a5-4c08-81b4-9565d636970c",
+      "foundAt": "2026-02-02T17:14:30.353Z",
+      "title": "GC gewinnt Zürcher Derby",
+      "urn": "urn:srf:video:ed764852-42a5-4c08-81b4-9565d636970c",
+      "type": "Sendung"
+    },
+    "8_Lausanne-Sport - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:49108cb8-f1cb-415e-8f95-a2aedec8931d",
+      "foundAt": "2026-02-02T17:14:30.772Z",
+      "title": "Lausanne spielt YB an die Wand",
+      "urn": "urn:srf:video:49108cb8-f1cb-415e-8f95-a2aedec8931d",
+      "type": "Standalone"
+    },
+    "8_FC Winterthur - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:107aa54c-52bc-4e71-ac90-151f880ca38f",
+      "foundAt": "2026-02-02T17:14:33.628Z",
+      "title": "Vom 0:2 zum 4:2: Lugano dreht Partie gegen Winterthur",
+      "urn": "urn:srf:video:107aa54c-52bc-4e71-ac90-151f880ca38f",
+      "type": "Standalone"
+    },
+    "9_FC Basel - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e4fd5b47-c31e-4ed3-816e-a4562bc246c0",
+      "foundAt": "2026-02-02T17:14:36.797Z",
+      "title": "Thun überrascht weiter, Basel gegen FCW souverän, Lugano bodigt FCZ",
+      "urn": "urn:srf:video:e4fd5b47-c31e-4ed3-816e-a4562bc246c0",
+      "type": "Sendung"
+    },
+    "9_FC Thun - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:1dab0bf2-6056-48f2-8af1-a0b315b35bbb",
+      "foundAt": "2026-02-02T17:14:37.322Z",
+      "title": "Thun schlägt Servette und bleibt Leader",
+      "urn": "urn:srf:video:1dab0bf2-6056-48f2-8af1-a0b315b35bbb",
+      "type": "Standalone"
+    },
+    "9_FC Lugano - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:724bd9df-6d4f-4cab-a2f0-d1ff1ad1ccfb",
+      "foundAt": "2026-02-02T17:14:37.648Z",
+      "title": "Dank Zanottis Top-Assist und von Ballmoos: Lugano schlägt den FCZ",
+      "urn": "urn:srf:video:724bd9df-6d4f-4cab-a2f0-d1ff1ad1ccfb",
+      "type": "Standalone"
+    },
+    "9_Grasshoppers - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:7e71aff2-1834-43f9-9466-1ceefd1cee99",
+      "foundAt": "2026-02-02T17:14:38.044Z",
+      "title": "GC verliert gegen Sion in Unterzahl mit 0:1",
+      "urn": "urn:srf:video:7e71aff2-1834-43f9-9466-1ceefd1cee99",
+      "type": "Standalone"
+    },
+    "9_FC Luzern - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:09073cbb-271d-4531-8c3d-5406dcb5a3ee",
+      "foundAt": "2026-02-02T17:14:38.443Z",
+      "title": "Spätes Comeback: Luzern erkämpft sich gegen Lausanne einen Punkt",
+      "urn": "urn:srf:video:09073cbb-271d-4531-8c3d-5406dcb5a3ee",
+      "type": "Standalone"
+    },
+    "9_BSC Young Boys - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0e7eca62-983b-4233-91b3-942af234f42a",
+      "foundAt": "2026-02-02T17:14:38.773Z",
+      "title": "Erster Sieg in Bern seit 20 Jahren: St. Gallen besiegt YB-Fluch",
+      "urn": "urn:srf:video:0e7eca62-983b-4233-91b3-942af234f42a",
+      "type": "Standalone"
+    },
+    "10_FC Sion - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:01ec3b10-5ba8-447e-b6fd-a2df8ed481bb",
+      "foundAt": "2026-02-02T17:14:39.314Z",
+      "title": "Imeri schiesst Thun beim FC Sion zum Sieg",
+      "urn": "urn:srf:video:01ec3b10-5ba8-447e-b6fd-a2df8ed481bb",
+      "type": "Standalone"
+    },
+    "10_FC St. Gallen - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:75a271ae-f655-42db-9c36-be3fec7f1a9a",
+      "foundAt": "2026-02-02T17:14:39.634Z",
+      "title": "Vogts dritter Doppelpack: St. Gallen zieht GC früh den Zahn",
+      "urn": "urn:srf:video:75a271ae-f655-42db-9c36-be3fec7f1a9a",
+      "type": "Standalone"
+    },
+    "10_FC Winterthur - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e1135831-60ed-4909-85d0-aab13645dc6a",
+      "foundAt": "2026-02-02T17:14:40.144Z",
+      "title": "Winterthur verspielt 2:0-Führung gegen Luzern",
+      "urn": "urn:srf:video:e1135831-60ed-4909-85d0-aab13645dc6a",
+      "type": "Sendung"
+    },
+    "10_FC Zürich - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:ba114ca8-4cae-4842-b6d3-080dc60b6a4d",
+      "foundAt": "2026-02-02T17:14:40.469Z",
+      "title": "Spätes Drama im Letzigrund: FCZ verpasst Spektakel-Remis gegen YB",
+      "urn": "urn:srf:video:ba114ca8-4cae-4842-b6d3-080dc60b6a4d",
+      "type": "Standalone"
+    },
+    "10_Lausanne-Sport - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:d60164a6-c235-4818-aaf8-c2ec900c50cc",
+      "foundAt": "2026-02-02T17:14:40.856Z",
+      "title": "Lausanne düpiert den FCB – YB zittert sich zum Sieg beim FCZ",
+      "urn": "urn:srf:video:d60164a6-c235-4818-aaf8-c2ec900c50cc",
+      "type": "Sendung"
+    },
+    "10_Servette FC - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:d92b0b3f-a190-4318-8a26-c11ac968f54a",
+      "foundAt": "2026-02-02T17:14:41.281Z",
+      "title": "Servette gelingt gegen Lugano der Befreiungsschlag",
+      "urn": "urn:srf:video:d92b0b3f-a190-4318-8a26-c11ac968f54a",
+      "type": "Standalone"
+    },
+    "11_FC Sion - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:1797862f-1fb2-4986-ba92-b79b021751c2",
+      "foundAt": "2026-02-02T17:14:42.149Z",
+      "title": "Sion schlägt St. Gallen knapp mit 3:2",
+      "urn": "urn:srf:video:1797862f-1fb2-4986-ba92-b79b021751c2",
+      "type": "Standalone"
+    },
+    "11_FC Thun - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c3606cc7-b3b4-4048-86d1-32c9384a667a",
+      "foundAt": "2026-02-02T17:14:42.574Z",
+      "title": "3:0: Leader Thun lässt Schlusslicht Winterthur keine Chance",
+      "urn": "urn:srf:video:c3606cc7-b3b4-4048-86d1-32c9384a667a",
+      "type": "Standalone"
+    },
+    "11_FC Basel - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:64107642-bf67-4459-8a53-56a5dd3cf292",
+      "foundAt": "2026-02-02T17:14:42.887Z",
+      "title": "Shaqiri dirigiert den FCB gegen harmlosen FCZ zum Sieg",
+      "urn": "urn:srf:video:64107642-bf67-4459-8a53-56a5dd3cf292",
+      "type": "Standalone"
+    },
+    "11_Lausanne-Sport - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:253d895d-e383-4d26-8ba6-220a6985e485",
+      "foundAt": "2026-02-02T17:14:43.357Z",
+      "title": "Viel Rauch, viel Zufall: Servette stoppt Lausannes 5-Tore-Serie",
+      "urn": "urn:srf:video:253d895d-e383-4d26-8ba6-220a6985e485",
+      "type": "Standalone"
+    },
+    "11_Grasshoppers - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:9d90a849-2fee-470f-93b1-db022054f788",
+      "foundAt": "2026-02-02T17:14:43.666Z",
+      "title": "WSL: YB, GC und der FCZ gewinnen",
+      "urn": "urn:srf:video:9d90a849-2fee-470f-93b1-db022054f788",
+      "type": "Sendung"
+    },
+    "11_FC Lugano - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:59830c42-e2f5-4001-98c1-0d990cbb29f2",
+      "foundAt": "2026-02-02T17:14:44.016Z",
+      "title": "Lugano mit schmeichelhaftem 2:0 gegen Luzern",
+      "urn": "urn:srf:video:59830c42-e2f5-4001-98c1-0d990cbb29f2",
+      "type": "Sendung"
+    },
+    "12_FC Thun - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:365a2586-335e-4c00-b480-dcb057eb3582",
+      "foundAt": "2026-02-02T17:14:44.554Z",
+      "title": "Leader Thun gewinnt zum 5. Mal in Folge",
+      "urn": "urn:srf:video:365a2586-335e-4c00-b480-dcb057eb3582",
+      "type": "Sendung"
+    },
+    "12_FC Winterthur - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:31458112-ccb6-414d-8d32-ed78f83364fa",
+      "foundAt": "2026-02-02T17:14:45.071Z",
+      "title": "Das Warten hat ein Ende: «Winti» feiert den 1. Saisonsieg",
+      "urn": "urn:srf:video:31458112-ccb6-414d-8d32-ed78f83364fa",
+      "type": "Sendung"
+    },
+    "12_FC Zürich - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:b1752d53-7514-4304-9038-e711226719fd",
+      "foundAt": "2026-02-02T17:14:45.607Z",
+      "title": "Lausanne stürzt den FCZ noch tiefer in die Tiefe",
+      "urn": "urn:srf:video:b1752d53-7514-4304-9038-e711226719fd",
+      "type": "Standalone"
+    },
+    "12_FC Luzern - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:b75dccf9-3708-4c7d-b7d4-6c4c92127f89",
+      "foundAt": "2026-02-02T17:14:45.912Z",
+      "title": "Luzern überfährt die Grasshoppers zuhause mit 6:0",
+      "urn": "urn:srf:video:b75dccf9-3708-4c7d-b7d4-6c4c92127f89",
+      "type": "Sendung"
+    },
+    "12_FC Lugano - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:57dec0c8-15a5-487f-b254-e1a966d05ca3",
+      "foundAt": "2026-02-02T17:14:48.902Z",
+      "title": "St. Gallen siegt in Lugano nach Rückstand",
+      "urn": "urn:srf:video:57dec0c8-15a5-487f-b254-e1a966d05ca3",
+      "type": "Standalone"
+    },
+    "13_FC Winterthur - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:59419c09-2a2c-4f72-ab3f-f49cce793783",
+      "foundAt": "2026-02-02T17:14:49.592Z",
+      "title": "Winterthur jubelt vergebens, GC nicht",
+      "urn": "urn:srf:video:59419c09-2a2c-4f72-ab3f-f49cce793783",
+      "type": "Standalone"
+    },
+    "13_FC Zürich - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:aca5f5c9-1e16-4169-9ff0-8605f038e92c",
+      "foundAt": "2026-02-02T17:14:49.902Z",
+      "title": "Irre Wende: Der FCZ schiesst sich spektakulär aus der Krise",
+      "urn": "urn:srf:video:aca5f5c9-1e16-4169-9ff0-8605f038e92c",
+      "type": "Sendung"
+    },
+    "13_Lausanne-Sport - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:259029c9-2b24-43c2-8f48-1d6e206bcd76",
+      "foundAt": "2026-02-02T17:14:54.482Z",
+      "title": "Remis gegen Sion: Lausanne kämpft sich nach 0:2-Rückstand zurück",
+      "urn": "urn:srf:video:259029c9-2b24-43c2-8f48-1d6e206bcd76",
+      "type": "Standalone"
+    },
+    "13_FC St. Gallen - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:59de09d6-b27d-44b3-a3d4-6b72e1256f67",
+      "foundAt": "2026-02-02T17:14:54.819Z",
+      "title": "YB bestraft St. Gallens Abwehrpatzer rigoros",
+      "urn": "urn:srf:video:59de09d6-b27d-44b3-a3d4-6b72e1256f67",
+      "type": "Standalone"
+    },
+    "14_FC Luzern - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:dda205aa-5b9c-46cf-98e9-800f6e11c648",
+      "foundAt": "2026-02-02T17:14:55.454Z",
+      "title": "Luzern und Servette trennen sich unentschieden",
+      "urn": "urn:srf:video:dda205aa-5b9c-46cf-98e9-800f6e11c648",
+      "type": "Standalone"
+    },
+    "14_BSC Young Boys - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:bb709cad-f8d1-4bcf-ae0a-a60d9d6565dc",
+      "foundAt": "2026-02-02T17:14:55.888Z",
+      "title": "YB fertigt Winterthur zu Hause ab",
+      "urn": "urn:srf:video:bb709cad-f8d1-4bcf-ae0a-a60d9d6565dc",
+      "type": "Standalone"
+    },
+    "14_FC Sion - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:4ef5d4d9-3252-497f-9bc4-d5227c809b77",
+      "foundAt": "2026-02-02T17:14:58.281Z",
+      "title": "FC Zürich punktet im Wallis nach 0:2-Rückstand",
+      "urn": "urn:srf:video:4ef5d4d9-3252-497f-9bc4-d5227c809b77",
+      "type": "Sendung"
+    },
+    "14_FC St. Gallen - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:9b60bc0a-153d-45b6-a260-1e75665fdbf3",
+      "foundAt": "2026-02-02T17:15:01.323Z",
+      "title": "St. Gallen schlägt Lausanne trotz langer Unterzahl",
+      "urn": "urn:srf:video:9b60bc0a-153d-45b6-a260-1e75665fdbf3",
+      "type": "Standalone"
+    },
+    "15_FC Lugano - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:9329dd74-2706-4c2d-b03b-14866aa9ebbc",
+      "foundAt": "2026-02-02T17:15:02.230Z",
+      "title": "Lugano muss sich trotz Traumfreistoss mit Remis begnügen",
+      "urn": "urn:srf:video:9329dd74-2706-4c2d-b03b-14866aa9ebbc",
+      "type": "Sendung"
+    },
+    "15_FC Zürich - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:a2bdb640-038d-4ff1-91bf-ca656c7122e4",
+      "foundAt": "2026-02-02T17:15:02.685Z",
+      "title": "Rückblick auf den Super-League-Samstag",
+      "urn": "urn:srf:video:a2bdb640-038d-4ff1-91bf-ca656c7122e4",
+      "type": "Sendung"
+    },
+    "15_FC Luzern - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:828c1583-e7d8-4053-926b-508c433af9c7",
+      "foundAt": "2026-02-02T17:15:03.308Z",
+      "title": "Winterthur gelingt in Luzern der Befreiungsschlag",
+      "urn": "urn:srf:video:828c1583-e7d8-4053-926b-508c433af9c7",
+      "type": "Standalone"
+    },
+    "15_Servette FC - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:b84a3121-ce57-4237-834e-6895bac92c53",
+      "foundAt": "2026-02-02T17:15:03.799Z",
+      "title": "Tag der offenen Tore: Servette und YB trennen sich 4:4",
+      "urn": "urn:srf:video:b84a3121-ce57-4237-834e-6895bac92c53",
+      "type": "Standalone"
+    },
+    "15_Lausanne-Sport - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:55aa91d9-3fc7-4935-934a-62d07839665e",
+      "foundAt": "2026-02-02T17:15:06.778Z",
+      "title": "3 wichtige Minuten: Auch Lausanne-Sport schlägt Leader Thun",
+      "urn": "urn:srf:video:55aa91d9-3fc7-4935-934a-62d07839665e",
+      "type": "Standalone"
+    },
+    "16_Grasshoppers - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:60f19188-4ff0-4a68-8c8a-17824fa3376e",
+      "foundAt": "2026-02-02T17:15:07.424Z",
+      "title": "Ein Kopfballtor reicht Servette zum Sieg über GC",
+      "urn": "urn:srf:video:60f19188-4ff0-4a68-8c8a-17824fa3376e",
+      "type": "Standalone"
+    },
+    "16_FC Thun - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:ce54b184-0d3d-4427-ad0c-4adf6be140ac",
+      "foundAt": "2026-02-02T17:15:07.813Z",
+      "title": "Thun kehrt mit Kunst und Köpfchen zum Siegen zurück",
+      "urn": "urn:srf:video:ce54b184-0d3d-4427-ad0c-4adf6be140ac",
+      "type": "Sendung"
+    },
+    "16_FC St. Gallen - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:568ed7a6-48fa-49c3-b496-834edfc3a6bb",
+      "foundAt": "2026-02-02T17:15:08.544Z",
+      "title": "Keny wieder Matchwinner: FCZ schlägt auch St. Gallen",
+      "urn": "urn:srf:video:568ed7a6-48fa-49c3-b496-834edfc3a6bb",
+      "type": "Standalone"
+    },
+    "16_FC Winterthur - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:3ffb0a14-cac1-4fb6-83af-e5a63afd62e8",
+      "foundAt": "2026-02-02T17:15:08.979Z",
+      "title": "Siegtor in der Nachspielzeit: FCB erkämpft sich in Winterthur 2:1",
+      "urn": "urn:srf:video:3ffb0a14-cac1-4fb6-83af-e5a63afd62e8",
+      "type": "Standalone"
+    },
+    "16_Lausanne-Sport - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c99b27b6-908f-4e33-935f-48ce27c52309",
+      "foundAt": "2026-02-02T17:15:09.380Z",
+      "title": "Lausanne verpasst den Sieg gegen Lugano",
+      "urn": "urn:srf:video:c99b27b6-908f-4e33-935f-48ce27c52309",
+      "type": "Standalone"
+    },
+    "16_FC Sion - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:85303346-bea8-4bcc-a0b9-c05d2b197b85",
+      "foundAt": "2026-02-02T17:15:09.790Z",
+      "title": "YB taucht im Regen von Sion",
+      "urn": "urn:srf:video:85303346-bea8-4bcc-a0b9-c05d2b197b85",
+      "type": "Standalone"
+    },
+    "17_FC Sion - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:75820200-133e-4188-b453-9db64002c5b3",
+      "foundAt": "2026-02-02T17:15:10.311Z",
+      "title": "GC verliert abermals mit 0:1",
+      "urn": "urn:srf:video:75820200-133e-4188-b453-9db64002c5b3",
+      "type": "Sendung"
+    },
+    "17_FC Zürich - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c3d29383-7460-4379-9c47-3e0d15b25203",
+      "foundAt": "2026-02-02T17:15:10.817Z",
+      "title": "Winterthur holt späten Punkt beim FCZ",
+      "urn": "urn:srf:video:c3d29383-7460-4379-9c47-3e0d15b25203",
+      "type": "Standalone"
+    },
+    "17_FC Thun - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:25bfcfbd-bddd-48ee-a109-d1c05c3000ca",
+      "foundAt": "2026-02-02T17:15:11.193Z",
+      "title": "St. Gallen schlägt Leader Thun",
+      "urn": "urn:srf:video:25bfcfbd-bddd-48ee-a109-d1c05c3000ca",
+      "type": "Standalone"
+    },
+    "17_BSC Young Boys - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:9e0f5aed-1f10-4a0b-8f78-27c633ef82b7",
+      "foundAt": "2026-02-02T17:15:11.600Z",
+      "title": "Alles zum YB-Heimsieg gegen den FCL",
+      "urn": "urn:srf:video:9e0f5aed-1f10-4a0b-8f78-27c633ef82b7",
+      "type": "Sendung"
+    },
+    "17_FC Basel - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:43636632-da06-4c9e-bf30-1e7646f059a7",
+      "foundAt": "2026-02-02T17:15:11.996Z",
+      "title": "Nullnummer im St. Jakob-Park zwischen dem FCB und Lausanne",
+      "urn": "urn:srf:video:43636632-da06-4c9e-bf30-1e7646f059a7",
+      "type": "Standalone"
+    },
+    "17_FC Lugano - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:94767df5-d73f-45d9-86de-f9c1c7d7677e",
+      "foundAt": "2026-02-02T17:15:12.397Z",
+      "title": "Lugano mit wichtigem Heimsieg gegen Servette",
+      "urn": "urn:srf:video:94767df5-d73f-45d9-86de-f9c1c7d7677e",
+      "type": "Standalone"
+    },
+    "18_FC St. Gallen - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:2fee41b3-c1e6-4536-9335-344e66c4c557",
+      "foundAt": "2026-02-02T17:15:12.941Z",
+      "title": "St. Gallen dreht das Spiel gegen Sion",
+      "urn": "urn:srf:video:2fee41b3-c1e6-4536-9335-344e66c4c557",
+      "type": "Standalone"
+    },
+    "18_FC Winterthur - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:2c3e1b81-9098-413f-8ef7-ba4a5373e265",
+      "foundAt": "2026-02-02T17:15:13.397Z",
+      "title": "Winterthur gegen Thun ohne Chance",
+      "urn": "urn:srf:video:2c3e1b81-9098-413f-8ef7-ba4a5373e265",
+      "type": "Standalone"
+    },
+    "18_FC Luzern - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:64c19aeb-e837-435c-8860-5dd884a0ee40",
+      "foundAt": "2026-02-02T17:15:13.802Z",
+      "title": "GC demütigt YB, der FCB siegt in Luzern",
+      "urn": "urn:srf:video:64c19aeb-e837-435c-8860-5dd884a0ee40",
+      "type": "Sendung"
+    },
+    "18_BSC Young Boys - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:35f6c030-0468-47cd-a6d0-91a29aa9d04d",
+      "foundAt": "2026-02-02T17:15:14.282Z",
+      "title": "GC demütigt YB mit 6:2",
+      "urn": "urn:srf:video:35f6c030-0468-47cd-a6d0-91a29aa9d04d",
+      "type": "Standalone"
+    },
+    "18_FC Zürich - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:51e6e4b4-9b2c-4e35-bf62-ba2a690e3678",
+      "foundAt": "2026-02-02T17:15:14.622Z",
+      "title": "Lugano jubelt im Letzigrund sehr spät",
+      "urn": "urn:srf:video:51e6e4b4-9b2c-4e35-bf62-ba2a690e3678",
+      "type": "Sendung"
+    },
+    "18_Servette FC - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:3bc44bb4-1810-48c4-921f-ac658737aff3",
+      "foundAt": "2026-02-02T17:15:15.587Z",
+      "title": "Lausanne siegt glücklich in Genf",
+      "urn": "urn:srf:video:3bc44bb4-1810-48c4-921f-ac658737aff3",
       "type": "Standalone"
     }
   }
