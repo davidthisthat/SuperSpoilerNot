@@ -9,9 +9,14 @@
             margin: 0;
             padding: 0;
             background-color: #228B22;
+            background-image: url('rasen.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             font-family: 'Arial Black', Arial, sans-serif;
             color: white;
             text-align: center;
+            min-height: 100vh;
         }
         .container {
             max-width: 900px;
@@ -22,11 +27,27 @@
             font-size: 50px;
             margin: 20px 0;
             text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .mobile-hint {
+            display: none;
+            background: rgba(255, 200, 0, 0.9);
+            color: #333;
+            padding: 12px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .mobile-hint {
+                display: block;
+            }
         }
         .match {
             display: flex;
             align-items: center;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.6);
             margin: 5px 0;
             padding: 15px 20px;
             border-radius: 5px;
@@ -88,6 +109,10 @@
 <body>
 
     <div class="container">
+        <div class="mobile-hint">
+            📱 Erst das Smartphone quer drehen, dann den Link anklicken.
+        </div>
+        
         <h1 id="matchday-title">Spieltag</h1>
         
         <div class="matchday-nav">
