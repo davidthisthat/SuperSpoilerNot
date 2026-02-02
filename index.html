@@ -40,17 +40,21 @@
         /* Desktop: Einfacher Hinweis-Text */
         .hint-desktop {
             margin: 15px 0 20px 0;
-            color: rgba(255,255,255,0.85);
-            font-size: 15px;
+            color: rgba(255,255,255,0.9);
+            font-size: 20px;
             font-family: Arial, sans-serif;
+        }
+        /* Mobile: Container für Overlay-Positionierung */
+        .hint-mobile-wrapper {
+            display: none;
+            position: relative;
         }
         /* Mobile: Klickbarer Trigger */
         .hint-mobile-trigger {
-            display: none;
             margin: 15px 0 10px 0;
             cursor: pointer;
             color: rgba(255,255,255,0.8);
-            font-size: 16px;
+            font-size: 20px;
             font-family: Arial, sans-serif;
         }
         .hint-mobile-trigger:hover {
@@ -63,18 +67,24 @@
         .hint-mobile-trigger.open .arrow {
             transform: rotate(90deg);
         }
-        /* Mobile: Hinweis-Box unterhalb */
+        /* Mobile: Overlay-Box (schwebt über Inhalt) */
         .hint-mobile-content {
             display: none;
-            background: rgba(0, 0, 0, 0.75);
-            padding: 15px 20px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px 25px;
             border-radius: 8px;
-            margin: 0 0 15px 0;
+            margin-top: 10px;
             color: white;
             font-family: Arial, sans-serif;
-            font-size: 15px;
-            line-height: 1.6;
+            font-size: 18px;
+            line-height: 1.7;
             text-align: left;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
         }
         .hint-mobile-content.active {
             display: block;
@@ -83,7 +93,7 @@
             .hint-desktop {
                 display: none;
             }
-            .hint-mobile-trigger {
+            .hint-mobile-wrapper {
                 display: block;
             }
         }
@@ -199,15 +209,16 @@
             No Spoiler, so geht's: Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
         </div>
         
-        <!-- Mobile: Klickbarer Trigger -->
-        <div class="hint-mobile-trigger" id="hint-trigger" onclick="toggleMobileHint()">
-            No Spoiler – so geht's <span class="arrow">→</span>
-        </div>
-        
-        <!-- Mobile: Hinweis-Box -->
-        <div class="hint-mobile-content" id="hint-content">
-            <div style="margin-bottom: 10px;"><strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.</div>
-            <div><strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.</div>
+        <!-- Mobile: Wrapper für Overlay -->
+        <div class="hint-mobile-wrapper">
+            <div class="hint-mobile-trigger" id="hint-trigger" onclick="toggleMobileHint()">
+                No Spoiler – so geht's <span class="arrow">→</span>
+            </div>
+            <!-- Overlay-Box (schwebt über Inhalt) -->
+            <div class="hint-mobile-content" id="hint-content">
+                <div style="margin-bottom: 12px;"><strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.</div>
+                <div><strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.</div>
+            </div>
         </div>
         
         <h1 id="matchday-title">Spieltag</h1>
