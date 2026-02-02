@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #228B22;
-            background-image: url('img/rasen.png');
+            background-image: url('img/rasen-desktop.jpg');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -18,6 +18,12 @@
             color: white;
             text-align: center;
             min-height: 100vh;
+        }
+        @media (max-width: 768px) {
+            body {
+                background-image: url('img/rasen-mobile.jpg');
+                background-attachment: scroll;
+            }
         }
         .container {
             max-width: 900px;
