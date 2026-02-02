@@ -61,13 +61,56 @@ function findTeamInText(text, teamName, teamsData) {
     return false;
 }
 
-// Finde ein passendes Keyword für die Suche
-function getSearchKeyword(teamName, teamsData) {
+// Prüfe ob das Video-Datum zum Spieldatum passt
+// Video muss am Spieltag oder bis zu 2 Tage danach veröffentlicht worden sein
+function isVideoDateValid(video, matchDate) {
+    // API liefert verschiedene Datumsfelder: date, validFrom, publishedDate
+    const videoDateStr = video.date || video.validFrom || video.publishedDate;
+    
+    if (!videoDateStr) {
+        console.log(`    ⚠ Kein Datum im Video gefunden`);
+        return false;
+    }
+    
+    const videoDate = new Date(videoDateStr);
+    const matchDateObj = new Date(matchDate);
+    
+    // Nur das Datum vergleichen, nicht die Uhrzeit
+    videoDate.setHours(0, 0, 0, 0);
+    matchDateObj.setHours(0, 0, 0, 0);
+    
+    // Video muss am Spieltag oder bis zu 2 Tage danach sein
+    const diffDays = (videoDate - matchDateObj) / (1000 * 60 * 60 * 24);
+    
+    if (diffDays >= 0 && diffDays <= 2) {
+        return true;
+    }
+    
+    return false;
+}
+
+// Hole ALLE Keywords für ein Team
+function getAllKeywords(teamName, teamsData) {
     const teamInfo = teamsData.teams[teamName];
     if (teamInfo && teamInfo.keywords && teamInfo.keywords.length > 0) {
-        return teamInfo.keywords[0];
+        return teamInfo.keywords;
     }
-    return teamName;
+    return [teamName];
+}
+
+// Hole Derby-Keywords falls vorhanden
+function getDerbyKeywords(homeTeam, awayTeam, teamsData) {
+    if (!teamsData.match_combinations) return [];
+    
+    // Prüfe beide Richtungen
+    const key1 = `${homeTeam} vs ${awayTeam}`;
+    const key2 = `${awayTeam} vs ${homeTeam}`;
+    
+    const combo = teamsData.match_combinations[key1] || teamsData.match_combinations[key2];
+    if (combo && combo.keywords) {
+        return combo.keywords;
+    }
+    return [];
 }
 
 // Finde Spiele die gesucht werden müssen
@@ -82,7 +125,8 @@ function getMatchesToSearch(spielplan, links, testMatchday = null) {
         }
         
         for (const match of matchday.matches) {
-            const matchKey = `${match.home} - ${match.away}`;
+            // Match-Key enthält jetzt den Spieltag, um Hin- und Rückrunde zu unterscheiden
+            const matchKey = `${matchday.matchday}_${match.home} - ${match.away}`;
             
             // Überspringe wenn Link bereits gefunden
             if (links.matches[matchKey] && links.matches[matchKey].url) {
@@ -174,47 +218,86 @@ async function crawl() {
     for (const match of matchesToSearch) {
         console.log(`\n--- ${match.matchKey} ---`);
         
-        // Suche mit dem Home-Team Keyword
-        const homeKeyword = getSearchKeyword(match.home, teams);
-        const results = await searchVideos(homeKeyword);
+        // Sammle Keywords
+        const homeKeywords = getAllKeywords(match.home, teams);
+        const awayKeywords = getAllKeywords(match.away, teams);
+        const derbyKeywords = getDerbyKeywords(match.home, match.away, teams);
         
-        console.log(`  Gefunden: ${results.length} Videos`);
+        // Erstelle Kombinationen: "Home Away" Paare zuerst (spezifischer), dann einzelne Keywords
+        const combinedSearches = [];
         
-        // Durchsuche die Ergebnisse - zuerst Sport-Clip (Standalone), dann Sendung als Fallback
-        let standaloneMatch = null;
-        let sendungMatch = null;
+        // Kombinationen aus erstem Keyword jedes Teams
+        combinedSearches.push(`${homeKeywords[0]} ${awayKeywords[0]}`);
         
-        for (const video of results) {
-            const title = video.title || '';
-            const description = video.description || '';
-            const showTitle = video.show?.title || '';
-            const fullText = `${title} ${description} ${showTitle}`;
-            
-            // Prüfe ob mindestens ein Team erwähnt wird
-            const homeFound = findTeamInText(fullText, match.home, teams);
-            const awayFound = findTeamInText(fullText, match.away, teams);
-            
-            if (homeFound || awayFound) {
-                // Sport-Clip = Standalone (bevorzugt)
-                if (showTitle === 'Sport-Clip' && !standaloneMatch) {
-                    standaloneMatch = video;
-                }
-                // Super League Highlights = Sendung (Fallback)
-                else if (showTitle.includes('Super League') && !sendungMatch) {
-                    sendungMatch = video;
-                }
-            }
-            
-            // Wenn Standalone gefunden, können wir aufhören
-            if (standaloneMatch) break;
+        // Derby-Keywords
+        for (const dk of derbyKeywords) {
+            combinedSearches.push(dk);
         }
         
-        // Bevorzuge Standalone, sonst Sendung
-        const foundVideo = standaloneMatch || sendungMatch;
+        // Dann einzelne Keywords als Fallback
+        const allKeywords = [...new Set([...homeKeywords, ...awayKeywords])];
+        for (const kw of allKeywords) {
+            if (!combinedSearches.includes(kw)) {
+                combinedSearches.push(kw);
+            }
+        }
+        
+        console.log(`  Suchen: ${combinedSearches.join(', ')}`);
+        
+        let foundVideo = null;
+        let videoType = null;
+        
+        // Probiere jede Suche, bis ein Video gefunden wird
+        for (const keyword of combinedSearches) {
+            if (foundVideo) break;
+            
+            const results = await searchVideos(keyword);
+            console.log(`  Gefunden: ${results.length} Videos`);
+            
+            let standaloneMatch = null;
+            let sendungMatch = null;
+            
+            for (const video of results) {
+                const title = video.title || '';
+                const description = video.description || '';
+                const showTitle = video.show?.title || '';
+                const fullText = `${title} ${description} ${showTitle}`;
+                
+                // Prüfe ob mindestens ein Team erwähnt wird
+                const homeFound = findTeamInText(fullText, match.home, teams);
+                const awayFound = findTeamInText(fullText, match.away, teams);
+                
+                // Prüfe ob das Datum passt
+                const dateValid = isVideoDateValid(video, match.date);
+                
+                if ((homeFound || awayFound) && dateValid) {
+                    // Sport-Clip = Standalone Highlight (bevorzugt)
+                    if (showTitle === 'Sport-Clip' && !standaloneMatch) {
+                        standaloneMatch = video;
+                    }
+                    // Super League – Highlights = Sendung (Fallback)
+                    else if (showTitle.includes('Super League') && !sendungMatch) {
+                        sendungMatch = video;
+                    }
+                }
+                
+                if (standaloneMatch) break;
+            }
+            
+            if (standaloneMatch) {
+                foundVideo = standaloneMatch;
+                videoType = 'Standalone';
+            } else if (sendungMatch && !foundVideo) {
+                foundVideo = sendungMatch;
+                videoType = 'Sendung';
+            }
+            
+            // Kurze Pause zwischen API-Calls
+            await new Promise(r => setTimeout(r, 200));
+        }
         
         if (foundVideo) {
             const videoUrl = buildVideoUrl(foundVideo.urn);
-            const videoType = standaloneMatch ? 'Standalone' : 'Sendung';
             
             console.log(`  ✓ GEFUNDEN (${videoType}): ${foundVideo.title}`);
             console.log(`    URL: ${videoUrl}`);
@@ -227,65 +310,9 @@ async function crawl() {
                 type: videoType
             };
             foundCount++;
-        }
-        
-        // Falls nicht gefunden, zweiter Versuch mit Away-Team
-        if (!links.matches[match.matchKey]?.url) {
-            const awayKeyword = getSearchKeyword(match.away, teams);
-            if (awayKeyword !== homeKeyword) {
-                const results2 = await searchVideos(awayKeyword);
-                console.log(`  Zweite Suche (${awayKeyword}): ${results2.length} Videos`);
-                
-                let standaloneMatch2 = null;
-                let sendungMatch2 = null;
-                
-                for (const video of results2) {
-                    const title = video.title || '';
-                    const description = video.description || '';
-                    const showTitle = video.show?.title || '';
-                    const fullText = `${title} ${description} ${showTitle}`;
-                    
-                    const homeFound = findTeamInText(fullText, match.home, teams);
-                    const awayFound = findTeamInText(fullText, match.away, teams);
-                    
-                    if (homeFound || awayFound) {
-                        if (showTitle === 'Sport-Clip' && !standaloneMatch2) {
-                            standaloneMatch2 = video;
-                        } else if (showTitle.includes('Super League') && !sendungMatch2) {
-                            sendungMatch2 = video;
-                        }
-                    }
-                    
-                    if (standaloneMatch2) break;
-                }
-                
-                const foundVideo2 = standaloneMatch2 || sendungMatch2;
-                
-                if (foundVideo2) {
-                    const videoUrl = buildVideoUrl(foundVideo2.urn);
-                    const videoType = standaloneMatch2 ? 'Standalone' : 'Sendung';
-                    
-                    console.log(`  ✓ GEFUNDEN (${videoType}): ${foundVideo2.title}`);
-                    console.log(`    URL: ${videoUrl}`);
-                    
-                    links.matches[match.matchKey] = {
-                        url: videoUrl,
-                        foundAt: new Date().toISOString(),
-                        title: foundVideo2.title,
-                        urn: foundVideo2.urn,
-                        type: videoType
-                    };
-                    foundCount++;
-                }
-            }
-        }
-        
-        if (!links.matches[match.matchKey]?.url) {
+        } else {
             console.log(`  ✗ Nicht gefunden`);
         }
-        
-        // Kurze Pause zwischen API-Calls
-        await new Promise(r => setTimeout(r, 300));
     }
     
     // Speichere Ergebnisse

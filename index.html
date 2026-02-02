@@ -231,8 +231,8 @@
                 });
                 const timeStr = match.time;
                 
-                // Link suchen
-                const matchKey = `${match.home} - ${match.away}`;
+                // Link suchen (mit Spieltag, um Hin-/Rückrunde zu unterscheiden)
+                const matchKey = `${matchday.matchday}_${match.home} - ${match.away}`;
                 const linkData = links.matches[matchKey];
                 
                 let pairingHTML;
