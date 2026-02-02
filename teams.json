@@ -1,66 +1,50 @@
 {
   "teams": {
     "FC Basel": {
-      "keywords": ["Basel", "FCB", "Rot-Blau", "Kleiner Basler", "Die Basilisken", "Basel 1893", "Dorfclub", "Baselstadt", "Schwitzerland's Reds"]
+      "keywords": ["Basel", "FCB", "Rot-Blau", "Basler", "1893"]
     },
     "Grasshoppers": {
-      "keywords": ["GC", "Hoppers", "Zürich", "Grashoppers", "Zurich City", "Zürcher", "Hoppers", "GCZ"]
+      "keywords": ["GC", "Hoppers", "GCZ", "Grasshoppers", "Zürcher", "Hoppers"]
     },
     "FC Zürich": {
-      "keywords": ["FCZ", "Zürich", "Züri", "Fussballclub Zürich", "City of Zurich", "Zürcher", "Zürcher Verein"]
+      "keywords": ["FCZ", "Zürich", "Züri", "Zürcher"]
     },
     "BSC Young Boys": {
-      "keywords": ["YB", "Young Boys", "Bern", "Die Gelben", "Berner", "Berni", "Bernese", "BSC"]
+      "keywords": ["YB", "Young Boys", "Bern", "Berner", "BSC"]
     },
     "FC St. Gallen": {
-      "keywords": ["St. Gallen", "FCSG", "Die Espen", "Ostschweizer", "St. Gallers", "Grüne"]
+      "keywords": ["St. Gallen", "FCSG", "Espen", "Ostschweizer", "St. Galler"]
     },
     "FC Sion": {
-      "keywords": ["Sion", "FC Sion", "Les Chablaisiens", "Walliser", "Sionnais", "Sions"]
+      "keywords": ["Sion", "FC Sion", "Walliser"]
     },
     "Servette FC": {
-      "keywords": ["Servette", "Geneva", "Les Grenats", "Genfer", "Les Servettiens", "Servettiens"]
+      "keywords": ["Servette", "Genfer", "Servette-Genf"]
+    },
+   "FC Thun": {
+      "keywords": ["Thuner", "Oberländer", "Oberland", "FCT"]
+    },
+   "BSC Luzern": {
+      "keywords": ["FCL", "Innerschweizer", "Luzerner"]
     },
     "FC Lugano": {
-      "keywords": ["Lugano", "Ticino", "Luganesi", "Lugano Calcio", "I Bianconeri", "Tessiner"]
+      "keywords": ["Lugano", "Bianconeri", "Tessiner"]
     },
     "Lausanne-Sport": {
-      "keywords": ["Lausanne", "Lausanne-Sport", "Les Lausannois", "Lausannais", "Lousanne", "Les Vaudois", "Vaud"]
+      "keywords": ["Lausanner"]
     },
     "FC Winterthur": {
-      "keywords": ["Winterthur", "Winti", "FCW", "Die Winterthurer", "Wintis", "Zürcher Oberland"]
+      "keywords": ["Winterthur", "Winti", "FCW", "Winterthurer"]
     }
   },
   "match_combinations": {
     "FC Basel vs FC Zürich": {
-      "keywords": ["Derby", "Klassiker", "Zürich vs Basel", "Basler Klassiker", "Schweizer Superklassiker", "Topspiel", "Zürich Derby"]
+      "keywords": ["Derby"]
     },
-    "Grasshoppers vs BSC Young Boys": {
-      "keywords": ["Derby", "Zürcher Stadtderby", "Stadtderby", "Zürich-Bern Derby", "Grün-Weiss gegen Gelb-Schwarz", "Zürichs erstes Derby"]
-    },
-    "FC St. Gallen vs FC Basel": {
-      "keywords": ["Ostschweizer Derby", "Espe-Derby", "Basel-St. Gallen", "St. Gallen vs Basel", "Derby der Ostschweiz", "Schweizer Fußballkrieg"]
-    },
-    "FC Sion vs FC Lugano": {
-      "keywords": ["Ticino-Walliser Derby", "Sion vs Lugano", "Südschweizer Derby", "Lugano-Sion"]
-    },
-    "Servette FC vs FC Zürich": {
-      "keywords": ["Genfer Derby", "Genf vs Zürich", "Zürich – Servette", "Servette-Zürich", "Derby der Schweizer Metropolen"]
-    },
-    "Lausanne-Sport vs Grasshoppers": {
-      "keywords": ["Romandie Derbies", "Lausanne gegen Zürich", "Zürich der Westschweiz", "Lausanne-GC", "Westschweizer Derby"]
-    },
-    "FC Lugano vs BSC Young Boys": {
-      "keywords": ["Ticino-Bern Derby", "Tessiner gegen Berner", "Lugano vs Bern", "Luganesi gegen YB", "Zweites Süddorf"]
-    },
-    "FC St. Gallen vs Servette FC": {
-      "keywords": ["Servette St. Gallen", "St. Gallen-Genf", "Einer der größten Schweizer Klassiker", "Derby aus Genf"]
-    },
-    "FC Zürich vs Lausanne-Sport": {
-      "keywords": ["Zürich-Lausanne", "Zürich gegen Lausanne", "Derby der Westschweiz", "Schweiz gegen Lausanne"]
-    },
-    "FC Winterthur vs Servette FC": {
-      "keywords": ["Derby der Schwenke", "Winterthur gegen Genève", "Die wilden Berner"]
+    "Servette FC vs Lausanne-Sports": {
+      "keywords": ["Rhone"]
     }
+
+ 
   }
 }

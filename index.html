@@ -3,39 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super League Spielplan</title>
+    <title>23. Spieltag</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            background-color: #228B22; /* Fußballrasen grün */
+            font-family: 'Arial Black', Arial, sans-serif;
+            color: white;
             text-align: center;
         }
         .container {
-            background-color: white;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px;
         }
         h1 {
-            font-size: 24px;
-            color: #333;
-        }
-        .matchday {
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: #444;
+            font-size: 50px;
+            margin: 20px 0;
+            text-transform: uppercase;
         }
         .match {
-            margin: 10px 0;
-            font-size: 18px;
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.4);
+            margin: 5px 0;
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 26px;
+        }
+        .date-time {
+            flex: 0 0 180px; /* Verkleinerter Bereich für Datum/Zeit */
+            text-align: left;
+            font-size: 22px;
+        }
+        .pairing {
+            flex: 1;
+            text-align: left; /* Links ausgerichtet für kürzeren Abstand */
+            padding-left: 20px;
         }
         a {
+            color: white;
             text-decoration: none;
-            color: #007bff;
         }
         a:hover {
             text-decoration: underline;
@@ -45,29 +54,31 @@
 <body>
 
     <div class="container">
-        <h1>Super League Spielplan</h1>
-        <div class="matchday">
-            <p><strong>Matchday 23</strong> - 07. Februar 2026</p>
+        <h1>23. Spieltag</h1>
+
+        <div class="match">
+            <div class="date-time">07.02. | 18:00</div>
+            <div class="pairing"><a href="https://www.srf.ch/play/tv/sport-clip/video/fc-sion-vs-fc-luzern?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">FC Sion - FC Luzern</a></div>
         </div>
 
         <div class="match">
-            <p><strong>18:00</strong> - <a href="https://www.srf.ch/play/tv/sport-clip/video/fc-sion-vs-fc-luzern?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">FC Sion vs. FC Luzern</a></p>
+            <div class="date-time">07.02. | 20:30</div>
+            <div class="pairing"><a href="https://www.srf.ch/play/tv/sport-clip/video/grasshoppers-vs-bsc-young-boys?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">Grasshoppers - BSC Young Boys</a></div>
         </div>
 
         <div class="match">
-            <p><strong>20:30</strong> - <a href="https://www.srf.ch/play/tv/sport-clip/video/grasshoppers-vs-bsc-young-boys?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">Grasshoppers vs. BSC Young Boys</a></p>
+            <div class="date-time">08.02. | 14:00</div>
+            <div class="pairing"><a href="https://www.srf.ch/play/tv/sport-clip/video/servette-fc-vs-fc-thun?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">Servette FC - FC Thun</a></div>
         </div>
 
         <div class="match">
-            <p><strong>14:00</strong> - <a href="https://www.srf.ch/play/tv/sport-clip/video/servette-fc-vs-fc-thun?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">Servette FC vs. FC Thun</a></p>
+            <div class="date-time">08.02. | 16:30</div>
+            <div class="pairing"><a href="https://www.srf.ch/play/tv/sport-clip/video/fc-basel-vs-fc-zurich?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">FC Basel - FC Zürich</a></div>
         </div>
 
         <div class="match">
-            <p><strong>16:30</strong> - <a href="https://www.srf.ch/play/tv/sport-clip/video/fc-basel-vs-fc-zurich?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">FC Basel vs. FC Zürich</a></p>
-        </div>
-
-        <div class="match">
-            <p><strong>16:30</strong> - <a href="https://www.srf.ch/play/tv/sport-clip/video/lausanne-sport-vs-fc-st-gallen?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">Lausanne-Sport vs. FC St. Gallen</a></p>
+            <div class="date-time">08.02. | 16:30</div>
+            <div class="pairing"><a href="https://www.srf.ch/play/tv/sport-clip/video/lausanne-sport-vs-fc-st-gallen?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">Lausanne-Sport - FC St. Gallen</a></div>
         </div>
     </div>
 
