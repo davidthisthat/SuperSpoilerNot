@@ -1,29 +1,43 @@
-name: Crawler Workflow
+name: SRF Crawler
 
 on:
+  # Manuell ausführbar
+  workflow_dispatch:
+  
+  # Alle 5 Minuten (während aktiver Suchzeiten)
   schedule:
-    - cron: '0 */1 * * *'  # Läuft jede Stunde
-  push:
-    branches:
-      - main
+    - cron: '*/5 * * * *'
 
 jobs:
-  build:
+  crawl:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Check out code
-        uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          python-version: '3.x'
+          node-version: '20'
+          cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Crawler
+        run: npm run crawl
+
+      - name: Check for changes
+        id: git-check
         run: |
-          pip install -r requirements.txt
+          git diff --exit-code links.json || echo "changes=true" >> $GITHUB_OUTPUT
 
-      - name: Run Crawler Script
+      - name: Commit and Push changes
+        if: steps.git-check.outputs.changes == 'true'
         run: |
-          python3 scripts/crawler.py
-
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add links.json
+          git commit -m "Update links.json with new video links"
+          git push

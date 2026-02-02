@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>23. Spieltag</title>
+    <title>Super League Highlights - Spoilerfrei</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #228B22; /* Fußballrasen grün */
+            background-color: #228B22;
             font-family: 'Arial Black', Arial, sans-serif;
             color: white;
             text-align: center;
@@ -33,54 +33,180 @@
             font-size: 26px;
         }
         .date-time {
-            flex: 0 0 180px; /* Verkleinerter Bereich für Datum/Zeit */
+            flex: 0 0 220px;
             text-align: left;
             font-size: 22px;
         }
         .pairing {
             flex: 1;
-            text-align: left; /* Links ausgerichtet für kürzeren Abstand */
+            text-align: left;
             padding-left: 20px;
         }
-        a {
+        .link {
             color: white;
             text-decoration: none;
+            cursor: pointer;
         }
-        a:hover {
+        .link:hover {
             text-decoration: underline;
+        }
+        .no-link {
+            color: #aaa;
+            cursor: default;
+        }
+        .matchday-nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .matchday-nav button {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: 'Arial Black', Arial, sans-serif;
+        }
+        .matchday-nav button:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .matchday-nav button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .status-available {
+            color: #90EE90;
+        }
+        .status-pending {
+            color: #FFD700;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>23. Spieltag</h1>
-
-        <div class="match">
-            <div class="date-time">07.02. | 18:00</div>
-            <div class="pairing"><a href="https://www.srf.ch/play/tv/sport-clip/video/fc-sion-vs-fc-luzern?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">FC Sion - FC Luzern</a></div>
+        <h1 id="matchday-title">Spieltag</h1>
+        
+        <div class="matchday-nav">
+            <button id="prev-btn" onclick="changeMatchday(-1)">◀ Vorheriger</button>
+            <button id="next-btn" onclick="changeMatchday(1)">Nächster ▶</button>
         </div>
-
-        <div class="match">
-            <div class="date-time">07.02. | 20:30</div>
-            <div class="pairing"><a href="https://www.srf.ch/play/tv/sport-clip/video/grasshoppers-vs-bsc-young-boys?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">Grasshoppers - BSC Young Boys</a></div>
-        </div>
-
-        <div class="match">
-            <div class="date-time">08.02. | 14:00</div>
-            <div class="pairing"><a href="https://www.srf.ch/play/tv/sport-clip/video/servette-fc-vs-fc-thun?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">Servette FC - FC Thun</a></div>
-        </div>
-
-        <div class="match">
-            <div class="date-time">08.02. | 16:30</div>
-            <div class="pairing"><a href="https://www.srf.ch/play/tv/sport-clip/video/fc-basel-vs-fc-zurich?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">FC Basel - FC Zürich</a></div>
-        </div>
-
-        <div class="match">
-            <div class="date-time">08.02. | 16:30</div>
-            <div class="pairing"><a href="https://www.srf.ch/play/tv/sport-clip/video/lausanne-sport-vs-fc-st-gallen?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb">Lausanne-Sport - FC St. Gallen</a></div>
+        
+        <div id="matches-container">
+            <!-- Spiele werden hier dynamisch eingefügt -->
         </div>
     </div>
+
+    <script>
+        let spielplan = null;
+        let links = null;
+        let currentMatchdayIndex = 0;
+
+        // Daten laden
+        async function loadData() {
+            try {
+                const [spielplanRes, linksRes] = await Promise.all([
+                    fetch('spielplan.json'),
+                    fetch('links.json')
+                ]);
+                
+                spielplan = await spielplanRes.json();
+                links = await linksRes.json();
+                
+                // Finde den aktuellen/nächsten Spieltag
+                findCurrentMatchday();
+                renderMatchday();
+            } catch (error) {
+                console.error('Fehler beim Laden der Daten:', error);
+                document.getElementById('matches-container').innerHTML = 
+                    '<p>Fehler beim Laden der Spielpläne.</p>';
+            }
+        }
+
+        // Finde den aktuellen oder nächsten Spieltag basierend auf dem Datum
+        function findCurrentMatchday() {
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            for (let i = 0; i < spielplan.matchdays.length; i++) {
+                const matchday = spielplan.matchdays[i];
+                const lastMatchDate = new Date(matchday.matches[matchday.matches.length - 1].date);
+                lastMatchDate.setHours(23, 59, 59, 999);
+                
+                // Zeige den Spieltag, wenn er heute oder in der Zukunft ist
+                // oder wenn es der letzte ist und alle vergangen sind
+                if (lastMatchDate >= today || i === spielplan.matchdays.length - 1) {
+                    currentMatchdayIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // Spieltag anzeigen
+        function renderMatchday() {
+            const matchday = spielplan.matchdays[currentMatchdayIndex];
+            document.getElementById('matchday-title').textContent = `${matchday.matchday}. Spieltag`;
+            
+            const container = document.getElementById('matches-container');
+            container.innerHTML = '';
+            
+            matchday.matches.forEach(match => {
+                const matchDiv = document.createElement('div');
+                matchDiv.className = 'match';
+                
+                // Datum formatieren
+                const date = new Date(match.date);
+                const weekdays = ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa'];
+                const weekday = weekdays[date.getDay()];
+                const dateStr = date.toLocaleDateString('de-CH', { 
+                    day: '2-digit', 
+                    month: '2-digit' 
+                });
+                const timeStr = match.time;
+                
+                // Link suchen
+                const matchKey = `${match.home} - ${match.away}`;
+                const linkData = links.matches[matchKey];
+                
+                let pairingHTML;
+                if (linkData && linkData.url) {
+                    pairingHTML = `<span class="link status-available" data-url="${linkData.url}">${matchKey}</span>`;
+                } else {
+                    pairingHTML = `<span class="no-link">${matchKey}</span>`;
+                }
+                
+                matchDiv.innerHTML = `
+                    <div class="date-time">${weekday}. | ${dateStr} | ${timeStr}</div>
+                    <div class="pairing">${pairingHTML}</div>
+                `;
+                
+                container.appendChild(matchDiv);
+            });
+            
+            // Navigation Buttons aktualisieren
+            document.getElementById('prev-btn').disabled = currentMatchdayIndex === 0;
+            document.getElementById('next-btn').disabled = currentMatchdayIndex === spielplan.matchdays.length - 1;
+        }
+
+        // Spieltag wechseln
+        function changeMatchday(direction) {
+            currentMatchdayIndex += direction;
+            renderMatchday();
+        }
+
+        // Click-Handler für Links (versteckt URL in Statusleiste)
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('link') && e.target.dataset.url) {
+                window.location.href = e.target.dataset.url;
+            }
+        });
+
+        // Beim Laden starten
+        loadData();
+    </script>
 
 </body>
 </html>

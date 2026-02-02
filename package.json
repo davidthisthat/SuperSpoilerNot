@@ -1,0 +1,12 @@
+{
+  "name": "superspoilernot-crawler",
+  "version": "1.0.0",
+  "description": "Crawler für SRF Super League Highlights",
+  "main": "crawler.js",
+  "scripts": {
+    "crawl": "node crawler.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

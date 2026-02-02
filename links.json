@@ -1,0 +1,47 @@
+{
+  "lastUpdated": "2026-02-02T10:30:57.071Z",
+  "matches": {
+    "Servette FC - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:2490aa76-f9a1-4fa6-b29d-37a3be972ca5",
+      "foundAt": "2026-02-02T10:30:53.085Z",
+      "title": "Jallow trifft erstmals für Servette",
+      "urn": "urn:srf:video:2490aa76-f9a1-4fa6-b29d-37a3be972ca5",
+      "type": "Standalone"
+    },
+    "FC Winterthur - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:d0bc54b2-757c-417c-b9c2-dbc14da77901",
+      "foundAt": "2026-02-02T10:30:53.948Z",
+      "title": "Winterthur erkämpft sich 3 Punkte gegen harmloses Lausanne",
+      "urn": "urn:srf:video:d0bc54b2-757c-417c-b9c2-dbc14da77901",
+      "type": "Standalone"
+    },
+    "Grasshoppers - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:2fc8eb73-fb2f-438d-ad0d-74c52d8b9bc9",
+      "foundAt": "2026-02-02T10:30:54.466Z",
+      "title": "GC knöpft Lugano einen Punkt ab",
+      "urn": "urn:srf:video:2fc8eb73-fb2f-438d-ad0d-74c52d8b9bc9",
+      "type": "Standalone"
+    },
+    "FC Luzern - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:bb0e2671-6d4f-4638-bd7f-7ca3d0203c28",
+      "foundAt": "2026-02-02T10:30:55.019Z",
+      "title": "St. Gallen verspielt gegen Luzern eine 2:0-Führung",
+      "urn": "urn:srf:video:bb0e2671-6d4f-4638-bd7f-7ca3d0203c28",
+      "type": "Standalone"
+    },
+    "FC Basel - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb",
+      "foundAt": "2026-02-02T10:30:56.237Z",
+      "title": "Auch Basel muss sich Thun geschlagen geben",
+      "urn": "urn:srf:video:5a54b173-8e71-4468-9690-665affa809fb",
+      "type": "Standalone"
+    },
+    "BSC Young Boys - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:99e970ea-3163-487c-9434-0056682c1c6e",
+      "foundAt": "2026-02-02T10:30:56.771Z",
+      "title": "Aufbaugegner FCZ: YB fährt ungefährdeten ersten Sieg 2026 ein",
+      "urn": "urn:srf:video:99e970ea-3163-487c-9434-0056682c1c6e",
+      "type": "Standalone"
+    }
+  }
+}

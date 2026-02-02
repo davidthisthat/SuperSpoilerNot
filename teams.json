@@ -24,8 +24,8 @@
    "FC Thun": {
       "keywords": ["Thuner", "Oberländer", "Oberland", "FCT"]
     },
-   "BSC Luzern": {
-      "keywords": ["FCL", "Innerschweizer", "Luzerner"]
+   "FC Luzern": {
+      "keywords": ["Luzern", "FCL", "Innerschweizer", "Luzerner"]
     },
     "FC Lugano": {
       "keywords": ["Lugano", "Bianconeri", "Tessiner"]
@@ -42,7 +42,7 @@
       "keywords": ["Derby"]
     },
     "Servette FC vs Lausanne-Sports": {
-      "keywords": ["Rhone"]
+      "keywords": ["Rhone", "Derby"]
     }
 
  
