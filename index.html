@@ -236,11 +236,14 @@
                 const matchKey = `${matchday.matchday}_${match.home} - ${match.away}`;
                 const linkData = links.matches[matchKey];
                 
+                // Anzeige ohne Spieltag-Prefix
+                const displayName = `${match.home} - ${match.away}`;
+                
                 let pairingHTML;
                 if (linkData && linkData.url) {
-                    pairingHTML = `<span class="link status-available" data-url="${linkData.url}">${matchKey}</span>`;
+                    pairingHTML = `<span class="link status-available" data-url="${linkData.url}">${displayName}</span>`;
                 } else {
-                    pairingHTML = `<span class="no-link">${matchKey}</span>`;
+                    pairingHTML = `<span class="no-link">${displayName}</span>`;
                 }
                 
                 matchDiv.innerHTML = `
@@ -262,10 +265,10 @@
             renderMatchday();
         }
 
-        // Click-Handler für Links (versteckt URL in Statusleiste)
+        // Click-Handler für Links (versteckt URL in Statusleiste, öffnet in neuem Tab)
         document.addEventListener('click', function(e) {
             if (e.target.classList.contains('link') && e.target.dataset.url) {
-                window.location.href = e.target.dataset.url;
+                window.open(e.target.dataset.url, '_blank');
             }
         });
 

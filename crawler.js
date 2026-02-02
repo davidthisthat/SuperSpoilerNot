@@ -89,6 +89,15 @@ function isVideoDateValid(video, matchDate) {
     return false;
 }
 
+// Prüfe ob das Video lang genug ist (mindestens 90 Sekunden)
+// Filtert Tor-Clips und kurze Interviews aus
+const MIN_DURATION_MS = 90 * 1000; // 90 Sekunden in Millisekunden
+
+function isVideoLongEnough(video) {
+    const duration = video.duration || 0;
+    return duration >= MIN_DURATION_MS;
+}
+
 // Hole ALLE Keywords für ein Team
 function getAllKeywords(teamName, teamsData) {
     const teamInfo = teamsData.teams[teamName];
@@ -270,7 +279,10 @@ async function crawl() {
                 // Prüfe ob das Datum passt
                 const dateValid = isVideoDateValid(video, match.date);
                 
-                if ((homeFound || awayFound) && dateValid) {
+                // Prüfe Mindestlänge (90 Sekunden)
+                const longEnough = isVideoLongEnough(video);
+                
+                if ((homeFound || awayFound) && dateValid && longEnough) {
                     // Sport-Clip = Standalone Highlight (bevorzugt)
                     if (showTitle === 'Sport-Clip' && !standaloneMatch) {
                         standaloneMatch = video;

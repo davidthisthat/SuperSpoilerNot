@@ -1,7 +1,7 @@
 {
   "teams": {
     "FC Basel": {
-      "keywords": ["Basel", "FCB", "Rot-Blau", "Basler", "1893"]
+      "keywords": ["FCB", "Basel", "Rot-Blau", "Basler"]
     },
     "Grasshoppers": {
       "keywords": ["GC", "Hoppers", "GCZ", "Grasshoppers", "Zürcher", "Hoppers"]
@@ -39,7 +39,10 @@
   },
   "match_combinations": {
     "FC Basel vs FC Zürich": {
-      "keywords": ["Derby"]
+      "keywords": ["Klassiker"]
+    },
+    "FC Zürich vs FC Basel": {
+      "keywords": ["Klassiker"]
     },
     "Servette FC vs Lausanne-Sports": {
       "keywords": ["Rhone"]
