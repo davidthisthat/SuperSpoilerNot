@@ -135,6 +135,20 @@
             padding-top: 15px;
             border-top: 1px solid rgba(255,255,255,0.3);
         }
+        .info-mobile-only {
+            display: none;
+        }
+        .info-desktop-only {
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .info-mobile-only {
+                display: block;
+            }
+            .info-desktop-only {
+                display: none;
+            }
+        }
         .match {
             display: flex;
             align-items: center;
@@ -574,8 +588,15 @@
         <div class="info-overlay-content" onclick="event.stopPropagation()">
             <span class="info-overlay-close" onclick="closeInfoOverlay()">&times;</span>
             <h3>SRF-Spielberichte ohne Spoiler, so geht's:</h3>
-            <div class="info-section"><strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.</div>
-            <div class="info-section"><strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.<br><br>Desktop: Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.</div>
+            <div class="info-section info-mobile-only">
+                <strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.
+            </div>
+            <div class="info-section info-mobile-only">
+                <strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.
+            </div>
+            <div class="info-section info-desktop-only">
+                Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
+            </div>
             <div class="info-section">Die Spielberichte sind 5 Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
         </div>
     </div>
