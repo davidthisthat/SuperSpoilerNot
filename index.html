@@ -5,7 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>No Spoiler League</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-01966S1LE0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        // Consent standardmässig verweigert
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied'
+        });
+        
+        gtag('config', 'G-01966S1LE0', {
+            'anonymize_ip': true
+        });
+        
+        // Consent akzeptieren
+        function acceptCookies() {
+            gtag('consent', 'update', {
+                'analytics_storage': 'granted'
+            });
+            localStorage.setItem('cookieConsent', 'granted');
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+        
+        // Consent ablehnen
+        function declineCookies() {
+            localStorage.setItem('cookieConsent', 'denied');
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
+        
+        // Beim Laden prüfen
+        document.addEventListener('DOMContentLoaded', function() {
+            var consent = localStorage.getItem('cookieConsent');
+            if (consent === 'granted') {
+                gtag('consent', 'update', { 'analytics_storage': 'granted' });
+                document.getElementById('cookie-banner').style.display = 'none';
+            } else if (consent === 'denied') {
+                document.getElementById('cookie-banner').style.display = 'none';
+            }
+        });
+        
+        // Event-Tracking für Link-Klicks
+        function trackLinkClick(matchName) {
+            gtag('event', 'highlight_click', {
+                'event_category': 'Video',
+                'event_label': matchName
+            });
+        }
+        
+        // Event-Tracking für Team-Auswahl
+        function trackTeamSelect(teamName) {
+            gtag('event', 'team_select', {
+                'event_category': 'Navigation',
+                'event_label': teamName
+            });
+        }
+        
+        // Event-Tracking für Spieltag-Navigation
+        function trackMatchdayNav(matchday) {
+            gtag('event', 'matchday_view', {
+                'event_category': 'Navigation',
+                'event_label': 'Spieltag ' + matchday
+            });
+        }
+    </script>
+    
     <style>
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.95);
+            color: white;
+            padding: 15px 20px;
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+        .cookie-banner a {
+            color: #aaa;
+        }
+        .cookie-btn {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .cookie-btn.accept {
+            background: white;
+            color: black;
+        }
+        .cookie-btn.decline {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+        }
         body {
             margin: 0;
             padding: 0;
@@ -807,11 +912,22 @@
         function changeMatchday(direction) {
             currentMatchdayIndex += direction;
             renderMatchday();
+            
+            // Event-Tracking
+            if (typeof trackMatchdayNav === 'function') {
+                var matchday = spielplan.matchdays[currentMatchdayIndex].matchday;
+                trackMatchdayNav(matchday);
+            }
         }
 
         // Click-Handler für Links (versteckt URL in Statusleiste, öffnet in neuem Tab)
         document.addEventListener('click', function(e) {
             if (e.target.classList.contains('link') && e.target.dataset.url) {
+                // Event-Tracking
+                var matchName = e.target.textContent;
+                if (typeof trackLinkClick === 'function') {
+                    trackLinkClick(matchName);
+                }
                 window.open(e.target.dataset.url, '_blank');
             }
         });
@@ -853,6 +969,11 @@
             const select = document.getElementById('team-select');
             const team = select.value;
             if (!team) return;
+            
+            // Event-Tracking
+            if (typeof trackTeamSelect === 'function') {
+                trackTeamSelect(team);
+            }
             
             // Alle Spiele dieses Teams sammeln
             const teamMatches = [];
@@ -956,6 +1077,13 @@
         // Beim Laden starten
         loadData();
     </script>
+
+    <!-- Cookie Banner -->
+    <div class="cookie-banner" id="cookie-banner">
+        <span>Diese Seite verwendet Cookies zur Analyse. <a href="datenschutz.html">Mehr erfahren</a></span>
+        <button class="cookie-btn accept" onclick="acceptCookies()">Akzeptieren</button>
+        <button class="cookie-btn decline" onclick="declineCookies()">Ablehnen</button>
+    </div>
 
 </body>
 </html>
