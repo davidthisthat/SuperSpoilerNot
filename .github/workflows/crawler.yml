@@ -8,6 +8,11 @@ on:
   schedule:
     - cron: '*/5 * * * *'
 
+# Verhindert, dass sich Runs gegenseitig abbrechen
+concurrency:
+  group: crawler
+  cancel-in-progress: false
+
 jobs:
   crawl:
     runs-on: ubuntu-latest
