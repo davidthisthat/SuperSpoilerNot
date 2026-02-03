@@ -125,33 +125,52 @@
             text-align: left;
             padding-left: 20px;
         }
+        .match-row {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            padding-left: 20px;
+        }
+        .match-row .pairing {
+            padding-left: 0;
+        }
         .result {
             flex: 0 0 60px;
             text-align: right;
             font-weight: bold;
             font-size: 24px;
+            margin-left: 15px;
         }
         /* Hochformat Mobile: Datum über Paarung */
         @media (max-width: 600px) {
             .match {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: stretch;
                 padding: 12px 15px;
-                font-size: 20px;
+                font-size: 18px;
             }
             .date-time {
                 flex: none;
-                font-size: 16px;
+                font-size: 14px;
                 margin-bottom: 5px;
                 color: rgba(255,255,255,0.8);
             }
+            .match-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+            }
             .pairing {
                 padding-left: 0;
-                font-size: 20px;
+                font-size: 18px;
+                flex: 1;
             }
             .result {
-                font-size: 20px;
-                margin-top: 5px;
+                font-size: 18px;
+                margin-top: 0;
+                flex: 0 0 auto;
+                margin-left: 10px;
             }
             h1 {
                 font-size: 32px;
@@ -511,7 +530,8 @@
     <div class="container">
         <!-- Desktop: Einfacher Text -->
         <div class="hint-desktop">
-            No Spoiler, so geht's: Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
+            No Spoiler, so geht's: Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.<br>
+            <span style="font-size: 14px; opacity: 0.8;">Die Spielberichte sind 5 Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</span>
         </div>
         
         <!-- Mobile: Wrapper für Overlay -->
@@ -522,7 +542,8 @@
             <!-- Overlay-Box (schwebt über Inhalt) -->
             <div class="hint-mobile-content" id="hint-content">
                 <div style="margin-bottom: 12px;"><strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.</div>
-                <div><strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.</div>
+                <div style="margin-bottom: 12px;"><strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.</div>
+                <div style="font-size: 14px; opacity: 0.8; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 12px;">Die Spielberichte sind 5 Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
             </div>
         </div>
         
@@ -660,8 +681,10 @@
                 
                 matchDiv.innerHTML = `
                     <div class="date-time">${weekday}. | ${dateStr} | ${timeStr}</div>
-                    <div class="pairing">${pairingHTML}</div>
-                    ${resultDisplay}
+                    <div class="match-row">
+                        <div class="pairing">${pairingHTML}</div>
+                        ${resultDisplay}
+                    </div>
                 `;
                 
                 container.appendChild(matchDiv);
