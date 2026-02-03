@@ -37,72 +37,83 @@
             text-transform: uppercase;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        /* Desktop: Hinweis-Text mit Hintergrund */
-        .hint-desktop {
-            margin: 15px auto 20px auto;
+        /* Info-Icon */
+        .info-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
             background: rgba(0, 0, 0, 0.7);
             color: white;
             font-size: 18px;
-            font-family: Arial, sans-serif;
-            padding: 12px 25px;
-            border-radius: 8px;
-            display: inline-block;
+            font-family: serif;
+            font-style: italic;
+            font-weight: bold;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 15px 0;
         }
-        /* Mobile: Container für Overlay-Positionierung */
-        .hint-mobile-wrapper {
+        .info-icon:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+        /* Info-Overlay */
+        .info-overlay {
             display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        .info-overlay.active {
+            display: flex;
+        }
+        .info-overlay-content {
+            background: rgba(0, 0, 0, 0.95);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
             position: relative;
         }
-        /* Mobile: Klickbarer Trigger */
-        .hint-mobile-trigger {
-            margin: 15px 0 10px 0;
-            cursor: pointer;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            font-size: 22px;
-            font-family: Arial, sans-serif;
-            padding: 12px 20px;
-            border-radius: 8px;
-            display: inline-block;
-        }
-        .hint-mobile-trigger:hover {
-            background: rgba(0, 0, 0, 0.85);
-        }
-        .hint-mobile-trigger .arrow {
-            display: inline-block;
-            transition: transform 0.2s;
-        }
-        .hint-mobile-trigger.open .arrow {
-            transform: rotate(90deg);
-        }
-        /* Mobile: Overlay-Box (schwebt über Inhalt) */
-        .hint-mobile-content {
-            display: none;
+        .info-overlay-close {
             position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.9);
-            padding: 20px 25px;
-            border-radius: 8px;
-            margin-top: 10px;
-            color: white;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .info-overlay h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .info-section {
+            margin-bottom: 15px;
+        }
+        .info-section:last-child {
+            margin-bottom: 0;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255,255,255,0.3);
+        }
+        /* Titel-Struktur */
+        .season-title {
+            font-size: 20px;
             font-family: Arial, sans-serif;
-            font-size: 18px;
-            line-height: 1.7;
-            text-align: left;
-            z-index: 100;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            margin-bottom: 5px;
+            opacity: 0.9;
         }
-        .hint-mobile-content.active {
-            display: block;
-        }
-        @media (max-width: 768px) {
-            .hint-desktop {
-                display: none;
-            }
-            .hint-mobile-wrapper {
-                display: block;
+        @media (max-width: 600px) {
+            .season-title {
+                font-size: 16px;
             }
         }
         .match {
@@ -112,18 +123,22 @@
             margin: 5px 0;
             padding: 15px 20px;
             border-radius: 5px;
-            font-size: 26px;
+            font-size: 22px;
+            font-family: Arial, sans-serif;
         }
         .date-time {
             flex: 0 0 250px;
             text-align: left;
-            font-size: 22px;
+            font-size: 20px;
             white-space: nowrap;
+            font-family: Arial, sans-serif;
+            font-weight: normal;
         }
         .pairing {
             flex: 1;
             text-align: left;
             padding-left: 20px;
+            font-weight: bold;
         }
         .match-row {
             display: flex;
@@ -223,21 +238,26 @@
             color: #FFD700;
         }
         .footer {
-            margin-top: 40px;
-            padding: 15px 25px;
-            font-size: 14px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 8px 0;
+            font-size: 12px;
             font-family: Arial, sans-serif;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 8px;
-            display: inline-block;
+            background: #1a4d1a;
+            text-align: center;
         }
         .footer a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
         }
         .footer a:hover {
             text-decoration: underline;
+        }
+        .container {
+            padding-bottom: 50px;
         }
         /* Teammodus & Tabelle Buttons */
         .extra-buttons {
@@ -528,26 +548,24 @@
         </div>
     </div>
 
+    <!-- Info-Overlay -->
+    <div class="info-overlay" id="info-overlay" onclick="closeInfoOverlay(event)">
+        <div class="info-overlay-content" onclick="event.stopPropagation()">
+            <span class="info-overlay-close" onclick="closeInfoOverlay()">&times;</span>
+            <h3>SRF-Spielberichte ohne Spoiler, so geht's:</h3>
+            <div class="info-section"><strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.</div>
+            <div class="info-section"><strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.<br><br>Desktop: Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.</div>
+            <div class="info-section">Die Spielberichte sind 5 Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
+        </div>
+    </div>
+
     <div class="container">
-        <!-- Desktop: Einfacher Text -->
-        <div class="hint-desktop">
-            SRF-Spielberichte ohne Spoiler, so geht's: Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
-            <div style="margin-top: 10px;">Die Spielberichte sind 5 Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
-        </div>
+        <!-- Info-Icon -->
+        <div class="info-icon" onclick="showInfoOverlay()">i</div>
         
-        <!-- Mobile: Wrapper für Overlay -->
-        <div class="hint-mobile-wrapper">
-            <div class="hint-mobile-trigger" id="hint-trigger" onclick="toggleMobileHint()">
-                SRF-Spielberichte ohne Spoiler:<br>So geht's <span class="arrow">→</span>
-            </div>
-            <!-- Overlay-Box (schwebt über Inhalt) -->
-            <div class="hint-mobile-content" id="hint-content">
-                <div style="margin-bottom: 12px;"><strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.</div>
-                <div style="margin-bottom: 12px;"><strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.</div>
-                <div style="border-top: 1px solid rgba(255,255,255,0.3); padding-top: 12px;">Die Spielberichte sind 5 Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
-            </div>
-        </div>
-        
+        <!-- Titel -->
+        <div class="season-title">Saison 25/26</div>
+        <div style="font-size: 14px; margin-bottom: 5px;">–</div>
         <h1 id="matchday-title">Spieltag</h1>
         
         <div class="matchday-nav">
@@ -570,10 +588,12 @@
             <button onclick="showTable()">Aktuelle Tabelle</button>
         </div>
         
-        <div class="footer">
-            <a href="impressum.html">Impressum</a> | 
-            <a href="datenschutz.html">Datenschutz</a>
-        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="impressum.html">Impressum</a> | 
+        <a href="datenschutz.html">Datenschutz</a>
     </div>
 
     <script>
@@ -646,7 +666,7 @@
         // Spieltag anzeigen
         function renderMatchday() {
             const matchday = spielplan.matchdays[currentMatchdayIndex];
-            document.getElementById('matchday-title').textContent = `Saison 25/26 – Spieltag ${matchday.matchday}`;
+            document.getElementById('matchday-title').textContent = `Spieltag ${matchday.matchday}`;
             
             const container = document.getElementById('matches-container');
             container.innerHTML = '';
@@ -727,12 +747,15 @@
             }
         });
 
-        // Mobile Hint ein-/ausklappen
-        function toggleMobileHint() {
-            const trigger = document.getElementById('hint-trigger');
-            const content = document.getElementById('hint-content');
-            trigger.classList.toggle('open');
-            content.classList.toggle('active');
+        // Info-Overlay öffnen/schliessen
+        function showInfoOverlay() {
+            document.getElementById('info-overlay').classList.add('active');
+        }
+        
+        function closeInfoOverlay(event) {
+            if (!event || event.target === event.currentTarget) {
+                document.getElementById('info-overlay').classList.remove('active');
+            }
         }
 
         // Teams ins Dropdown laden
@@ -857,6 +880,7 @@
             if (e.key === 'Escape') {
                 closeTeamOverlay();
                 closeTableOverlay();
+                closeInfoOverlay();
             }
         });
 
