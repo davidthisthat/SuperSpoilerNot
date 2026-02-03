@@ -629,12 +629,13 @@
                 
                 // Anzeige ohne Spieltag-Prefix
                 const displayName = `${match.home} - ${match.away}`;
+                const resultDisplay = match.result ? ` <strong>${match.result}</strong>` : '';
                 
                 let pairingHTML;
                 if (linkData && linkData.url) {
-                    pairingHTML = `<span class="link status-available" data-url="${linkData.url}">${displayName}</span>`;
+                    pairingHTML = `<span class="link status-available" data-url="${linkData.url}">${displayName}</span>${resultDisplay}`;
                 } else {
-                    pairingHTML = `<span class="no-link">${displayName}</span>`;
+                    pairingHTML = `<span class="no-link">${displayName}</span>${resultDisplay}`;
                 }
                 
                 matchDiv.innerHTML = `
@@ -731,11 +732,12 @@
                 
                 const div = document.createElement('div');
                 div.className = 'team-match' + (hasLink ? '' : ' no-link');
+                const resultDisplay = match.result ? ` <strong>${match.result}</strong>` : '';
                 
                 // Gleiche Struktur wie normale Ansicht
                 div.innerHTML = `
                     <div class="team-date-time">Spieltag ${match.matchday} | ${weekday}. ${day}.${month}.${year}</div>
-                    <div class="team-pairing">${match.home} - ${match.away}</div>
+                    <div class="team-pairing">${match.home} - ${match.away}${resultDisplay}</div>
                 `;
                 
                 if (hasLink) {
