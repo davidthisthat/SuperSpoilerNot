@@ -1,0 +1,15 @@
+{
+  "name": "No Spoiler League",
+  "short_name": "No Spoiler",
+  "icons": [
+    {
+      "src": "img/iconmobile.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#228B22",
+  "theme_color": "#ffffff"
+}
