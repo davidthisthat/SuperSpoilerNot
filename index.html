@@ -29,17 +29,18 @@
         /* Header */
         .header {
             background: #1a4d1a;
-            padding: 12px 20px;
+            padding: 18px 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 15px;
         }
         .header-title {
-            font-family: 'Georgia', serif;
-            font-size: 24px;
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            font-size: 32px;
             font-weight: normal;
-            letter-spacing: 1px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
         }
         .info-icon {
             display: inline-flex;
@@ -67,30 +68,24 @@
         }
         h1 {
             font-size: 70px;
-            margin: 10px 0 20px 0;
-            text-transform: uppercase;
+            margin: 5px 0 20px 0;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
         @media (max-width: 600px) {
             h1 {
-                font-size: 48px;
+                font-size: 56px;
             }
         }
         /* Titel-Struktur */
         .season-title {
-            font-size: 28px;
+            font-size: 36px;
             font-family: Arial, sans-serif;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             opacity: 0.9;
-        }
-        .title-divider {
-            font-size: 20px;
-            margin: 8px 0;
-            opacity: 0.7;
         }
         @media (max-width: 600px) {
             .season-title {
-                font-size: 22px;
+                font-size: 28px;
             }
         }
         /* Info-Overlay */
@@ -594,7 +589,6 @@
     <div class="container">
         <!-- Titel -->
         <div class="season-title">Saison 25/26</div>
-        <div class="title-divider">–</div>
         <h1 id="matchday-title">Spieltag</h1>
         
         <div class="matchday-nav">
