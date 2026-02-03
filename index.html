@@ -404,7 +404,7 @@
             color: #FFD700;
         }
         .footer {
-            padding: 15px 0;
+            padding: 20px 0 25px 0;
             font-size: 12px;
             font-family: Arial, sans-serif;
             background: white;
@@ -435,15 +435,19 @@
         .pill {
             background: rgba(255, 255, 255, 0.85);
             color: rgba(0, 0, 0, 0.85);
-            padding: 10px 30px;
+            padding: 10px 25px;
             border-radius: 50px;
             font-size: 16px;
             font-family: Arial, sans-serif;
             border: none;
             cursor: pointer;
             transition: background 0.2s;
-            min-width: 110px;
+            min-width: 100px;
             text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
         }
         .pill:hover {
             background: rgba(255, 255, 255, 0.95);
@@ -451,11 +455,16 @@
         .pill select {
             background: transparent;
             border: none;
-            font-size: 16px;
+            font-size: 14px;
             font-family: Arial, sans-serif;
             color: rgba(0, 0, 0, 0.85);
             cursor: pointer;
-            margin-left: 5px;
+            padding: 0;
+            margin: 0;
+            width: 25px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
         }
         /* Tabellen-Overlay */
         .table-overlay {
@@ -730,7 +739,7 @@
             <div class="info-section info-desktop-only" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">
                 Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
             </div>
-            <div class="info-section" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">Die Spielberichte sind spätestens fünf Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
+            <div class="info-section">Die Spielberichte sind spätestens fünf Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
             <div class="info-section info-mobile-only">
                 <strong>Seite auf Smartphone installieren:</strong><br>Drei Punkte neben URL anklicken → Teilen → Zum Home-Bildschirm
             </div>
@@ -761,12 +770,12 @@
         
         <!-- Teammodus & Tabelle -->
         <div class="extra-buttons">
-            <div class="pill">
-                Team
+            <label class="pill">
+                <span>Team</span>
                 <select id="team-select" onchange="showTeamMatches()">
-                    <option value="">▼</option>
+                    <option value="">···</option>
                 </select>
-            </div>
+            </label>
             <button class="pill" onclick="showTable()">Tabelle</button>
         </div>
         
