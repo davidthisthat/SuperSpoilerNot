@@ -170,7 +170,8 @@
                 font-size: 18px;
                 margin-top: 0;
                 flex: 0 0 auto;
-                margin-left: 10px;
+                margin-left: 8px;
+                padding-right: 5px;
             }
             h1 {
                 font-size: 32px;
@@ -503,7 +504,7 @@
     <div class="table-overlay" id="table-overlay">
         <div class="table-overlay-content">
             <div class="table-overlay-header">
-                <span class="table-overlay-title">Tabelle</span>
+                <span class="table-overlay-title">Aktuelle Tabelle</span>
                 <span class="table-overlay-close" onclick="closeTableOverlay()">✕</span>
             </div>
             <table class="standings-table" id="standings-table">
@@ -530,8 +531,8 @@
     <div class="container">
         <!-- Desktop: Einfacher Text -->
         <div class="hint-desktop">
-            No Spoiler, so geht's: Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.<br>
-            Die Spielberichte sind 5 Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.
+            No Spoiler, so geht's: Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
+            <div style="margin-top: 10px;">Die Spielberichte sind 5 Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
         </div>
         
         <!-- Mobile: Wrapper für Overlay -->
@@ -550,8 +551,8 @@
         <h1 id="matchday-title">Spieltag</h1>
         
         <div class="matchday-nav">
-            <button id="prev-btn" onclick="changeMatchday(-1)">◀ Vorheriger</button>
-            <button id="next-btn" onclick="changeMatchday(1)">Nächster ▶</button>
+            <button id="prev-btn" onclick="changeMatchday(-1)">← Spieltag</button>
+            <button id="next-btn" onclick="changeMatchday(1)">Spieltag →</button>
         </div>
         
         <div id="matches-container">
@@ -566,7 +567,7 @@
                     <option value="">– Team wählen –</option>
                 </select>
             </label>
-            <button onclick="showTable()">Tabelle</button>
+            <button onclick="showTable()">Aktuelle Tabelle</button>
         </div>
         
         <div class="footer">
@@ -691,8 +692,26 @@
             });
             
             // Navigation Buttons aktualisieren
-            document.getElementById('prev-btn').disabled = currentMatchdayIndex === 0;
-            document.getElementById('next-btn').disabled = currentMatchdayIndex === spielplan.matchdays.length - 1;
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            
+            if (currentMatchdayIndex > 0) {
+                const prevMatchday = spielplan.matchdays[currentMatchdayIndex - 1].matchday;
+                prevBtn.textContent = `← Spieltag ${prevMatchday}`;
+                prevBtn.disabled = false;
+            } else {
+                prevBtn.textContent = '← Spieltag';
+                prevBtn.disabled = true;
+            }
+            
+            if (currentMatchdayIndex < spielplan.matchdays.length - 1) {
+                const nextMatchday = spielplan.matchdays[currentMatchdayIndex + 1].matchday;
+                nextBtn.textContent = `Spieltag ${nextMatchday} →`;
+                nextBtn.disabled = false;
+            } else {
+                nextBtn.textContent = 'Spieltag →';
+                nextBtn.disabled = true;
+            }
         }
 
         // Spieltag wechseln
