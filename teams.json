@@ -1,16 +1,16 @@
 {
   "teams": {
     "FC Basel": {
-      "keywords": ["FCB", "Basel", "Rot-Blau", "Basler"]
+      "keywords": ["FCB", "Basel", "FC Basel", "Rot-Blau", "Basler"]
     },
     "Grasshoppers": {
-      "keywords": ["GC", "Hoppers", "GCZ", "Grasshoppers", "Zürcher", "Hoppers"]
+      "keywords": ["GC", "Hoppers", "GCZ", "Grasshoppers", "Hoppers"]
     },
     "FC Zürich": {
-      "keywords": ["FCZ", "Zürich", "Züri", "Zürcher"]
+      "keywords": ["FCZ", "FC Zürich"]
     },
     "BSC Young Boys": {
-      "keywords": ["YB", "Young Boys", "Bern", "Berner", "BSC"]
+      "keywords": ["YB", "Young Boys", "Bern", "Berner", "BSC", "BSC Young Boys"]
     },
     "FC St. Gallen": {
       "keywords": ["St. Gallen", "FCSG", "Espen", "Ostschweizer", "St. Galler"]
@@ -19,35 +19,37 @@
       "keywords": ["Sion", "FC Sion", "Walliser"]
     },
     "Servette FC": {
-      "keywords": ["Servette", "Genfer", "Servette-Genf"]
+      "keywords": ["Servette", "Servette FC", "Genfer", "Servette-Genf"]
     },
    "FC Thun": {
-      "keywords": ["Thuner", "Oberländer", "Oberland", "FCT"]
+      "keywords": ["Thuner", "Oberländer", "Oberland", "FCT", "FC Thun"]
     },
    "FC Luzern": {
-      "keywords": ["Luzern", "FCL", "Luzerner"]
+      "keywords": ["Luzern", "FC Luzern", "Luzerner"]
     },
     "FC Lugano": {
-      "keywords": ["Lugano", "Bianconeri", "Tessiner"]
+      "keywords": ["Lugano", "Tessiner", "FC Lugano"]
     },
     "Lausanne-Sport": {
-      "keywords": ["Lausanner"]
+      "keywords": ["Lausanner", "Lausanne-Sport", "LS"]
     },
     "FC Winterthur": {
-      "keywords": ["Winterthur", "Winti", "FCW", "Winterthurer"]
+      "keywords": ["Winterthur", "FC Winterthur", "Winthi", "FCW", "Winterthurer"]
     }
   },
   "match_combinations": {
     "FC Basel vs FC Zürich": {
       "keywords": ["Klassiker"]
     },
-    "FC Zürich vs FC Basel": {
-      "keywords": ["Klassiker"]
+    "FC Zürich vs Grasshoppers": {
+      "keywords": ["Derby"]
     },
     "Servette FC vs Lausanne-Sports": {
-      "keywords": ["Rhone"]
+      "keywords": ["Rhone", "Derby"]
+    },
+ "Fc Thun FC vs BSC Young Boys": {
+      "keywords": ["Derby", "Berner Derby"]
     }
-
  
   }
 }

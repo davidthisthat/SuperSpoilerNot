@@ -5,363 +5,1678 @@
     {
       "matchday": 1,
       "matches": [
-        { "date": "2025-07-25", "time": "20:30", "home": "FC Zürich", "away": "FC Sion", "searchStart": "" },
-        { "date": "2025-07-26", "time": "18:00", "home": "Grasshoppers", "away": "FC Luzern", "searchStart": "" },
-        { "date": "2025-07-26", "time": "18:00", "home": "FC St. Gallen", "away": "FC Basel", "searchStart": "" },
-        { "date": "2025-07-26", "time": "20:30", "home": "BSC Young Boys", "away": "Servette FC", "searchStart": "" },
-        { "date": "2025-07-27", "time": "16:00", "home": "Lausanne-Sport", "away": "FC Winterthur", "searchStart": "" },
-        { "date": "2025-07-27", "time": "16:00", "home": "FC Lugano", "away": "FC Thun", "searchStart": "" }
+        {
+          "date": "2025-07-25",
+          "time": "20:30",
+          "home": "FC Zürich",
+          "away": "FC Sion",
+          "searchStart": "",
+          "result": "2:3"
+        },
+        {
+          "date": "2025-07-26",
+          "time": "18:00",
+          "home": "Grasshoppers",
+          "away": "FC Luzern",
+          "searchStart": "",
+          "result": "2:3"
+        },
+        {
+          "date": "2025-07-26",
+          "time": "18:00",
+          "home": "FC St. Gallen",
+          "away": "FC Basel",
+          "searchStart": "",
+          "result": "2:1"
+        },
+        {
+          "date": "2025-07-26",
+          "time": "20:30",
+          "home": "BSC Young Boys",
+          "away": "Servette FC",
+          "searchStart": "",
+          "result": "3:1"
+        },
+        {
+          "date": "2025-07-27",
+          "time": "16:00",
+          "home": "Lausanne-Sport",
+          "away": "FC Winterthur",
+          "searchStart": "",
+          "result": "3:2"
+        },
+        {
+          "date": "2025-07-27",
+          "time": "16:00",
+          "home": "FC Lugano",
+          "away": "FC Thun",
+          "searchStart": "",
+          "result": "1:2"
+        }
       ]
     },
     {
       "matchday": 2,
       "matches": [
-        { "date": "2025-08-02", "time": "18:00", "home": "Servette FC", "away": "FC St. Gallen", "searchStart": "" },
-        { "date": "2025-08-02", "time": "18:00", "home": "FC Winterthur", "away": "BSC Young Boys", "searchStart": "" },
-        { "date": "2025-08-02", "time": "20:30", "home": "FC Basel", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2025-08-03", "time": "14:00", "home": "FC Thun", "away": "Lausanne-Sport", "searchStart": "" },
-        { "date": "2025-08-03", "time": "16:30", "home": "FC Luzern", "away": "FC Zürich", "searchStart": "" },
-        { "date": "2025-08-03", "time": "16:30", "home": "FC Sion", "away": "FC Lugano", "searchStart": "" }
+        {
+          "date": "2025-08-02",
+          "time": "18:00",
+          "home": "Servette FC",
+          "away": "FC St. Gallen",
+          "searchStart": "",
+          "result": "1:4"
+        },
+        {
+          "date": "2025-08-02",
+          "time": "18:00",
+          "home": "FC Winterthur",
+          "away": "BSC Young Boys",
+          "searchStart": "",
+          "result": "1:1"
+        },
+        {
+          "date": "2025-08-02",
+          "time": "20:30",
+          "home": "FC Basel",
+          "away": "Grasshoppers",
+          "searchStart": "",
+          "result": "2:1"
+        },
+        {
+          "date": "2025-08-03",
+          "time": "14:00",
+          "home": "FC Thun",
+          "away": "Lausanne-Sport",
+          "searchStart": "",
+          "result": "2:1"
+        },
+        {
+          "date": "2025-08-03",
+          "time": "16:30",
+          "home": "FC Luzern",
+          "away": "FC Zürich",
+          "searchStart": "",
+          "result": "1:1"
+        },
+        {
+          "date": "2025-08-03",
+          "time": "16:30",
+          "home": "FC Sion",
+          "away": "FC Lugano",
+          "searchStart": "",
+          "result": "4:0"
+        }
       ]
     },
     {
       "matchday": 3,
       "matches": [
-        { "date": "2025-08-09", "time": "18:00", "home": "FC St. Gallen", "away": "FC Winterthur", "searchStart": "" },
-        { "date": "2025-08-09", "time": "20:30", "home": "FC Luzern", "away": "FC Thun", "searchStart": "" },
-        { "date": "2025-08-10", "time": "14:00", "home": "BSC Young Boys", "away": "FC Sion", "searchStart": "" },
-        { "date": "2025-08-10", "time": "16:30", "home": "Servette FC", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2025-08-10", "time": "16:30", "home": "Lausanne-Sport", "away": "FC Zürich", "searchStart": "" },
-        { "date": "2025-08-10", "time": "16:30", "home": "FC Lugano", "away": "FC Basel", "searchStart": "" }
+        {
+          "date": "2025-08-09",
+          "time": "18:00",
+          "home": "FC St. Gallen",
+          "away": "FC Winterthur",
+          "searchStart": "",
+          "result": "5:0"
+        },
+        {
+          "date": "2025-08-09",
+          "time": "20:30",
+          "home": "FC Luzern",
+          "away": "FC Thun",
+          "searchStart": "",
+          "result": "1:2"
+        },
+        {
+          "date": "2025-08-10",
+          "time": "14:00",
+          "home": "BSC Young Boys",
+          "away": "FC Sion",
+          "searchStart": "",
+          "result": "0:0"
+        },
+        {
+          "date": "2025-08-10",
+          "time": "16:30",
+          "home": "Servette FC",
+          "away": "Grasshoppers",
+          "searchStart": "",
+          "result": "1:1"
+        },
+        {
+          "date": "2025-08-10",
+          "time": "16:30",
+          "home": "Lausanne-Sport",
+          "away": "FC Zürich",
+          "searchStart": "",
+          "result": "1:2"
+        },
+        {
+          "date": "2025-08-10",
+          "time": "16:30",
+          "home": "FC Lugano",
+          "away": "FC Basel",
+          "searchStart": "",
+          "result": "3:1"
+        }
       ]
     },
     {
       "matchday": 4,
       "matches": [
-        { "date": "2025-08-06", "time": "20:30", "home": "FC Basel", "away": "BSC Young Boys", "searchStart": "" },
-        { "date": "2025-08-23", "time": "18:00", "home": "FC Zürich", "away": "FC Thun", "searchStart": "" },
-        { "date": "2025-08-24", "time": "14:00", "home": "Grasshoppers", "away": "FC Winterthur", "searchStart": "" },
-        { "date": "2025-08-24", "time": "16:30", "home": "FC St. Gallen", "away": "FC Luzern", "searchStart": "" },
-        { "date": "2025-09-17", "time": "19:00", "home": "FC Sion", "away": "Servette FC", "searchStart": "" },
-        { "date": "2025-08-24", "time": "16:30", "home": "FC Lugano", "away": "Lausanne-Sport", "searchStart": "" }
+        {
+          "date": "2025-08-06",
+          "time": "20:30",
+          "home": "FC Basel",
+          "away": "BSC Young Boys",
+          "searchStart": "",
+          "result": "4:1"
+        },
+        {
+          "date": "2025-08-23",
+          "time": "18:00",
+          "home": "FC Zürich",
+          "away": "FC Thun",
+          "searchStart": "",
+          "result": "0:4"
+        },
+        {
+          "date": "2025-08-24",
+          "time": "14:00",
+          "home": "Grasshoppers",
+          "away": "FC Winterthur",
+          "searchStart": "",
+          "result": "2:2"
+        },
+        {
+          "date": "2025-08-24",
+          "time": "16:30",
+          "home": "FC St. Gallen",
+          "away": "FC Luzern",
+          "searchStart": "",
+          "result": "0:1"
+        },
+        {
+          "date": "2025-09-17",
+          "time": "19:00",
+          "home": "FC Sion",
+          "away": "Servette FC",
+          "searchStart": "",
+          "result": "0:2"
+        },
+        {
+          "date": "2025-08-24",
+          "time": "16:30",
+          "home": "FC Lugano",
+          "away": "Lausanne-Sport",
+          "searchStart": "",
+          "result": "1:1"
+        }
       ]
     },
     {
       "matchday": 5,
       "matches": [
-        { "date": "2025-08-30", "time": "18:00", "home": "FC Thun", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2025-08-30", "time": "18:00", "home": "FC Winterthur", "away": "FC Zürich", "searchStart": "" },
-        { "date": "2025-08-30", "time": "20:30", "home": "FC Sion", "away": "FC Basel", "searchStart": "" },
-        { "date": "2025-08-31", "time": "14:00", "home": "Lausanne-Sport", "away": "FC St. Gallen", "searchStart": "" },
-        { "date": "2025-08-31", "time": "16:30", "home": "Servette FC", "away": "FC Luzern", "searchStart": "" },
-        { "date": "2025-08-31", "time": "16:30", "home": "BSC Young Boys", "away": "FC Lugano", "searchStart": "" }
+        {
+          "date": "2025-08-30",
+          "time": "18:00",
+          "home": "FC Thun",
+          "away": "Grasshoppers",
+          "searchStart": "",
+          "result": "1:1"
+        },
+        {
+          "date": "2025-08-30",
+          "time": "18:00",
+          "home": "FC Winterthur",
+          "away": "FC Zürich",
+          "searchStart": "",
+          "result": "1:3"
+        },
+        {
+          "date": "2025-08-30",
+          "time": "20:30",
+          "home": "FC Sion",
+          "away": "FC Basel",
+          "searchStart": "",
+          "result": "0:1"
+        },
+        {
+          "date": "2025-08-31",
+          "time": "14:00",
+          "home": "Lausanne-Sport",
+          "away": "FC St. Gallen",
+          "searchStart": "",
+          "result": "1:2"
+        },
+        {
+          "date": "2025-08-31",
+          "time": "16:30",
+          "home": "Servette FC",
+          "away": "FC Luzern",
+          "searchStart": "",
+          "result": "2:2"
+        },
+        {
+          "date": "2025-08-31",
+          "time": "16:30",
+          "home": "BSC Young Boys",
+          "away": "FC Lugano",
+          "searchStart": "",
+          "result": "3:1"
+        }
       ]
     },
     {
       "matchday": 6,
       "matches": [
-        { "date": "2025-09-13", "time": "18:00", "home": "FC Thun", "away": "FC Basel", "searchStart": "" },
-        { "date": "2025-09-13", "time": "18:00", "home": "FC Zürich", "away": "Servette FC", "searchStart": "" },
-        { "date": "2025-09-13", "time": "20:30", "home": "FC St. Gallen", "away": "FC Lugano", "searchStart": "" },
-        { "date": "2025-09-14", "time": "14:00", "home": "FC Winterthur", "away": "FC Sion", "searchStart": "" },
-        { "date": "2025-09-14", "time": "16:30", "home": "Grasshoppers", "away": "Lausanne-Sport", "searchStart": "" },
-        { "date": "2025-09-14", "time": "16:30", "home": "FC Luzern", "away": "BSC Young Boys", "searchStart": "" }
+        {
+          "date": "2025-09-13",
+          "time": "18:00",
+          "home": "FC Thun",
+          "away": "FC Basel",
+          "searchStart": "",
+          "result": "1:3"
+        },
+        {
+          "date": "2025-09-13",
+          "time": "18:00",
+          "home": "FC Zürich",
+          "away": "Servette FC",
+          "searchStart": "",
+          "result": "2:1"
+        },
+        {
+          "date": "2025-09-13",
+          "time": "20:30",
+          "home": "FC St. Gallen",
+          "away": "FC Lugano",
+          "searchStart": "",
+          "result": "1:0"
+        },
+        {
+          "date": "2025-09-14",
+          "time": "14:00",
+          "home": "FC Winterthur",
+          "away": "FC Sion",
+          "searchStart": "",
+          "result": "2:3"
+        },
+        {
+          "date": "2025-09-14",
+          "time": "16:30",
+          "home": "Grasshoppers",
+          "away": "Lausanne-Sport",
+          "searchStart": "",
+          "result": "3:1"
+        },
+        {
+          "date": "2025-09-14",
+          "time": "16:30",
+          "home": "FC Luzern",
+          "away": "BSC Young Boys",
+          "searchStart": "",
+          "result": "1:2"
+        }
       ]
     },
     {
       "matchday": 7,
       "matches": [
-        { "date": "2025-09-27", "time": "18:00", "home": "FC Lugano", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2025-09-27", "time": "18:00", "home": "Servette FC", "away": "FC Winterthur", "searchStart": "" },
-        { "date": "2025-09-27", "time": "20:30", "home": "FC Zürich", "away": "FC St. Gallen", "searchStart": "" },
-        { "date": "2025-09-28", "time": "14:00", "home": "BSC Young Boys", "away": "FC Thun", "searchStart": "" },
-        { "date": "2025-09-28", "time": "16:30", "home": "FC Basel", "away": "FC Luzern", "searchStart": "" },
-        { "date": "2025-09-28", "time": "16:30", "home": "FC Sion", "away": "Lausanne-Sport", "searchStart": "" }
+        {
+          "date": "2025-09-27",
+          "time": "18:00",
+          "home": "FC Lugano",
+          "away": "Grasshoppers",
+          "searchStart": "",
+          "result": "2:1"
+        },
+        {
+          "date": "2025-09-27",
+          "time": "18:00",
+          "home": "Servette FC",
+          "away": "FC Winterthur",
+          "searchStart": "",
+          "result": "4:0"
+        },
+        {
+          "date": "2025-09-27",
+          "time": "20:30",
+          "home": "FC Zürich",
+          "away": "FC St. Gallen",
+          "searchStart": "",
+          "result": "3:1"
+        },
+        {
+          "date": "2025-09-28",
+          "time": "14:00",
+          "home": "BSC Young Boys",
+          "away": "FC Thun",
+          "searchStart": "",
+          "result": "4:2"
+        },
+        {
+          "date": "2025-09-28",
+          "time": "16:30",
+          "home": "FC Basel",
+          "away": "FC Luzern",
+          "searchStart": "",
+          "result": "1:2"
+        },
+        {
+          "date": "2025-09-28",
+          "time": "16:30",
+          "home": "FC Sion",
+          "away": "Lausanne-Sport",
+          "searchStart": "",
+          "result": "0:0"
+        }
       ]
     },
     {
       "matchday": 8,
       "matches": [
-        { "date": "2025-10-04", "time": "18:00", "home": "FC Luzern", "away": "FC Sion", "searchStart": "" },
-        { "date": "2025-10-04", "time": "18:00", "home": "FC St. Gallen", "away": "FC Thun", "searchStart": "" },
-        { "date": "2025-10-04", "time": "20:30", "home": "Grasshoppers", "away": "FC Zürich", "searchStart": "" },
-        { "date": "2025-10-05", "time": "14:00", "home": "Lausanne-Sport", "away": "BSC Young Boys", "searchStart": "" },
-        { "date": "2025-10-05", "time": "16:30", "home": "Servette FC", "away": "FC Basel", "searchStart": "" },
-        { "date": "2025-10-05", "time": "16:30", "home": "FC Winterthur", "away": "FC Lugano", "searchStart": "" }
+        {
+          "date": "2025-10-04",
+          "time": "18:00",
+          "home": "FC Luzern",
+          "away": "FC Sion",
+          "searchStart": "",
+          "result": "3:3"
+        },
+        {
+          "date": "2025-10-04",
+          "time": "18:00",
+          "home": "FC St. Gallen",
+          "away": "FC Thun",
+          "searchStart": "",
+          "result": "1:2"
+        },
+        {
+          "date": "2025-10-04",
+          "time": "20:30",
+          "home": "Grasshoppers",
+          "away": "FC Zürich",
+          "searchStart": "",
+          "result": "3:0"
+        },
+        {
+          "date": "2025-10-05",
+          "time": "14:00",
+          "home": "Lausanne-Sport",
+          "away": "BSC Young Boys",
+          "searchStart": "",
+          "result": "5:0"
+        },
+        {
+          "date": "2025-10-05",
+          "time": "16:30",
+          "home": "Servette FC",
+          "away": "FC Basel",
+          "searchStart": "",
+          "result": "0:3"
+        },
+        {
+          "date": "2025-10-05",
+          "time": "16:30",
+          "home": "FC Winterthur",
+          "away": "FC Lugano",
+          "searchStart": "",
+          "result": "2:4"
+        }
       ]
     },
     {
       "matchday": 9,
       "matches": [
-        { "date": "2025-10-18", "time": "18:00", "home": "FC Basel", "away": "FC Winterthur", "searchStart": "" },
-        { "date": "2025-10-18", "time": "18:00", "home": "FC Thun", "away": "Servette FC", "searchStart": "" },
-        { "date": "2025-10-18", "time": "20:30", "home": "FC Lugano", "away": "FC Zürich", "searchStart": "" },
-        { "date": "2025-10-19", "time": "14:00", "home": "Grasshoppers", "away": "FC Sion", "searchStart": "" },
-        { "date": "2025-10-19", "time": "16:30", "home": "FC Luzern", "away": "Lausanne-Sport", "searchStart": "" },
-        { "date": "2025-10-19", "time": "16:30", "home": "BSC Young Boys", "away": "FC St. Gallen", "searchStart": "" }
+        {
+          "date": "2025-10-18",
+          "time": "18:00",
+          "home": "FC Basel",
+          "away": "FC Winterthur",
+          "searchStart": "",
+          "result": "3:0"
+        },
+        {
+          "date": "2025-10-18",
+          "time": "18:00",
+          "home": "FC Thun",
+          "away": "Servette FC",
+          "searchStart": "",
+          "result": "3:1"
+        },
+        {
+          "date": "2025-10-18",
+          "time": "20:30",
+          "home": "FC Lugano",
+          "away": "FC Zürich",
+          "searchStart": "",
+          "result": "1:0"
+        },
+        {
+          "date": "2025-10-19",
+          "time": "14:00",
+          "home": "Grasshoppers",
+          "away": "FC Sion",
+          "searchStart": "",
+          "result": "0:1"
+        },
+        {
+          "date": "2025-10-19",
+          "time": "16:30",
+          "home": "FC Luzern",
+          "away": "Lausanne-Sport",
+          "searchStart": "",
+          "result": "2:2"
+        },
+        {
+          "date": "2025-10-19",
+          "time": "16:30",
+          "home": "BSC Young Boys",
+          "away": "FC St. Gallen",
+          "searchStart": "",
+          "result": "1:2"
+        }
       ]
     },
     {
       "matchday": 10,
       "matches": [
-        { "date": "2025-10-25", "time": "18:00", "home": "FC Sion", "away": "FC Thun", "searchStart": "" },
-        { "date": "2025-10-25", "time": "18:00", "home": "FC St. Gallen", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2025-10-25", "time": "20:30", "home": "FC Winterthur", "away": "FC Luzern", "searchStart": "" },
-        { "date": "2025-10-26", "time": "14:00", "home": "FC Zürich", "away": "BSC Young Boys", "searchStart": "" },
-        { "date": "2025-10-26", "time": "16:30", "home": "Lausanne-Sport", "away": "FC Basel", "searchStart": "" },
-        { "date": "2025-10-26", "time": "16:30", "home": "Servette FC", "away": "FC Lugano", "searchStart": "" }
+        {
+          "date": "2025-10-25",
+          "time": "18:00",
+          "home": "FC Sion",
+          "away": "FC Thun",
+          "searchStart": "",
+          "result": "0:1"
+        },
+        {
+          "date": "2025-10-25",
+          "time": "18:00",
+          "home": "FC St. Gallen",
+          "away": "Grasshoppers",
+          "searchStart": "",
+          "result": "5:0"
+        },
+        {
+          "date": "2025-10-25",
+          "time": "20:30",
+          "home": "FC Winterthur",
+          "away": "FC Luzern",
+          "searchStart": "",
+          "result": "2:2"
+        },
+        {
+          "date": "2025-10-26",
+          "time": "14:00",
+          "home": "FC Zürich",
+          "away": "BSC Young Boys",
+          "searchStart": "",
+          "result": "2:3"
+        },
+        {
+          "date": "2025-10-26",
+          "time": "16:30",
+          "home": "Lausanne-Sport",
+          "away": "FC Basel",
+          "searchStart": "",
+          "result": "5:1"
+        },
+        {
+          "date": "2025-10-26",
+          "time": "16:30",
+          "home": "Servette FC",
+          "away": "FC Lugano",
+          "searchStart": "",
+          "result": "2:1"
+        }
       ]
     },
     {
       "matchday": 11,
       "matches": [
-        { "date": "2025-10-28", "time": "20:30", "home": "FC Sion", "away": "FC St. Gallen", "searchStart": "" },
-        { "date": "2025-10-28", "time": "20:30", "home": "FC Thun", "away": "FC Winterthur", "searchStart": "" },
-        { "date": "2025-10-29", "time": "20:30", "home": "FC Basel", "away": "FC Zürich", "searchStart": "" },
-        { "date": "2025-10-29", "time": "20:30", "home": "Lausanne-Sport", "away": "Servette FC", "searchStart": "" },
-        { "date": "2025-10-30", "time": "20:30", "home": "Grasshoppers", "away": "BSC Young Boys", "searchStart": "" },
-        { "date": "2025-10-30", "time": "20:30", "home": "FC Lugano", "away": "FC Luzern", "searchStart": "" }
+        {
+          "date": "2025-10-28",
+          "time": "20:30",
+          "home": "FC Sion",
+          "away": "FC St. Gallen",
+          "searchStart": "",
+          "result": "3:2"
+        },
+        {
+          "date": "2025-10-28",
+          "time": "20:30",
+          "home": "FC Thun",
+          "away": "FC Winterthur",
+          "searchStart": "",
+          "result": "3:0"
+        },
+        {
+          "date": "2025-10-29",
+          "time": "20:30",
+          "home": "FC Basel",
+          "away": "FC Zürich",
+          "searchStart": "",
+          "result": "2:0"
+        },
+        {
+          "date": "2025-10-29",
+          "time": "20:30",
+          "home": "Lausanne-Sport",
+          "away": "Servette FC",
+          "searchStart": "",
+          "result": "1:3"
+        },
+        {
+          "date": "2025-10-30",
+          "time": "20:30",
+          "home": "Grasshoppers",
+          "away": "BSC Young Boys",
+          "searchStart": "",
+          "result": "3:3"
+        },
+        {
+          "date": "2025-10-30",
+          "time": "20:30",
+          "home": "FC Lugano",
+          "away": "FC Luzern",
+          "searchStart": "",
+          "result": "2:0"
+        }
       ]
     },
     {
       "matchday": 12,
       "matches": [
-        { "date": "2025-11-01", "time": "18:00", "home": "FC Thun", "away": "FC Sion", "searchStart": "" },
-        { "date": "2025-11-01", "time": "18:00", "home": "FC Winterthur", "away": "Servette FC", "searchStart": "" },
-        { "date": "2025-11-01", "time": "20:30", "home": "FC Zürich", "away": "Lausanne-Sport", "searchStart": "" },
-        { "date": "2025-11-02", "time": "16:30", "home": "FC Luzern", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2025-11-02", "time": "16:30", "home": "BSC Young Boys", "away": "FC Basel", "searchStart": "" },
-        { "date": "2025-11-26", "time": "19:00", "home": "FC Lugano", "away": "FC St. Gallen", "searchStart": "" }
+        {
+          "date": "2025-11-01",
+          "time": "18:00",
+          "home": "FC Thun",
+          "away": "FC Sion",
+          "searchStart": "",
+          "result": "2:1"
+        },
+        {
+          "date": "2025-11-01",
+          "time": "18:00",
+          "home": "FC Winterthur",
+          "away": "Servette FC",
+          "searchStart": "",
+          "result": "4:2"
+        },
+        {
+          "date": "2025-11-01",
+          "time": "20:30",
+          "home": "FC Zürich",
+          "away": "Lausanne-Sport",
+          "searchStart": "",
+          "result": "1:2"
+        },
+        {
+          "date": "2025-11-02",
+          "time": "16:30",
+          "home": "FC Luzern",
+          "away": "Grasshoppers",
+          "searchStart": "",
+          "result": "6:0"
+        },
+        {
+          "date": "2025-11-02",
+          "time": "16:30",
+          "home": "BSC Young Boys",
+          "away": "FC Basel",
+          "searchStart": "",
+          "result": "0:0"
+        },
+        {
+          "date": "2025-11-26",
+          "time": "19:00",
+          "home": "FC Lugano",
+          "away": "FC St. Gallen",
+          "searchStart": "",
+          "result": "1:3"
+        }
       ]
     },
     {
       "matchday": 13,
       "matches": [
-        { "date": "2025-11-08", "time": "18:00", "home": "FC Winterthur", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2025-11-08", "time": "18:00", "home": "FC Zürich", "away": "FC Luzern", "searchStart": "" },
-        { "date": "2025-11-08", "time": "20:30", "home": "Servette FC", "away": "FC Thun", "searchStart": "" },
-        { "date": "2025-11-09", "time": "14:00", "home": "FC Basel", "away": "FC Lugano", "searchStart": "" },
-        { "date": "2025-11-09", "time": "16:30", "home": "Lausanne-Sport", "away": "FC Sion", "searchStart": "" },
-        { "date": "2025-11-09", "time": "16:30", "home": "FC St. Gallen", "away": "BSC Young Boys", "searchStart": "" }
+        {
+          "date": "2025-11-08",
+          "time": "18:00",
+          "home": "FC Winterthur",
+          "away": "Grasshoppers",
+          "searchStart": "",
+          "result": "0:1"
+        },
+        {
+          "date": "2025-11-08",
+          "time": "18:00",
+          "home": "FC Zürich",
+          "away": "FC Luzern",
+          "searchStart": "",
+          "result": "3:2"
+        },
+        {
+          "date": "2025-11-08",
+          "time": "20:30",
+          "home": "Servette FC",
+          "away": "FC Thun",
+          "searchStart": "",
+          "result": "0:1"
+        },
+        {
+          "date": "2025-11-09",
+          "time": "14:00",
+          "home": "FC Basel",
+          "away": "FC Lugano",
+          "searchStart": "",
+          "result": "0:1"
+        },
+        {
+          "date": "2025-11-09",
+          "time": "16:30",
+          "home": "Lausanne-Sport",
+          "away": "FC Sion",
+          "searchStart": "",
+          "result": "2:2"
+        },
+        {
+          "date": "2025-11-09",
+          "time": "16:30",
+          "home": "FC St. Gallen",
+          "away": "BSC Young Boys",
+          "searchStart": "",
+          "result": "1:4"
+        }
       ]
     },
     {
       "matchday": 14,
       "matches": [
-        { "date": "2025-11-22", "time": "18:00", "home": "FC Luzern", "away": "Servette FC", "searchStart": "" },
-        { "date": "2025-11-22", "time": "18:00", "home": "BSC Young Boys", "away": "FC Winterthur", "searchStart": "" },
-        { "date": "2025-11-22", "time": "20:30", "home": "FC Thun", "away": "FC Lugano", "searchStart": "" },
-        { "date": "2025-11-23", "time": "14:00", "home": "FC Sion", "away": "FC Zürich", "searchStart": "" },
-        { "date": "2025-11-23", "time": "16:30", "home": "Grasshoppers", "away": "FC Basel", "searchStart": "" },
-        { "date": "2025-11-23", "time": "16:30", "home": "FC St. Gallen", "away": "Lausanne-Sport", "searchStart": "" }
+        {
+          "date": "2025-11-22",
+          "time": "18:00",
+          "home": "FC Luzern",
+          "away": "Servette FC",
+          "searchStart": "",
+          "result": "2:2"
+        },
+        {
+          "date": "2025-11-22",
+          "time": "18:00",
+          "home": "BSC Young Boys",
+          "away": "FC Winterthur",
+          "searchStart": "",
+          "result": "5:0"
+        },
+        {
+          "date": "2025-11-22",
+          "time": "20:30",
+          "home": "FC Thun",
+          "away": "FC Lugano",
+          "searchStart": "",
+          "result": "0:1"
+        },
+        {
+          "date": "2025-11-23",
+          "time": "14:00",
+          "home": "FC Sion",
+          "away": "FC Zürich",
+          "searchStart": "",
+          "result": "2:2"
+        },
+        {
+          "date": "2025-11-23",
+          "time": "16:30",
+          "home": "Grasshoppers",
+          "away": "FC Basel",
+          "searchStart": "",
+          "result": "1:1"
+        },
+        {
+          "date": "2025-11-23",
+          "time": "16:30",
+          "home": "FC St. Gallen",
+          "away": "Lausanne-Sport",
+          "searchStart": "",
+          "result": "1:0"
+        }
       ]
     },
     {
       "matchday": 15,
       "matches": [
-        { "date": "2025-11-29", "time": "18:00", "home": "FC Lugano", "away": "FC Sion", "searchStart": "" },
-        { "date": "2025-11-29", "time": "18:00", "home": "FC Zürich", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2025-11-29", "time": "20:30", "home": "FC Luzern", "away": "FC Winterthur", "searchStart": "" },
-        { "date": "2025-11-30", "time": "14:00", "home": "Servette FC", "away": "BSC Young Boys", "searchStart": "" },
-        { "date": "2025-11-30", "time": "16:30", "home": "FC Basel", "away": "FC St. Gallen", "searchStart": "" },
-        { "date": "2025-11-30", "time": "16:30", "home": "Lausanne-Sport", "away": "FC Thun", "searchStart": "" }
+        {
+          "date": "2025-11-29",
+          "time": "18:00",
+          "home": "FC Lugano",
+          "away": "FC Sion",
+          "searchStart": "",
+          "result": "1:1"
+        },
+        {
+          "date": "2025-11-29",
+          "time": "18:00",
+          "home": "FC Zürich",
+          "away": "Grasshoppers",
+          "searchStart": "",
+          "result": "1:0"
+        },
+        {
+          "date": "2025-11-29",
+          "time": "20:30",
+          "home": "FC Luzern",
+          "away": "FC Winterthur",
+          "searchStart": "",
+          "result": "1:3"
+        },
+        {
+          "date": "2025-11-30",
+          "time": "14:00",
+          "home": "Servette FC",
+          "away": "BSC Young Boys",
+          "searchStart": "",
+          "result": "4:4"
+        },
+        {
+          "date": "2025-11-30",
+          "time": "16:30",
+          "home": "FC Basel",
+          "away": "FC St. Gallen",
+          "searchStart": "",
+          "result": "0:0"
+        },
+        {
+          "date": "2025-11-30",
+          "time": "16:30",
+          "home": "Lausanne-Sport",
+          "away": "FC Thun",
+          "searchStart": "",
+          "result": "2:1"
+        }
       ]
     },
     {
       "matchday": 16,
       "matches": [
-        { "date": "2025-12-06", "time": "18:00", "home": "Grasshoppers", "away": "Servette FC", "searchStart": "" },
-        { "date": "2025-12-06", "time": "18:00", "home": "FC Thun", "away": "FC Luzern", "searchStart": "" },
-        { "date": "2025-12-06", "time": "20:30", "home": "FC St. Gallen", "away": "FC Zürich", "searchStart": "" },
-        { "date": "2025-12-07", "time": "14:00", "home": "FC Winterthur", "away": "FC Basel", "searchStart": "" },
-        { "date": "2025-12-07", "time": "16:30", "home": "Lausanne-Sport", "away": "FC Lugano", "searchStart": "" },
-        { "date": "2025-12-07", "time": "16:30", "home": "FC Sion", "away": "BSC Young Boys", "searchStart": "" }
+        {
+          "date": "2025-12-06",
+          "time": "18:00",
+          "home": "Grasshoppers",
+          "away": "Servette FC",
+          "searchStart": "",
+          "result": "0:1"
+        },
+        {
+          "date": "2025-12-06",
+          "time": "18:00",
+          "home": "FC Thun",
+          "away": "FC Luzern",
+          "searchStart": "",
+          "result": "4:1"
+        },
+        {
+          "date": "2025-12-06",
+          "time": "20:30",
+          "home": "FC St. Gallen",
+          "away": "FC Zürich",
+          "searchStart": "",
+          "result": "1:2"
+        },
+        {
+          "date": "2025-12-07",
+          "time": "14:00",
+          "home": "FC Winterthur",
+          "away": "FC Basel",
+          "searchStart": "",
+          "result": "1:2"
+        },
+        {
+          "date": "2025-12-07",
+          "time": "16:30",
+          "home": "Lausanne-Sport",
+          "away": "FC Lugano",
+          "searchStart": "",
+          "result": "0:0"
+        },
+        {
+          "date": "2025-12-07",
+          "time": "16:30",
+          "home": "FC Sion",
+          "away": "BSC Young Boys",
+          "searchStart": "",
+          "result": "2:0"
+        }
       ]
     },
     {
       "matchday": 17,
       "matches": [
-        { "date": "2025-12-13", "time": "18:00", "home": "FC Sion", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2025-12-13", "time": "18:00", "home": "FC Zürich", "away": "FC Winterthur", "searchStart": "" },
-        { "date": "2025-12-13", "time": "20:30", "home": "FC Thun", "away": "FC St. Gallen", "searchStart": "" },
-        { "date": "2025-12-14", "time": "14:00", "home": "BSC Young Boys", "away": "FC Luzern", "searchStart": "" },
-        { "date": "2025-12-14", "time": "16:30", "home": "FC Basel", "away": "Lausanne-Sport", "searchStart": "" },
-        { "date": "2025-12-14", "time": "16:30", "home": "FC Lugano", "away": "Servette FC", "searchStart": "" }
+        {
+          "date": "2025-12-13",
+          "time": "18:00",
+          "home": "FC Sion",
+          "away": "Grasshoppers",
+          "searchStart": "",
+          "result": "1:0"
+        },
+        {
+          "date": "2025-12-13",
+          "time": "18:00",
+          "home": "FC Zürich",
+          "away": "FC Winterthur",
+          "searchStart": "",
+          "result": "2:2"
+        },
+        {
+          "date": "2025-12-13",
+          "time": "20:30",
+          "home": "FC Thun",
+          "away": "FC St. Gallen",
+          "searchStart": "",
+          "result": "0:2"
+        },
+        {
+          "date": "2025-12-14",
+          "time": "14:00",
+          "home": "BSC Young Boys",
+          "away": "FC Luzern",
+          "searchStart": "",
+          "result": "2:0"
+        },
+        {
+          "date": "2025-12-14",
+          "time": "16:30",
+          "home": "FC Basel",
+          "away": "Lausanne-Sport",
+          "searchStart": "",
+          "result": "0:0"
+        },
+        {
+          "date": "2025-12-14",
+          "time": "16:30",
+          "home": "FC Lugano",
+          "away": "Servette FC",
+          "searchStart": "",
+          "result": "4:2"
+        }
       ]
     },
     {
       "matchday": 18,
       "matches": [
-        { "date": "2025-12-16", "time": "20:30", "home": "FC St. Gallen", "away": "FC Sion", "searchStart": "" },
-        { "date": "2025-12-16", "time": "20:30", "home": "FC Winterthur", "away": "FC Thun", "searchStart": "" },
-        { "date": "2025-12-17", "time": "20:30", "home": "FC Luzern", "away": "FC Basel", "searchStart": "" },
-        { "date": "2025-12-17", "time": "20:30", "home": "BSC Young Boys", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2025-12-17", "time": "20:30", "home": "FC Zürich", "away": "FC Lugano", "searchStart": "" },
-        { "date": "2026-01-14", "time": "20:30", "home": "Servette FC", "away": "Lausanne-Sport", "searchStart": "" }
+        {
+          "date": "2025-12-16",
+          "time": "20:30",
+          "home": "FC St. Gallen",
+          "away": "FC Sion",
+          "searchStart": "",
+          "result": "3:1"
+        },
+        {
+          "date": "2025-12-16",
+          "time": "20:30",
+          "home": "FC Winterthur",
+          "away": "FC Thun",
+          "searchStart": "",
+          "result": "1:4"
+        },
+        {
+          "date": "2025-12-17",
+          "time": "20:30",
+          "home": "FC Luzern",
+          "away": "FC Basel",
+          "searchStart": "",
+          "result": "1:2"
+        },
+        {
+          "date": "2025-12-17",
+          "time": "20:30",
+          "home": "BSC Young Boys",
+          "away": "Grasshoppers",
+          "searchStart": "",
+          "result": "2:6"
+        },
+        {
+          "date": "2025-12-17",
+          "time": "20:30",
+          "home": "FC Zürich",
+          "away": "FC Lugano",
+          "searchStart": "",
+          "result": "0:1"
+        },
+        {
+          "date": "2026-01-14",
+          "time": "20:30",
+          "home": "Servette FC",
+          "away": "Lausanne-Sport",
+          "searchStart": "",
+          "result": "0:1"
+        }
       ]
     },
     {
       "matchday": 19,
       "matches": [
-        { "date": "2025-12-20", "time": "18:00", "home": "FC Thun", "away": "FC Zürich", "searchStart": "2025-12-20T20:00:00" },
-        { "date": "2025-12-20", "time": "20:30", "home": "FC Basel", "away": "Servette FC", "searchStart": "2025-12-20T22:30:00" },
-        { "date": "2025-12-21", "time": "14:00", "home": "Lausanne-Sport", "away": "FC Luzern", "searchStart": "2025-12-21T16:00:00" },
-        { "date": "2025-12-21", "time": "16:30", "home": "Grasshoppers", "away": "FC St. Gallen", "searchStart": "2025-12-21T18:30:00" },
-        { "date": "2025-12-21", "time": "16:30", "home": "FC Lugano", "away": "BSC Young Boys", "searchStart": "2025-12-21T18:30:00" },
-        { "date": "2026-01-14", "time": "20:30", "home": "FC Sion", "away": "FC Winterthur", "searchStart": "2026-01-14T22:30:00" }
+        {
+          "date": "2025-12-20",
+          "time": "18:00",
+          "home": "FC Thun",
+          "away": "FC Zürich",
+          "searchStart": "2025-12-20T20:00:00",
+          "result": "4:2"
+        },
+        {
+          "date": "2025-12-20",
+          "time": "20:30",
+          "home": "FC Basel",
+          "away": "Servette FC",
+          "searchStart": "2025-12-20T22:30:00",
+          "result": "1:1"
+        },
+        {
+          "date": "2025-12-21",
+          "time": "14:00",
+          "home": "Lausanne-Sport",
+          "away": "FC Luzern",
+          "searchStart": "2025-12-21T16:00:00",
+          "result": "0:4"
+        },
+        {
+          "date": "2025-12-21",
+          "time": "16:30",
+          "home": "Grasshoppers",
+          "away": "FC St. Gallen",
+          "searchStart": "2025-12-21T18:30:00",
+          "result": "1:2"
+        },
+        {
+          "date": "2025-12-21",
+          "time": "16:30",
+          "home": "FC Lugano",
+          "away": "BSC Young Boys",
+          "searchStart": "2025-12-21T18:30:00",
+          "result": "3:0"
+        },
+        {
+          "date": "2026-01-14",
+          "time": "20:30",
+          "home": "FC Sion",
+          "away": "FC Winterthur",
+          "searchStart": "2026-01-14T22:30:00",
+          "result": "2:0"
+        }
       ]
     },
     {
       "matchday": 20,
       "matches": [
-        { "date": "2026-01-17", "time": "18:00", "home": "FC Luzern", "away": "FC Lugano", "searchStart": "2026-01-17T20:00:00" },
-        { "date": "2026-01-17", "time": "20:30", "home": "BSC Young Boys", "away": "Lausanne-Sport", "searchStart": "2026-01-17T22:30:00" },
-        { "date": "2026-01-18", "time": "14:00", "home": "Servette FC", "away": "FC Zürich", "searchStart": "2026-01-18T16:00:00" },
-        { "date": "2026-01-18", "time": "16:30", "home": "FC Basel", "away": "FC Sion", "searchStart": "2026-01-18T18:30:00" },
-        { "date": "2026-01-18", "time": "16:30", "home": "Grasshoppers", "away": "FC Thun", "searchStart": "2026-01-18T18:30:00" },
-        { "date": "2026-01-17", "time": "00:00", "home": "FC Winterthur", "away": "FC St. Gallen", "searchStart": "", "note": "verlegt" }
+        {
+          "date": "2026-01-17",
+          "time": "18:00",
+          "home": "FC Luzern",
+          "away": "FC Lugano",
+          "searchStart": "2026-01-17T20:00:00",
+          "result": "2:5"
+        },
+        {
+          "date": "2026-01-17",
+          "time": "20:30",
+          "home": "BSC Young Boys",
+          "away": "Lausanne-Sport",
+          "searchStart": "2026-01-17T22:30:00",
+          "result": "1:3"
+        },
+        {
+          "date": "2026-01-18",
+          "time": "14:00",
+          "home": "Servette FC",
+          "away": "FC Zürich",
+          "searchStart": "2026-01-18T16:00:00",
+          "result": "1:1"
+        },
+        {
+          "date": "2026-01-18",
+          "time": "16:30",
+          "home": "FC Basel",
+          "away": "FC Sion",
+          "searchStart": "2026-01-18T18:30:00",
+          "result": "1:1"
+        },
+        {
+          "date": "2026-01-18",
+          "time": "16:30",
+          "home": "Grasshoppers",
+          "away": "FC Thun",
+          "searchStart": "2026-01-18T18:30:00",
+          "result": "1:3"
+        },
+        {
+          "date": "2026-01-17",
+          "time": "00:00",
+          "home": "FC Winterthur",
+          "away": "FC St. Gallen",
+          "searchStart": "",
+          "note": "verlegt",
+          "result": null
+        }
       ]
     },
     {
       "matchday": 21,
       "matches": [
-        { "date": "2026-01-24", "time": "18:00", "home": "Lausanne-Sport", "away": "Grasshoppers", "searchStart": "2026-01-24T20:00:00" },
-        { "date": "2026-01-24", "time": "18:00", "home": "FC Lugano", "away": "FC Winterthur", "searchStart": "2026-01-24T20:00:00" },
-        { "date": "2026-01-24", "time": "20:30", "home": "FC Sion", "away": "FC Luzern", "searchStart": "2026-01-24T22:30:00" },
-        { "date": "2026-01-25", "time": "14:00", "home": "FC Thun", "away": "BSC Young Boys", "searchStart": "2026-01-25T16:00:00" },
-        { "date": "2026-01-25", "time": "16:30", "home": "FC St. Gallen", "away": "Servette FC", "searchStart": "2026-01-25T18:30:00" },
-        { "date": "2026-01-25", "time": "16:30", "home": "FC Zürich", "away": "FC Basel", "searchStart": "2026-01-25T18:30:00" }
+        {
+          "date": "2026-01-24",
+          "time": "18:00",
+          "home": "Lausanne-Sport",
+          "away": "Grasshoppers",
+          "searchStart": "2026-01-24T20:00:00",
+          "result": "1:1"
+        },
+        {
+          "date": "2026-01-24",
+          "time": "18:00",
+          "home": "FC Lugano",
+          "away": "FC Winterthur",
+          "searchStart": "2026-01-24T20:00:00",
+          "result": "4:1"
+        },
+        {
+          "date": "2026-01-24",
+          "time": "20:30",
+          "home": "FC Sion",
+          "away": "FC Luzern",
+          "searchStart": "2026-01-24T22:30:00",
+          "result": "1:1"
+        },
+        {
+          "date": "2026-01-25",
+          "time": "14:00",
+          "home": "FC Thun",
+          "away": "BSC Young Boys",
+          "searchStart": "2026-01-25T16:00:00",
+          "result": "4:1"
+        },
+        {
+          "date": "2026-01-25",
+          "time": "16:30",
+          "home": "FC St. Gallen",
+          "away": "Servette FC",
+          "searchStart": "2026-01-25T18:30:00",
+          "result": "2:4"
+        },
+        {
+          "date": "2026-01-25",
+          "time": "16:30",
+          "home": "FC Zürich",
+          "away": "FC Basel",
+          "searchStart": "2026-01-25T18:30:00",
+          "result": "3:4"
+        }
       ]
     },
     {
       "matchday": 22,
       "matches": [
-        { "date": "2026-01-31", "time": "18:00", "home": "Servette FC", "away": "FC Sion", "searchStart": "2026-01-31T20:00:00" },
-        { "date": "2026-01-31", "time": "18:00", "home": "FC Winterthur", "away": "Lausanne-Sport", "searchStart": "2026-01-31T20:00:00" },
-        { "date": "2026-01-31", "time": "20:30", "home": "Grasshoppers", "away": "FC Lugano", "searchStart": "2026-01-31T22:30:00" },
-        { "date": "2026-02-01", "time": "14:00", "home": "FC Luzern", "away": "FC St. Gallen", "searchStart": "2026-02-01T16:00:00" },
-        { "date": "2026-02-01", "time": "16:30", "home": "FC Basel", "away": "FC Thun", "searchStart": "2026-02-01T18:30:00" },
-        { "date": "2026-02-01", "time": "16:30", "home": "BSC Young Boys", "away": "FC Zürich", "searchStart": "2026-02-01T18:30:00" }
+        {
+          "date": "2026-01-31",
+          "time": "18:00",
+          "home": "Servette FC",
+          "away": "FC Sion",
+          "searchStart": "2026-01-31T20:00:00",
+          "result": "3:3"
+        },
+        {
+          "date": "2026-01-31",
+          "time": "18:00",
+          "home": "FC Winterthur",
+          "away": "Lausanne-Sport",
+          "searchStart": "2026-01-31T20:00:00",
+          "result": "2:1"
+        },
+        {
+          "date": "2026-01-31",
+          "time": "20:30",
+          "home": "Grasshoppers",
+          "away": "FC Lugano",
+          "searchStart": "2026-01-31T22:30:00",
+          "result": "1:1"
+        },
+        {
+          "date": "2026-02-01",
+          "time": "14:00",
+          "home": "FC Luzern",
+          "away": "FC St. Gallen",
+          "searchStart": "2026-02-01T16:00:00",
+          "result": "2:2"
+        },
+        {
+          "date": "2026-02-01",
+          "time": "16:30",
+          "home": "FC Basel",
+          "away": "FC Thun",
+          "searchStart": "2026-02-01T18:30:00",
+          "result": "1:2"
+        },
+        {
+          "date": "2026-02-01",
+          "time": "16:30",
+          "home": "BSC Young Boys",
+          "away": "FC Zürich",
+          "searchStart": "2026-02-01T18:30:00",
+          "result": "3:0"
+        }
       ]
     },
     {
       "matchday": 23,
       "matches": [
-        { "date": "2026-02-07", "time": "18:00", "home": "FC Sion", "away": "FC Luzern", "searchStart": "2026-02-07T20:00:00" },
-        { "date": "2026-02-07", "time": "18:00", "home": "FC Winterthur", "away": "FC Lugano", "searchStart": "2026-02-07T20:00:00" },
-        { "date": "2026-02-07", "time": "20:30", "home": "Grasshoppers", "away": "BSC Young Boys", "searchStart": "2026-02-07T22:30:00" },
-        { "date": "2026-02-08", "time": "14:00", "home": "Servette FC", "away": "FC Thun", "searchStart": "2026-02-08T16:00:00" },
-        { "date": "2026-02-08", "time": "16:30", "home": "FC Basel", "away": "FC Zürich", "searchStart": "2026-02-08T18:30:00" },
-        { "date": "2026-02-08", "time": "16:30", "home": "Lausanne-Sport", "away": "FC St. Gallen", "searchStart": "2026-02-08T18:30:00" }
+        {
+          "date": "2026-02-07",
+          "time": "18:00",
+          "home": "FC Sion",
+          "away": "FC Luzern",
+          "searchStart": "2026-02-07T20:00:00"
+        },
+        {
+          "date": "2026-02-07",
+          "time": "18:00",
+          "home": "FC Winterthur",
+          "away": "FC Lugano",
+          "searchStart": "2026-02-07T20:00:00"
+        },
+        {
+          "date": "2026-02-07",
+          "time": "20:30",
+          "home": "Grasshoppers",
+          "away": "BSC Young Boys",
+          "searchStart": "2026-02-07T22:30:00"
+        },
+        {
+          "date": "2026-02-08",
+          "time": "14:00",
+          "home": "Servette FC",
+          "away": "FC Thun",
+          "searchStart": "2026-02-08T16:00:00"
+        },
+        {
+          "date": "2026-02-08",
+          "time": "16:30",
+          "home": "FC Basel",
+          "away": "FC Zürich",
+          "searchStart": "2026-02-08T18:30:00"
+        },
+        {
+          "date": "2026-02-08",
+          "time": "16:30",
+          "home": "Lausanne-Sport",
+          "away": "FC St. Gallen",
+          "searchStart": "2026-02-08T18:30:00"
+        }
       ]
     },
     {
       "matchday": 24,
       "matches": [
-        { "date": "2026-02-10", "time": "20:30", "home": "FC Luzern", "away": "Grasshoppers", "searchStart": "2026-02-10T22:30:00" },
-        { "date": "2026-02-11", "time": "20:30", "home": "FC Lugano", "away": "Servette FC", "searchStart": "2026-02-11T22:30:00" },
-        { "date": "2026-02-11", "time": "20:30", "home": "FC St. Gallen", "away": "BSC Young Boys", "searchStart": "2026-02-11T22:30:00" },
-        { "date": "2026-02-11", "time": "20:30", "home": "FC Zürich", "away": "FC Winterthur", "searchStart": "2026-02-11T22:30:00" },
-        { "date": "2026-02-12", "time": "20:30", "home": "FC Sion", "away": "FC Basel", "searchStart": "2026-02-12T22:30:00" },
-        { "date": "2026-02-12", "time": "20:30", "home": "FC Thun", "away": "Lausanne-Sport", "searchStart": "2026-02-12T22:30:00" }
+        {
+          "date": "2026-02-10",
+          "time": "20:30",
+          "home": "FC Luzern",
+          "away": "Grasshoppers",
+          "searchStart": "2026-02-10T22:30:00"
+        },
+        {
+          "date": "2026-02-11",
+          "time": "20:30",
+          "home": "FC Lugano",
+          "away": "Servette FC",
+          "searchStart": "2026-02-11T22:30:00"
+        },
+        {
+          "date": "2026-02-11",
+          "time": "20:30",
+          "home": "FC St. Gallen",
+          "away": "BSC Young Boys",
+          "searchStart": "2026-02-11T22:30:00"
+        },
+        {
+          "date": "2026-02-11",
+          "time": "20:30",
+          "home": "FC Zürich",
+          "away": "FC Winterthur",
+          "searchStart": "2026-02-11T22:30:00"
+        },
+        {
+          "date": "2026-02-12",
+          "time": "20:30",
+          "home": "FC Sion",
+          "away": "FC Basel",
+          "searchStart": "2026-02-12T22:30:00"
+        },
+        {
+          "date": "2026-02-12",
+          "time": "20:30",
+          "home": "FC Thun",
+          "away": "Lausanne-Sport",
+          "searchStart": "2026-02-12T22:30:00"
+        }
       ]
     },
     {
       "matchday": 25,
       "matches": [
-        { "date": "2026-02-14", "time": "18:00", "home": "FC St. Gallen", "away": "Grasshoppers", "searchStart": "2026-02-14T20:00:00" },
-        { "date": "2026-02-14", "time": "18:00", "home": "FC Zürich", "away": "FC Luzern", "searchStart": "2026-02-14T20:00:00" },
-        { "date": "2026-02-14", "time": "20:30", "home": "BSC Young Boys", "away": "FC Winterthur", "searchStart": "2026-02-14T22:30:00" },
-        { "date": "2026-02-15", "time": "14:00", "home": "FC Thun", "away": "FC Sion", "searchStart": "2026-02-15T16:00:00" },
-        { "date": "2026-02-15", "time": "16:30", "home": "FC Basel", "away": "FC Lugano", "searchStart": "2026-02-15T18:30:00" },
-        { "date": "2026-02-15", "time": "16:30", "home": "Lausanne-Sport", "away": "Servette FC", "searchStart": "2026-02-15T18:30:00" }
+        {
+          "date": "2026-02-14",
+          "time": "18:00",
+          "home": "FC St. Gallen",
+          "away": "Grasshoppers",
+          "searchStart": "2026-02-14T20:00:00"
+        },
+        {
+          "date": "2026-02-14",
+          "time": "18:00",
+          "home": "FC Zürich",
+          "away": "FC Luzern",
+          "searchStart": "2026-02-14T20:00:00"
+        },
+        {
+          "date": "2026-02-14",
+          "time": "20:30",
+          "home": "BSC Young Boys",
+          "away": "FC Winterthur",
+          "searchStart": "2026-02-14T22:30:00"
+        },
+        {
+          "date": "2026-02-15",
+          "time": "14:00",
+          "home": "FC Thun",
+          "away": "FC Sion",
+          "searchStart": "2026-02-15T16:00:00"
+        },
+        {
+          "date": "2026-02-15",
+          "time": "16:30",
+          "home": "FC Basel",
+          "away": "FC Lugano",
+          "searchStart": "2026-02-15T18:30:00"
+        },
+        {
+          "date": "2026-02-15",
+          "time": "16:30",
+          "home": "Lausanne-Sport",
+          "away": "Servette FC",
+          "searchStart": "2026-02-15T18:30:00"
+        }
       ]
     },
     {
       "matchday": 26,
       "matches": [
-        { "date": "2026-02-21", "time": "18:00", "home": "Servette FC", "away": "FC St. Gallen", "searchStart": "2026-02-21T20:00:00" },
-        { "date": "2026-02-21", "time": "18:00", "home": "FC Winterthur", "away": "FC Thun", "searchStart": "2026-02-21T20:00:00" },
-        { "date": "2026-02-21", "time": "20:30", "home": "Grasshoppers", "away": "FC Zürich", "searchStart": "2026-02-21T22:30:00" },
-        { "date": "2026-02-22", "time": "14:00", "home": "FC Sion", "away": "BSC Young Boys", "searchStart": "2026-02-22T16:00:00" },
-        { "date": "2026-02-22", "time": "16:30", "home": "FC Lugano", "away": "Lausanne-Sport", "searchStart": "2026-02-22T18:30:00" },
-        { "date": "2026-02-22", "time": "16:30", "home": "FC Luzern", "away": "FC Basel", "searchStart": "2026-02-22T18:30:00" }
+        {
+          "date": "2026-02-21",
+          "time": "18:00",
+          "home": "Servette FC",
+          "away": "FC St. Gallen",
+          "searchStart": "2026-02-21T20:00:00"
+        },
+        {
+          "date": "2026-02-21",
+          "time": "18:00",
+          "home": "FC Winterthur",
+          "away": "FC Thun",
+          "searchStart": "2026-02-21T20:00:00"
+        },
+        {
+          "date": "2026-02-21",
+          "time": "20:30",
+          "home": "Grasshoppers",
+          "away": "FC Zürich",
+          "searchStart": "2026-02-21T22:30:00"
+        },
+        {
+          "date": "2026-02-22",
+          "time": "14:00",
+          "home": "FC Sion",
+          "away": "BSC Young Boys",
+          "searchStart": "2026-02-22T16:00:00"
+        },
+        {
+          "date": "2026-02-22",
+          "time": "16:30",
+          "home": "FC Lugano",
+          "away": "Lausanne-Sport",
+          "searchStart": "2026-02-22T18:30:00"
+        },
+        {
+          "date": "2026-02-22",
+          "time": "16:30",
+          "home": "FC Luzern",
+          "away": "FC Basel",
+          "searchStart": "2026-02-22T18:30:00"
+        }
       ]
     },
     {
       "matchday": 27,
       "matches": [
-        { "date": "2026-02-28", "time": "18:00", "home": "FC St. Gallen", "away": "FC Winterthur", "searchStart": "2026-02-28T20:00:00" },
-        { "date": "2026-02-28", "time": "18:00", "home": "FC Thun", "away": "FC Luzern", "searchStart": "2026-02-28T20:00:00" },
-        { "date": "2026-02-28", "time": "20:30", "home": "Servette FC", "away": "FC Sion", "searchStart": "2026-02-28T22:30:00" },
-        { "date": "2026-03-01", "time": "14:00", "home": "Lausanne-Sport", "away": "FC Basel", "searchStart": "2026-03-01T16:00:00" },
-        { "date": "2026-03-01", "time": "16:30", "home": "Grasshoppers", "away": "FC Lugano", "searchStart": "2026-03-01T18:30:00" },
-        { "date": "2026-03-01", "time": "16:30", "home": "BSC Young Boys", "away": "FC Zürich", "searchStart": "2026-03-01T18:30:00" }
+        {
+          "date": "2026-02-28",
+          "time": "18:00",
+          "home": "FC St. Gallen",
+          "away": "FC Winterthur",
+          "searchStart": "2026-02-28T20:00:00"
+        },
+        {
+          "date": "2026-02-28",
+          "time": "18:00",
+          "home": "FC Thun",
+          "away": "FC Luzern",
+          "searchStart": "2026-02-28T20:00:00"
+        },
+        {
+          "date": "2026-02-28",
+          "time": "20:30",
+          "home": "Servette FC",
+          "away": "FC Sion",
+          "searchStart": "2026-02-28T22:30:00"
+        },
+        {
+          "date": "2026-03-01",
+          "time": "14:00",
+          "home": "Lausanne-Sport",
+          "away": "FC Basel",
+          "searchStart": "2026-03-01T16:00:00"
+        },
+        {
+          "date": "2026-03-01",
+          "time": "16:30",
+          "home": "Grasshoppers",
+          "away": "FC Lugano",
+          "searchStart": "2026-03-01T18:30:00"
+        },
+        {
+          "date": "2026-03-01",
+          "time": "16:30",
+          "home": "BSC Young Boys",
+          "away": "FC Zürich",
+          "searchStart": "2026-03-01T18:30:00"
+        }
       ]
     },
     {
       "matchday": 28,
       "matches": [
-        { "date": "2026-03-03", "time": "20:30", "home": "FC Winterthur", "away": "Servette FC", "searchStart": "2026-03-03T22:30:00" },
-        { "date": "2026-03-04", "time": "20:30", "home": "FC Lugano", "away": "FC Sion", "searchStart": "2026-03-04T22:30:00" },
-        { "date": "2026-03-04", "time": "20:30", "home": "FC Luzern", "away": "BSC Young Boys", "searchStart": "2026-03-04T22:30:00" },
-        { "date": "2026-03-05", "time": "20:30", "home": "FC Basel", "away": "Grasshoppers", "searchStart": "2026-03-05T22:30:00" },
-        { "date": "2026-03-05", "time": "20:30", "home": "FC Thun", "away": "FC St. Gallen", "searchStart": "2026-03-05T22:30:00" }
+        {
+          "date": "2026-03-03",
+          "time": "20:30",
+          "home": "FC Winterthur",
+          "away": "Servette FC",
+          "searchStart": "2026-03-03T22:30:00"
+        },
+        {
+          "date": "2026-03-04",
+          "time": "20:30",
+          "home": "FC Lugano",
+          "away": "FC Sion",
+          "searchStart": "2026-03-04T22:30:00"
+        },
+        {
+          "date": "2026-03-04",
+          "time": "20:30",
+          "home": "FC Luzern",
+          "away": "BSC Young Boys",
+          "searchStart": "2026-03-04T22:30:00"
+        },
+        {
+          "date": "2026-03-05",
+          "time": "20:30",
+          "home": "FC Basel",
+          "away": "Grasshoppers",
+          "searchStart": "2026-03-05T22:30:00"
+        },
+        {
+          "date": "2026-03-05",
+          "time": "20:30",
+          "home": "FC Thun",
+          "away": "FC St. Gallen",
+          "searchStart": "2026-03-05T22:30:00"
+        }
       ]
     },
     {
       "matchday": 29,
       "matches": [
-        { "date": "2026-03-07", "time": "18:00", "home": "Servette FC", "away": "FC Zürich", "searchStart": "2026-03-07T20:00:00" },
-        { "date": "2026-03-07", "time": "18:00", "home": "FC Sion", "away": "FC Winterthur", "searchStart": "2026-03-07T20:00:00" },
-        { "date": "2026-03-07", "time": "20:30", "home": "FC Lugano", "away": "FC Luzern", "searchStart": "2026-03-07T22:30:00" },
-        { "date": "2026-03-08", "time": "14:00", "home": "FC St. Gallen", "away": "FC Basel", "searchStart": "2026-03-08T16:00:00" },
-        { "date": "2026-03-08", "time": "16:30", "home": "Grasshoppers", "away": "Lausanne-Sport", "searchStart": "2026-03-08T18:30:00" },
-        { "date": "2026-03-08", "time": "16:30", "home": "BSC Young Boys", "away": "FC Thun", "searchStart": "2026-03-08T18:30:00" }
+        {
+          "date": "2026-03-07",
+          "time": "18:00",
+          "home": "Servette FC",
+          "away": "FC Zürich",
+          "searchStart": "2026-03-07T20:00:00"
+        },
+        {
+          "date": "2026-03-07",
+          "time": "18:00",
+          "home": "FC Sion",
+          "away": "FC Winterthur",
+          "searchStart": "2026-03-07T20:00:00"
+        },
+        {
+          "date": "2026-03-07",
+          "time": "20:30",
+          "home": "FC Lugano",
+          "away": "FC Luzern",
+          "searchStart": "2026-03-07T22:30:00"
+        },
+        {
+          "date": "2026-03-08",
+          "time": "14:00",
+          "home": "FC St. Gallen",
+          "away": "FC Basel",
+          "searchStart": "2026-03-08T16:00:00"
+        },
+        {
+          "date": "2026-03-08",
+          "time": "16:30",
+          "home": "Grasshoppers",
+          "away": "Lausanne-Sport",
+          "searchStart": "2026-03-08T18:30:00"
+        },
+        {
+          "date": "2026-03-08",
+          "time": "16:30",
+          "home": "BSC Young Boys",
+          "away": "FC Thun",
+          "searchStart": "2026-03-08T18:30:00"
+        }
       ]
     },
     {
       "matchday": 30,
       "matches": [
-        { "date": "2026-03-14", "time": "18:00", "home": "FC Thun", "away": "Grasshoppers", "searchStart": "2026-03-14T20:00:00" },
-        { "date": "2026-03-14", "time": "18:00", "home": "FC Zürich", "away": "FC Sion", "searchStart": "2026-03-14T20:00:00" },
-        { "date": "2026-03-14", "time": "20:30", "home": "FC St. Gallen", "away": "FC Lugano", "searchStart": "2026-03-14T22:30:00" },
-        { "date": "2026-03-15", "time": "14:00", "home": "Lausanne-Sport", "away": "BSC Young Boys", "searchStart": "2026-03-15T16:00:00" },
-        { "date": "2026-03-15", "time": "16:30", "home": "FC Basel", "away": "Servette FC", "searchStart": "2026-03-15T18:30:00" },
-        { "date": "2026-03-15", "time": "16:30", "home": "FC Luzern", "away": "FC Winterthur", "searchStart": "2026-03-15T18:30:00" }
+        {
+          "date": "2026-03-14",
+          "time": "18:00",
+          "home": "FC Thun",
+          "away": "Grasshoppers",
+          "searchStart": "2026-03-14T20:00:00"
+        },
+        {
+          "date": "2026-03-14",
+          "time": "18:00",
+          "home": "FC Zürich",
+          "away": "FC Sion",
+          "searchStart": "2026-03-14T20:00:00"
+        },
+        {
+          "date": "2026-03-14",
+          "time": "20:30",
+          "home": "FC St. Gallen",
+          "away": "FC Lugano",
+          "searchStart": "2026-03-14T22:30:00"
+        },
+        {
+          "date": "2026-03-15",
+          "time": "14:00",
+          "home": "Lausanne-Sport",
+          "away": "BSC Young Boys",
+          "searchStart": "2026-03-15T16:00:00"
+        },
+        {
+          "date": "2026-03-15",
+          "time": "16:30",
+          "home": "FC Basel",
+          "away": "Servette FC",
+          "searchStart": "2026-03-15T18:30:00"
+        },
+        {
+          "date": "2026-03-15",
+          "time": "16:30",
+          "home": "FC Luzern",
+          "away": "FC Winterthur",
+          "searchStart": "2026-03-15T18:30:00"
+        }
       ]
     },
     {
       "matchday": 31,
       "matches": [
-        { "date": "2026-03-21", "time": "18:00", "home": "Servette FC", "away": "Grasshoppers", "searchStart": "2026-03-21T20:00:00" },
-        { "date": "2026-03-21", "time": "18:00", "home": "FC Zürich", "away": "FC Thun", "searchStart": "2026-03-21T20:00:00" },
-        { "date": "2026-03-21", "time": "20:30", "home": "FC Sion", "away": "FC St. Gallen", "searchStart": "2026-03-21T22:30:00" },
-        { "date": "2026-03-22", "time": "14:00", "home": "FC Winterthur", "away": "FC Basel", "searchStart": "2026-03-22T16:00:00" },
-        { "date": "2026-03-22", "time": "16:30", "home": "FC Luzern", "away": "Lausanne-Sport", "searchStart": "2026-03-22T18:30:00" },
-        { "date": "2026-03-22", "time": "16:30", "home": "BSC Young Boys", "away": "FC Lugano", "searchStart": "2026-03-22T18:30:00" }
+        {
+          "date": "2026-03-21",
+          "time": "18:00",
+          "home": "Servette FC",
+          "away": "Grasshoppers",
+          "searchStart": "2026-03-21T20:00:00"
+        },
+        {
+          "date": "2026-03-21",
+          "time": "18:00",
+          "home": "FC Zürich",
+          "away": "FC Thun",
+          "searchStart": "2026-03-21T20:00:00"
+        },
+        {
+          "date": "2026-03-21",
+          "time": "20:30",
+          "home": "FC Sion",
+          "away": "FC St. Gallen",
+          "searchStart": "2026-03-21T22:30:00"
+        },
+        {
+          "date": "2026-03-22",
+          "time": "14:00",
+          "home": "FC Winterthur",
+          "away": "FC Basel",
+          "searchStart": "2026-03-22T16:00:00"
+        },
+        {
+          "date": "2026-03-22",
+          "time": "16:30",
+          "home": "FC Luzern",
+          "away": "Lausanne-Sport",
+          "searchStart": "2026-03-22T18:30:00"
+        },
+        {
+          "date": "2026-03-22",
+          "time": "16:30",
+          "home": "BSC Young Boys",
+          "away": "FC Lugano",
+          "searchStart": "2026-03-22T18:30:00"
+        }
       ]
     },
     {
       "matchday": 32,
       "matches": [
-        { "date": "2026-04-04", "time": "18:00", "home": "Lausanne-Sport", "away": "FC Winterthur", "searchStart": "2026-04-04T20:00:00" },
-        { "date": "2026-04-04", "time": "18:00", "home": "FC Lugano", "away": "FC Thun", "searchStart": "2026-04-04T20:00:00" },
-        { "date": "2026-04-04", "time": "20:30", "home": "FC Basel", "away": "BSC Young Boys", "searchStart": "2026-04-04T22:30:00" },
-        { "date": "2026-04-06", "time": "14:00", "home": "Grasshoppers", "away": "FC Sion", "searchStart": "2026-04-06T16:00:00" },
-        { "date": "2026-04-06", "time": "16:30", "home": "Servette FC", "away": "FC Luzern", "searchStart": "2026-04-06T18:30:00" },
-        { "date": "2026-04-06", "time": "16:30", "home": "FC St. Gallen", "away": "FC Zürich", "searchStart": "2026-04-06T18:30:00" }
+        {
+          "date": "2026-04-04",
+          "time": "18:00",
+          "home": "Lausanne-Sport",
+          "away": "FC Winterthur",
+          "searchStart": "2026-04-04T20:00:00"
+        },
+        {
+          "date": "2026-04-04",
+          "time": "18:00",
+          "home": "FC Lugano",
+          "away": "FC Thun",
+          "searchStart": "2026-04-04T20:00:00"
+        },
+        {
+          "date": "2026-04-04",
+          "time": "20:30",
+          "home": "FC Basel",
+          "away": "BSC Young Boys",
+          "searchStart": "2026-04-04T22:30:00"
+        },
+        {
+          "date": "2026-04-06",
+          "time": "14:00",
+          "home": "Grasshoppers",
+          "away": "FC Sion",
+          "searchStart": "2026-04-06T16:00:00"
+        },
+        {
+          "date": "2026-04-06",
+          "time": "16:30",
+          "home": "Servette FC",
+          "away": "FC Luzern",
+          "searchStart": "2026-04-06T18:30:00"
+        },
+        {
+          "date": "2026-04-06",
+          "time": "16:30",
+          "home": "FC St. Gallen",
+          "away": "FC Zürich",
+          "searchStart": "2026-04-06T18:30:00"
+        }
       ]
     },
     {
       "matchday": 33,
       "matches": [
-        { "date": "2026-04-11", "time": "00:00", "home": "FC Luzern", "away": "FC St. Gallen", "searchStart": "" },
-        { "date": "2026-04-11", "time": "00:00", "home": "FC Sion", "away": "Lausanne-Sport", "searchStart": "" },
-        { "date": "2026-04-11", "time": "00:00", "home": "FC Thun", "away": "FC Basel", "searchStart": "" },
-        { "date": "2026-04-11", "time": "00:00", "home": "FC Winterthur", "away": "Grasshoppers", "searchStart": "" },
-        { "date": "2026-04-11", "time": "00:00", "home": "BSC Young Boys", "away": "Servette FC", "searchStart": "" },
-        { "date": "2026-04-11", "time": "00:00", "home": "FC Zürich", "away": "FC Lugano", "searchStart": "" }
+        {
+          "date": "2026-04-11",
+          "time": "00:00",
+          "home": "FC Luzern",
+          "away": "FC St. Gallen",
+          "searchStart": ""
+        },
+        {
+          "date": "2026-04-11",
+          "time": "00:00",
+          "home": "FC Sion",
+          "away": "Lausanne-Sport",
+          "searchStart": ""
+        },
+        {
+          "date": "2026-04-11",
+          "time": "00:00",
+          "home": "FC Thun",
+          "away": "FC Basel",
+          "searchStart": ""
+        },
+        {
+          "date": "2026-04-11",
+          "time": "00:00",
+          "home": "FC Winterthur",
+          "away": "Grasshoppers",
+          "searchStart": ""
+        },
+        {
+          "date": "2026-04-11",
+          "time": "00:00",
+          "home": "BSC Young Boys",
+          "away": "Servette FC",
+          "searchStart": ""
+        },
+        {
+          "date": "2026-04-11",
+          "time": "00:00",
+          "home": "FC Zürich",
+          "away": "FC Lugano",
+          "searchStart": ""
+        }
       ]
     }
   ]

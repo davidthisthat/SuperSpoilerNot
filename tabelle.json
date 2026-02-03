@@ -1,0 +1,18 @@
+{
+  "lastUpdated": "2026-02-02",
+  "afterMatchday": 22,
+  "standings": [
+    { "rank": 1, "team": "FC Thun", "played": 22, "won": 16, "drawn": 1, "lost": 5, "goalsFor": 48, "goalsAgainst": 26, "goalDiff": 22, "points": 49 },
+    { "rank": 2, "team": "FC Lugano", "played": 22, "won": 12, "drawn": 4, "lost": 6, "goalsFor": 38, "goalsAgainst": 27, "goalDiff": 11, "points": 40 },
+    { "rank": 3, "team": "FC St. Gallen", "played": 21, "won": 12, "drawn": 2, "lost": 7, "goalsFor": 42, "goalsAgainst": 28, "goalDiff": 14, "points": 38 },
+    { "rank": 4, "team": "FC Basel", "played": 22, "won": 10, "drawn": 6, "lost": 6, "goalsFor": 34, "goalsAgainst": 26, "goalDiff": 8, "points": 36 },
+    { "rank": 5, "team": "FC Sion", "played": 22, "won": 8, "drawn": 9, "lost": 5, "goalsFor": 34, "goalsAgainst": 28, "goalDiff": 6, "points": 33 },
+    { "rank": 6, "team": "BSC Young Boys", "played": 22, "won": 9, "drawn": 5, "lost": 8, "goalsFor": 43, "goalsAgainst": 45, "goalDiff": -2, "points": 32 },
+    { "rank": 7, "team": "Lausanne-Sport", "played": 22, "won": 7, "drawn": 7, "lost": 8, "goalsFor": 33, "goalsAgainst": 31, "goalDiff": 2, "points": 28 },
+    { "rank": 8, "team": "Servette FC", "played": 22, "won": 6, "drawn": 7, "lost": 9, "goalsFor": 38, "goalsAgainst": 43, "goalDiff": -5, "points": 25 },
+    { "rank": 9, "team": "FC Zürich", "played": 22, "won": 7, "drawn": 4, "lost": 11, "goalsFor": 32, "goalsAgainst": 43, "goalDiff": -11, "points": 25 },
+    { "rank": 10, "team": "FC Luzern", "played": 22, "won": 5, "drawn": 8, "lost": 9, "goalsFor": 40, "goalsAgainst": 43, "goalDiff": -3, "points": 23 },
+    { "rank": 11, "team": "Grasshoppers", "played": 22, "won": 4, "drawn": 7, "lost": 11, "goalsFor": 29, "goalsAgainst": 40, "goalDiff": -11, "points": 19 },
+    { "rank": 12, "team": "FC Winterthur", "played": 21, "won": 3, "drawn": 4, "lost": 14, "goalsFor": 26, "goalsAgainst": 57, "goalDiff": -31, "points": 13 }
+  ]
+}

@@ -209,25 +209,133 @@
         .footer a:hover {
             text-decoration: underline;
         }
-        /* Teammodus */
-        .team-filter {
+        /* Teammodus & Tabelle Buttons */
+        .extra-buttons {
             margin: 30px 0 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
-        .team-filter label {
+        .extra-buttons label, .extra-buttons button {
             background: rgba(0, 0, 0, 0.7);
             padding: 12px 20px;
             border-radius: 8px;
             font-size: 18px;
             font-family: Arial, sans-serif;
             display: inline-block;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
-        .team-filter select {
+        .extra-buttons label:hover, .extra-buttons button:hover {
+            background: rgba(0, 0, 0, 0.85);
+        }
+        .extra-buttons select {
             padding: 10px 15px;
             font-size: 16px;
             border-radius: 5px;
             border: none;
             font-family: Arial, sans-serif;
             margin-left: 10px;
+        }
+        /* Tabellen-Overlay */
+        .table-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #228B22;
+            background-image: url('img/rasen-desktop.jpg');
+            background-size: cover;
+            background-position: center;
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        .table-overlay.active {
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .table-overlay {
+                background-image: url('img/rasen-mobile.jpg');
+            }
+        }
+        .table-overlay-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 10px;
+        }
+        .table-overlay-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .table-overlay-title {
+            font-size: 36px;
+            font-family: 'Arial Black', Arial, sans-serif;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .table-overlay-close {
+            background: rgba(0, 0, 0, 0.7);
+            font-size: 28px;
+            cursor: pointer;
+            padding: 8px 18px;
+            border-radius: 8px;
+        }
+        .table-overlay-close:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+        /* Tabelle */
+        .standings-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .standings-table th, .standings-table td {
+            padding: 12px 8px;
+            text-align: center;
+        }
+        .standings-table th {
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 14px;
+        }
+        .standings-table td {
+            font-size: 16px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .standings-table .team-name {
+            text-align: left;
+            padding-left: 15px;
+            font-weight: bold;
+        }
+        .standings-table .rank {
+            font-weight: bold;
+            width: 40px;
+        }
+        .standings-table .points {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        @media (max-width: 600px) {
+            .table-overlay-title {
+                font-size: 26px;
+            }
+            .standings-table th, .standings-table td {
+                padding: 8px 4px;
+                font-size: 13px;
+            }
+            .standings-table .points {
+                font-size: 15px;
+            }
+            .standings-table .hide-mobile {
+                display: none;
+            }
         }
         /* Team-Overlay mit Rasen-Hintergrund */
         .team-overlay {
@@ -352,6 +460,34 @@
         </div>
     </div>
 
+    <!-- Tabellen-Overlay -->
+    <div class="table-overlay" id="table-overlay">
+        <div class="table-overlay-content">
+            <div class="table-overlay-header">
+                <span class="table-overlay-title">Tabelle</span>
+                <span class="table-overlay-close" onclick="closeTableOverlay()">✕</span>
+            </div>
+            <table class="standings-table" id="standings-table">
+                <thead>
+                    <tr>
+                        <th class="rank">#</th>
+                        <th class="team-name">Verein</th>
+                        <th>Sp</th>
+                        <th class="hide-mobile">S</th>
+                        <th class="hide-mobile">U</th>
+                        <th class="hide-mobile">N</th>
+                        <th>Tore</th>
+                        <th class="hide-mobile">TD</th>
+                        <th class="points">Pkt</th>
+                    </tr>
+                </thead>
+                <tbody id="standings-body">
+                    <!-- Tabelle wird hier eingefügt -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
     <div class="container">
         <!-- Desktop: Einfacher Text -->
         <div class="hint-desktop">
@@ -381,14 +517,15 @@
             <!-- Spiele werden hier dynamisch eingefügt -->
         </div>
         
-        <!-- Teammodus -->
-        <div class="team-filter">
+        <!-- Teammodus & Tabelle -->
+        <div class="extra-buttons">
             <label>
                 Teammodus
                 <select id="team-select" onchange="showTeamMatches()">
                     <option value="">– Team wählen –</option>
                 </select>
             </label>
+            <button onclick="showTable()">Tabelle</button>
         </div>
         
         <div class="footer">
@@ -400,6 +537,7 @@
     <script>
         let spielplan = null;
         let links = null;
+        let tabelle = null;
         let currentMatchdayIndex = 0;
 
         // Daten laden
@@ -418,6 +556,14 @@
                     // Fallback: lokale Datei
                     const linksRes = await fetch('links.json');
                     links = await linksRes.json();
+                }
+                
+                // Tabelle laden
+                try {
+                    const tabelleRes = await fetch('tabelle.json');
+                    tabelle = await tabelleRes.json();
+                } catch (e) {
+                    console.log('Tabelle nicht gefunden');
                 }
                 
                 // Finde den aktuellen/nächsten Spieltag
@@ -609,10 +755,42 @@
             document.getElementById('team-overlay').classList.remove('active');
         }
 
-        // ESC schliesst Team-Overlay
+        // Tabelle anzeigen
+        function showTable() {
+            if (!tabelle) return;
+            
+            const tbody = document.getElementById('standings-body');
+            tbody.innerHTML = '';
+            
+            tabelle.standings.forEach(team => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="rank">${team.rank}</td>
+                    <td class="team-name">${team.team}</td>
+                    <td>${team.played}</td>
+                    <td class="hide-mobile">${team.won}</td>
+                    <td class="hide-mobile">${team.drawn}</td>
+                    <td class="hide-mobile">${team.lost}</td>
+                    <td>${team.goalsFor}:${team.goalsAgainst}</td>
+                    <td class="hide-mobile">${team.goalDiff > 0 ? '+' : ''}${team.goalDiff}</td>
+                    <td class="points">${team.points}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+            
+            document.getElementById('table-overlay').classList.add('active');
+        }
+
+        // Tabellen-Overlay schliessen
+        function closeTableOverlay() {
+            document.getElementById('table-overlay').classList.remove('active');
+        }
+
+        // ESC schliesst Overlays
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
                 closeTeamOverlay();
+                closeTableOverlay();
             }
         });
 
