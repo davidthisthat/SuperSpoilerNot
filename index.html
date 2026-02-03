@@ -123,23 +123,32 @@
             color: white;
             padding: 30px;
             border-radius: 12px;
-            max-width: 600px;
+            max-width: 650px;
             margin: 20px;
             font-family: Arial, sans-serif;
-            font-size: 16px;
+            font-size: 18px;
             line-height: 1.7;
             position: relative;
+            text-align: left;
         }
         .info-overlay-close {
             position: absolute;
             top: 10px;
             right: 15px;
-            font-size: 24px;
+            font-size: 28px;
             cursor: pointer;
         }
         .info-overlay h3 {
             margin-top: 0;
-            font-size: 20px;
+            font-size: 24px;
+        }
+        @media (max-width: 768px) {
+            .info-overlay-content {
+                font-size: 16px;
+            }
+            .info-overlay h3 {
+                font-size: 20px;
+            }
         }
         .info-section {
             margin-bottom: 15px;
@@ -604,12 +613,15 @@
             <div class="info-section info-mobile-only" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">
                 <strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.
             </div>
-            <div class="info-section info-desktop-only">
+            <div class="info-section info-desktop-only" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">
                 Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
             </div>
-            <div class="info-section" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">Die Spielberichte sind 5 Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
-            <div class="info-section info-mobile-only">
+            <div class="info-section" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">Die Spielberichte sind spätestens fünf Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
+            <div class="info-section info-mobile-only" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">
                 <strong>Seite auf Smartphone installieren:</strong><br>Drei Punkte neben URL anklicken → Teilen → Zum Home-Bildschirm
+            </div>
+            <div class="info-section">
+                Mit dem Button «Team» kannst du die Saisons der Teams nachverfolgen.
             </div>
         </div>
     </div>
