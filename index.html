@@ -125,6 +125,12 @@
             text-align: left;
             padding-left: 20px;
         }
+        .result {
+            flex: 0 0 60px;
+            text-align: right;
+            font-weight: bold;
+            font-size: 24px;
+        }
         /* Hochformat Mobile: Datum über Paarung */
         @media (max-width: 600px) {
             .match {
@@ -142,6 +148,10 @@
             .pairing {
                 padding-left: 0;
                 font-size: 20px;
+            }
+            .result {
+                font-size: 20px;
+                margin-top: 5px;
             }
             h1 {
                 font-size: 32px;
@@ -422,6 +432,12 @@
             padding-left: 20px;
             font-family: 'Arial Black', Arial, sans-serif;
         }
+        .team-result {
+            flex: 0 0 60px;
+            text-align: right;
+            font-weight: bold;
+            font-size: 22px;
+        }
         @media (max-width: 600px) {
             .team-overlay-title {
                 font-size: 26px;
@@ -441,6 +457,10 @@
             .team-pairing {
                 padding-left: 0;
                 font-size: 18px;
+            }
+            .team-result {
+                font-size: 18px;
+                margin-top: 5px;
             }
         }
     </style>
@@ -629,18 +649,19 @@
                 
                 // Anzeige ohne Spieltag-Prefix
                 const displayName = `${match.home} - ${match.away}`;
-                const resultDisplay = match.result ? ` <strong>${match.result}</strong>` : '';
+                const resultDisplay = match.result ? `<div class="result">${match.result}</div>` : '';
                 
                 let pairingHTML;
                 if (linkData && linkData.url) {
-                    pairingHTML = `<span class="link status-available" data-url="${linkData.url}">${displayName}</span>${resultDisplay}`;
+                    pairingHTML = `<span class="link status-available" data-url="${linkData.url}">${displayName}</span>`;
                 } else {
-                    pairingHTML = `<span class="no-link">${displayName}</span>${resultDisplay}`;
+                    pairingHTML = `<span class="no-link">${displayName}</span>`;
                 }
                 
                 matchDiv.innerHTML = `
                     <div class="date-time">${weekday}. | ${dateStr} | ${timeStr}</div>
                     <div class="pairing">${pairingHTML}</div>
+                    ${resultDisplay}
                 `;
                 
                 container.appendChild(matchDiv);
@@ -732,12 +753,13 @@
                 
                 const div = document.createElement('div');
                 div.className = 'team-match' + (hasLink ? '' : ' no-link');
-                const resultDisplay = match.result ? ` <strong>${match.result}</strong>` : '';
+                const resultDisplay = match.result ? `<div class="team-result">${match.result}</div>` : '';
                 
                 // Gleiche Struktur wie normale Ansicht
                 div.innerHTML = `
                     <div class="team-date-time">Spieltag ${match.matchday} | ${weekday}. ${day}.${month}.${year}</div>
-                    <div class="team-pairing">${match.home} - ${match.away}${resultDisplay}</div>
+                    <div class="team-pairing">${match.home} - ${match.away}</div>
+                    ${resultDisplay}
                 `;
                 
                 if (hasLink) {
