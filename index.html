@@ -160,13 +160,22 @@
             top: 0;
             z-index: 100;
         }
+        .header-text {
+            text-align: center;
+        }
         .header-title {
             font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-            font-size: 48px;
+            font-size: 56px;
             font-weight: normal;
             letter-spacing: 4px;
             text-transform: uppercase;
             color: black;
+        }
+        .header-subtitle {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: black;
+            margin-top: 5px;
         }
         .info-icon {
             display: inline-flex;
@@ -242,23 +251,67 @@
             position: relative;
             text-align: left;
         }
+        @media (min-width: 769px) {
+            .info-overlay-content {
+                background: url('img/tv.png') no-repeat center center;
+                background-size: contain;
+                width: 700px;
+                height: 525px;
+                max-width: 90vw;
+                padding: 0;
+                border-radius: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .info-overlay-content .info-text-wrapper {
+                width: 58%;
+                margin-left: -8%;
+                margin-top: -2%;
+                padding: 20px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 16px;
+                line-height: 1.8;
+                color: #00ff00;
+                text-shadow: 0 0 5px #00ff00;
+            }
+        }
         .info-overlay-close {
             position: absolute;
             top: 10px;
             right: 15px;
             font-size: 28px;
             cursor: pointer;
+            z-index: 10;
         }
-        .info-overlay h3 {
+        .info-overlay h3, .info-text-wrapper h3 {
             margin-top: 0;
             font-size: 24px;
+        }
+        @media (min-width: 769px) {
+            .info-overlay-close {
+                top: 20px;
+                right: 20px;
+                color: #333;
+            }
+            .info-text-wrapper h3 {
+                font-size: 18px;
+                margin-bottom: 15px;
+                color: #00ff00;
+            }
         }
         @media (max-width: 768px) {
             .info-overlay-content {
                 font-size: 16px;
+                background: rgba(0, 0, 0, 0.95);
             }
-            .info-overlay h3 {
+            .info-overlay h3, .info-text-wrapper h3 {
                 font-size: 20px;
+                color: white;
+            }
+            .info-text-wrapper {
+                color: white;
             }
         }
         .info-section {
@@ -268,6 +321,15 @@
             margin-bottom: 0;
             padding-top: 15px;
             border-top: 1px solid rgba(255,255,255,0.3);
+        }
+        @media (min-width: 769px) {
+            .info-section {
+                margin-bottom: 10px;
+                border-color: rgba(0,255,0,0.3) !important;
+            }
+            .info-section:last-child {
+                border-top-color: rgba(0,255,0,0.3);
+            }
         }
         .info-mobile-only {
             display: none;
@@ -731,29 +793,34 @@
     <div class="info-overlay" id="info-overlay" onclick="closeInfoOverlay(event)">
         <div class="info-overlay-content" onclick="event.stopPropagation()">
             <span class="info-overlay-close" onclick="closeInfoOverlay()">&times;</span>
-            <h3>SRF-Spielberichte ohne Spoiler, so geht's:</h3>
-            <div class="info-section info-mobile-only">
-                <strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.
-            </div>
-            <div class="info-section info-mobile-only" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">
-                <strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.
-            </div>
-            <div class="info-section info-desktop-only" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">
-                Link klicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
-            </div>
-            <div class="info-section">Die Spielberichte sind spätestens fünf Minuten nach Veröffentlichung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
-            <div class="info-section info-mobile-only">
-                <strong>Seite auf Smartphone installieren:</strong><br>Drei Punkte neben URL anklicken → Teilen → Zum Home-Bildschirm
-            </div>
-            <div class="info-section">
-                Mit dem Button «Team» kannst du die Saison deines Teams nachverfolgen.
+            <div class="info-text-wrapper">
+                <h3>SRF-Zusammenfassungen ohne Spoiler geniessen</h3>
+                <div class="info-section info-mobile-only">
+                    <strong>Mit Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Augen drei Sekunden schliessen.
+                </div>
+                <div class="info-section info-mobile-only" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">
+                    <strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.
+                </div>
+                <div class="info-section info-desktop-only" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">
+                    So geht's: Link anklicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
+                </div>
+                <div class="info-section">Die Spielberichte sind spätestens fünf Minuten nach Ausstrahlung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
+                <div class="info-section info-mobile-only">
+                    <strong>Seite auf Smartphone installieren:</strong><br>Drei Punkte neben URL anklicken → Teilen → Zum Home-Bildschirm
+                </div>
+                <div class="info-section">
+                    Mit dem Button «Team» kannst du die Saison deines Teams nachverfolgen.
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Header -->
     <div class="header">
-        <span class="header-title">No Spoiler League</span>
+        <div class="header-text">
+            <span class="header-title">No Spoiler League</span>
+            <div class="header-subtitle">SRF-Zusammenfassungen ohne Spoiler</div>
+        </div>
         <div class="info-icon" onclick="showInfoOverlay()">i</div>
     </div>
 
