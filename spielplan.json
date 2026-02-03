@@ -1423,6 +1423,13 @@
           "searchStart": "2026-03-04T22:30:00"
         },
         {
+          "home": "FC Zürich",
+          "away": "Lausanne-Sport",
+          "date": "2026-03-04",
+          "time": "20:30",
+          "searchStart": ""
+        },
+        {
           "date": "2026-03-05",
           "time": "20:30",
           "home": "FC Basel",
