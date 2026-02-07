@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-02T18:41:12.752Z",
+  "lastUpdated": "2026-02-07T20:24:36.066Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -889,6 +889,20 @@
       "title": "Spektakel-Remis in Genf, Lausanne schlägt Thun, keine Tore in Basel",
       "urn": "urn:srf:video:4bf5617f-1908-4310-a7a7-cf122d761c25",
       "type": "Sendung"
+    },
+    "23_FC Sion - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:15ff2bb3-0e6e-4f31-a077-2b1e52c1c6d9",
+      "foundAt": "2026-02-07T20:24:18.943Z",
+      "title": "Zwischen Sion und Luzern gibt es keine Tore",
+      "urn": "urn:srf:video:15ff2bb3-0e6e-4f31-a077-2b1e52c1c6d9",
+      "type": "Standalone"
+    },
+    "23_FC Winterthur - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:f6b3bdbd-f95d-41fc-b95b-173ae7f7a12b",
+      "foundAt": "2026-02-07T20:24:19.213Z",
+      "title": "Lugano erkämpft sich in Unterzahl ein Remis in Winterthur",
+      "urn": "urn:srf:video:f6b3bdbd-f95d-41fc-b95b-173ae7f7a12b",
+      "type": "Standalone"
     }
   }
 }
