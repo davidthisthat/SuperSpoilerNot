@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-07T20:24:36.066Z",
+  "lastUpdated": "2026-02-07T22:20:23.601Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -902,6 +902,13 @@
       "foundAt": "2026-02-07T20:24:19.213Z",
       "title": "Lugano erkämpft sich in Unterzahl ein Remis in Winterthur",
       "urn": "urn:srf:video:f6b3bdbd-f95d-41fc-b95b-173ae7f7a12b",
+      "type": "Standalone"
+    },
+    "23_Grasshoppers - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:30cf09f3-998d-4310-a0ba-15d83afe18c2",
+      "foundAt": "2026-02-07T22:20:23.601Z",
+      "title": "GC ringt YB ein Remis ab",
+      "urn": "urn:srf:video:30cf09f3-998d-4310-a0ba-15d83afe18c2",
       "type": "Standalone"
     }
   }
