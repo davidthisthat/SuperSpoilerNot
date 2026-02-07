@@ -920,7 +920,7 @@
             for (let i = 0; i < spielplan.matchdays.length; i++) {
                 const matchday = spielplan.matchdays[i];
                 const firstMatchDate = new Date(matchday.matches[0].date);
-                firstMatchDate.setHours(0, 1, 0, 0); // 0:01 Uhr
+                firstMatchDate.setHours(0, 0, 0, 0); // Mitternacht
                 
                 if (today >= firstMatchDate) {
                     foundIndex = i;
