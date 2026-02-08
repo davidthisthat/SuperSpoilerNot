@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-07T22:20:23.601Z",
+  "lastUpdated": "2026-02-08T18:20:44.169Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -909,6 +909,20 @@
       "foundAt": "2026-02-07T22:20:23.601Z",
       "title": "GC ringt YB ein Remis ab",
       "urn": "urn:srf:video:30cf09f3-998d-4310-a0ba-15d83afe18c2",
+      "type": "Standalone"
+    },
+    "23_FC Basel - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:33a7ced3-1c51-4e05-93bf-46bdc60554b4",
+      "foundAt": "2026-02-08T18:20:42.749Z",
+      "title": "Basel entscheidet dramatischen Klassiker gegen den FCZ spät für sich",
+      "urn": "urn:srf:video:33a7ced3-1c51-4e05-93bf-46bdc60554b4",
+      "type": "Standalone"
+    },
+    "23_Lausanne-Sport - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:3a3554df-ded7-4b69-a1d9-d1c3f9930b50",
+      "foundAt": "2026-02-08T18:20:44.169Z",
+      "title": "Kein Sieger bei Lausanne gegen St. Gallen",
+      "urn": "urn:srf:video:3a3554df-ded7-4b69-a1d9-d1c3f9930b50",
       "type": "Standalone"
     }
   }
