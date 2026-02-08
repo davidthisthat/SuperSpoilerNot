@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-08T18:20:44.169Z",
+  "lastUpdated": "2026-02-08T18:55:20.017Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -924,6 +924,13 @@
       "title": "Kein Sieger bei Lausanne gegen St. Gallen",
       "urn": "urn:srf:video:3a3554df-ded7-4b69-a1d9-d1c3f9930b50",
       "type": "Standalone"
+    },
+    "23_Servette FC - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0ef1e7a7-3c89-4e83-97e6-492481cad7e6",
+      "foundAt": "2026-02-08T18:55:20.017Z",
+      "title": "Thun tritt in Genf wie ein Meister auf",
+      "urn": "urn:srf:video:0ef1e7a7-3c89-4e83-97e6-492481cad7e6",
+      "type": "Sendung"
     }
   }
 }
