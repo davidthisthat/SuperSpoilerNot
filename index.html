@@ -256,14 +256,29 @@
             padding: 10px;
             padding-top: 20px;
         }
+        .matchday-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
         h1 {
             font-size: 70px;
             margin: 5px 0 20px 0;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
+        .mobile-only {
+            display: none;
+        }
         @media (max-width: 600px) {
-            h1 {
-                font-size: 56px;
+            .matchday-header {
+                gap: 10px;
+            }
+            .mobile-only {
+                display: inline-flex;
+            }
+            .header-icons .refresh-icon {
+                display: none;
             }
         }
         /* Info-Overlay */
@@ -875,8 +890,11 @@
     </div>
 
     <div class="container">
-        <!-- Titel -->
-        <h1 id="matchday-title">Spieltag</h1>
+        <!-- Titel mit mobilem Refresh-Button -->
+        <div class="matchday-header">
+            <h1 id="matchday-title">Spieltag</h1>
+            <div class="refresh-icon mobile-only" onclick="refreshData()" title="Aktualisieren">↻</div>
+        </div>
         
         <div class="matchday-nav">
             <button id="prev-btn" onclick="changeMatchday(-1)">← Spieltag</button>
