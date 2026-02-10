@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-08T18:55:20.017Z",
+  "lastUpdated": "2026-02-10T22:20:26.297Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -931,6 +931,13 @@
       "title": "Thun tritt in Genf wie ein Meister auf",
       "urn": "urn:srf:video:0ef1e7a7-3c89-4e83-97e6-492481cad7e6",
       "type": "Sendung"
+    },
+    "24_FC Luzern - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:02b493b9-bb25-487d-94eb-fb8e60e285cd",
+      "foundAt": "2026-02-10T22:20:26.297Z",
+      "title": "Luzern schlägt GC schon wieder und verschafft sich etwas Luft",
+      "urn": "urn:srf:video:02b493b9-bb25-487d-94eb-fb8e60e285cd",
+      "type": "Standalone"
     }
   }
 }
