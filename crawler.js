@@ -168,7 +168,12 @@ function getMatchesToSearch(spielplan, links, testMatchday = null) {
             
             // Prüfe ob Suchzeit erreicht ist UND nicht zu alt
             if (match.searchStart) {
-                const searchTime = new Date(match.searchStart);
+                // searchStart ist in Schweizer Zeit - füge Zeitzone hinzu falls nicht vorhanden
+                let searchStartStr = match.searchStart;
+                if (!searchStartStr.includes('+') && !searchStartStr.includes('Z')) {
+                    searchStartStr += '+01:00'; // Schweizer Winterzeit (CET)
+                }
+                const searchTime = new Date(searchStartStr);
                 const searchEndTime = new Date(searchTime.getTime() + MAX_SEARCH_HOURS * 60 * 60 * 1000);
                 
                 if (now >= searchTime && now <= searchEndTime) {
