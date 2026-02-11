@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-10T22:20:26.297Z",
+  "lastUpdated": "2026-02-11T22:20:24.624Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -937,6 +937,27 @@
       "foundAt": "2026-02-10T22:20:26.297Z",
       "title": "Luzern schlägt GC schon wieder und verschafft sich etwas Luft",
       "urn": "urn:srf:video:02b493b9-bb25-487d-94eb-fb8e60e285cd",
+      "type": "Standalone"
+    },
+    "24_FC Lugano - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:af6e32d5-7c2f-4b2f-bc76-268429cf8367",
+      "foundAt": "2026-02-11T22:20:21.517Z",
+      "title": "Lugano und Servette teilen sich die Punkte",
+      "urn": "urn:srf:video:af6e32d5-7c2f-4b2f-bc76-268429cf8367",
+      "type": "Standalone"
+    },
+    "24_FC St. Gallen - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:df5906e1-fc14-4d94-838f-cc1585b79399",
+      "foundAt": "2026-02-11T22:20:24.040Z",
+      "title": "«Trotz» 2:0-Vorsprung: Erster Liga-Sieg für St. Gallen im 2026",
+      "urn": "urn:srf:video:df5906e1-fc14-4d94-838f-cc1585b79399",
+      "type": "Standalone"
+    },
+    "24_FC Zürich - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:3c3612ae-d914-4c0e-8b3a-e4e6bb1f25dc",
+      "foundAt": "2026-02-11T22:20:24.624Z",
+      "title": "Der FCZ verschafft sich gegen Winterthur endlich wieder etwas Luft",
+      "urn": "urn:srf:video:3c3612ae-d914-4c0e-8b3a-e4e6bb1f25dc",
       "type": "Standalone"
     }
   }
