@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-11T22:20:24.624Z",
+  "lastUpdated": "2026-02-12T22:05:29.762Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -958,6 +958,13 @@
       "foundAt": "2026-02-11T22:20:24.624Z",
       "title": "Der FCZ verschafft sich gegen Winterthur endlich wieder etwas Luft",
       "urn": "urn:srf:video:3c3612ae-d914-4c0e-8b3a-e4e6bb1f25dc",
+      "type": "Standalone"
+    },
+    "24_FC Thun - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:5b080b61-4bc7-483c-bd0e-52991c13f58d",
+      "foundAt": "2026-02-12T22:05:29.762Z",
+      "title": "Thun feiert gegen Lausanne den 7. Sieg in Folge",
+      "urn": "urn:srf:video:5b080b61-4bc7-483c-bd0e-52991c13f58d",
       "type": "Standalone"
     }
   }
