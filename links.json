@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-12T22:05:29.762Z",
+  "lastUpdated": "2026-02-12T22:20:24.274Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -966,6 +966,13 @@
       "title": "Thun feiert gegen Lausanne den 7. Sieg in Folge",
       "urn": "urn:srf:video:5b080b61-4bc7-483c-bd0e-52991c13f58d",
       "type": "Standalone"
+    },
+    "24_FC Sion - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:5b689c45-4d41-4ef9-9372-f30ca5e5cfb9",
+      "foundAt": "2026-02-12T22:20:24.274Z",
+      "title": "Sion bezwingt blassen FC Basel",
+      "urn": "urn:srf:video:5b689c45-4d41-4ef9-9372-f30ca5e5cfb9",
+      "type": "Sendung"
     }
   }
 }
