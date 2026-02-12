@@ -1,6 +1,28 @@
 const fs = require('fs');
 const path = require('path');
 
+// Schweizer Zeitzone automatisch erkennen (CET = UTC+1, CEST = UTC+2)
+// Sommerzeit: Letzter Sonntag im März bis letzter Sonntag im Oktober
+function getSwissTimezoneOffset(date) {
+    const year = date.getFullYear();
+    
+    // Letzter Sonntag im März
+    const march31 = new Date(year, 2, 31);
+    const lastSundayMarch = 31 - march31.getDay();
+    const summerStart = new Date(year, 2, lastSundayMarch, 2, 0, 0); // 02:00 Uhr
+    
+    // Letzter Sonntag im Oktober
+    const october31 = new Date(year, 9, 31);
+    const lastSundayOctober = 31 - october31.getDay();
+    const summerEnd = new Date(year, 9, lastSundayOctober, 3, 0, 0); // 03:00 Uhr
+    
+    // Prüfe ob Datum in Sommerzeit liegt
+    if (date >= summerStart && date < summerEnd) {
+        return '+02:00'; // CEST (Sommerzeit)
+    }
+    return '+01:00'; // CET (Winterzeit)
+}
+
 // Konfiguration - Interne SRF API (keine Auth nötig!)
 const API_BASE = 'https://il.srgssr.ch/integrationlayer/2.0/srf/searchResultMediaList';
 const LINKS_FILE = path.join(__dirname, 'links.json');
@@ -168,10 +190,13 @@ function getMatchesToSearch(spielplan, links, testMatchday = null) {
             
             // Prüfe ob Suchzeit erreicht ist UND nicht zu alt
             if (match.searchStart) {
-                // searchStart ist in Schweizer Zeit - füge Zeitzone hinzu falls nicht vorhanden
+                // searchStart ist in Schweizer Zeit - füge Zeitzone automatisch hinzu
                 let searchStartStr = match.searchStart;
                 if (!searchStartStr.includes('+') && !searchStartStr.includes('Z')) {
-                    searchStartStr += '+01:00'; // Schweizer Winterzeit (CET)
+                    // Bestimme Zeitzone basierend auf dem Datum
+                    const tempDate = new Date(searchStartStr);
+                    const tzOffset = getSwissTimezoneOffset(tempDate);
+                    searchStartStr += tzOffset;
                 }
                 const searchTime = new Date(searchStartStr);
                 const searchEndTime = new Date(searchTime.getTime() + MAX_SEARCH_HOURS * 60 * 60 * 1000);
