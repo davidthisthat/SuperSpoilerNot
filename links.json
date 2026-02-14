@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-14T19:25:28.617Z",
+  "lastUpdated": "2026-02-14T19:40:22.144Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -979,6 +979,13 @@
       "foundAt": "2026-02-14T19:25:23.754Z",
       "title": "Görtler: «In der 2. Halbzeit hat es GC gut gemacht»",
       "urn": "urn:srf:video:4373e04b-c083-49e8-969f-44e79263d13c",
+      "type": "Standalone"
+    },
+    "25_FC Zürich - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:1e4cef04-9182-41e0-bcc6-f9d5131d99dc",
+      "foundAt": "2026-02-14T19:40:22.144Z",
+      "title": "FCZ geht zu Hause gegen Luzern unter",
+      "urn": "urn:srf:video:1e4cef04-9182-41e0-bcc6-f9d5131d99dc",
       "type": "Standalone"
     }
   }
