@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-12T22:20:24.274Z",
+  "lastUpdated": "2026-02-14T19:25:28.617Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -973,6 +973,13 @@
       "title": "Sion bezwingt blassen FC Basel",
       "urn": "urn:srf:video:5b689c45-4d41-4ef9-9372-f30ca5e5cfb9",
       "type": "Sendung"
+    },
+    "25_FC St. Gallen - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:4373e04b-c083-49e8-969f-44e79263d13c",
+      "foundAt": "2026-02-14T19:25:23.754Z",
+      "title": "Görtler: «In der 2. Halbzeit hat es GC gut gemacht»",
+      "urn": "urn:srf:video:4373e04b-c083-49e8-969f-44e79263d13c",
+      "type": "Standalone"
     }
   }
 }
