@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-14T19:40:22.144Z",
+  "lastUpdated": "2026-02-14T22:30:29.066Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -986,6 +986,13 @@
       "foundAt": "2026-02-14T19:40:22.144Z",
       "title": "FCZ geht zu Hause gegen Luzern unter",
       "urn": "urn:srf:video:1e4cef04-9182-41e0-bcc6-f9d5131d99dc",
+      "type": "Standalone"
+    },
+    "25_BSC Young Boys - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:ab90ff6b-2f77-40f3-826f-7f19443ee27d",
+      "foundAt": "2026-02-14T22:30:29.066Z",
+      "title": "YB schickt schwaches Winterthur mit 6:1 nach Hause",
+      "urn": "urn:srf:video:ab90ff6b-2f77-40f3-826f-7f19443ee27d",
       "type": "Standalone"
     }
   }
