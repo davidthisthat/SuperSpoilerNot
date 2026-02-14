@@ -113,7 +113,7 @@ function isVideoDateValid(video, matchDate) {
 
 // Prüfe ob das Video die richtige Länge hat
 // Mindestens 90 Sekunden (filtert Tor-Clips), maximal 20 Minuten (filtert ganze Sendungen)
-const MIN_DURATION_MS = 90 * 1000; // 90 Sekunden
+const MIN_DURATION_MS = 120 * 1000; // 2 Minuten
 const MAX_DURATION_MS = 20 * 60 * 1000; // 20 Minuten
 
 function isVideoDurationValid(video) {
@@ -124,10 +124,19 @@ function isVideoDurationValid(video) {
 // Blacklist: Videos mit diesen Wörtern im Titel sind keine Spielberichte
 const TITLE_BLACKLIST = ['trainer', 'coach', 'interview', 'pressekonferenz', 'vorstellung', 'bilanz', 'analyse', 'vorschau', 'reaktion', 'stimmen'];
 
+// Erweiterte Blacklist: Auch in der Beschreibung prüfen (nur eindeutige Wörter)
+const DESCRIPTION_BLACKLIST = ['interview', 'stimmen', 'reaktion'];
+
 function isNotBlacklisted(video) {
     const title = (video.title || '').toLowerCase();
     for (const word of TITLE_BLACKLIST) {
         if (title.includes(word)) {
+            return false;
+        }
+    }
+    const description = (video.description || '').toLowerCase();
+    for (const word of DESCRIPTION_BLACKLIST) {
+        if (description.includes(word)) {
             return false;
         }
     }
