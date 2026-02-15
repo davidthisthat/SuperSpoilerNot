@@ -30,19 +30,22 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Update Results
+        run: npm run results
+
       - name: Run Crawler
         run: npm run crawl
 
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code links.json || echo "changes=true" >> $GITHUB_OUTPUT
+          git diff --exit-code links.json spielplan.json || echo "changes=true" >> $GITHUB_OUTPUT
 
       - name: Commit and Push changes
         if: steps.git-check.outputs.changes == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add links.json
-          git commit -m "Update links.json with new video links"
+          git add links.json spielplan.json
+          git commit -m "Update links und Resultate"
           git push
