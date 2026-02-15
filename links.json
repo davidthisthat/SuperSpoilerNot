@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T16:10:28.452Z",
+  "lastUpdated": "2026-02-15T18:40:31.788Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1000,6 +1000,13 @@
       "foundAt": "2026-02-15T16:10:28.452Z",
       "title": "Thun feiert gegen Sion den 8. Sieg in Serie",
       "urn": "urn:srf:video:60dff584-caea-425e-b393-9ec0bbf6d787",
+      "type": "Standalone"
+    },
+    "25_Lausanne-Sport - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:fc3f1745-7d22-4227-abc7-0c49f17ab3e6",
+      "foundAt": "2026-02-15T18:40:31.788Z",
+      "title": "Lausanne holt trotz langer Überzahl nur einen Punkt gegen Servette",
+      "urn": "urn:srf:video:fc3f1745-7d22-4227-abc7-0c49f17ab3e6",
       "type": "Standalone"
     }
   }
