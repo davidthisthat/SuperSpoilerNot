@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T18:40:31.788Z",
+  "lastUpdated": "2026-02-15T18:45:26.000Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1007,6 +1007,13 @@
       "foundAt": "2026-02-15T18:40:31.788Z",
       "title": "Lausanne holt trotz langer Überzahl nur einen Punkt gegen Servette",
       "urn": "urn:srf:video:fc3f1745-7d22-4227-abc7-0c49f17ab3e6",
+      "type": "Standalone"
+    },
+    "25_FC Basel - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:87e51329-07eb-46ca-84cd-09df251f7fd4",
+      "foundAt": "2026-02-15T18:45:26.000Z",
+      "title": "Nächstes Elfmeterdrama um Shaqiri: FCB nur mit 1:1 gegen Lugano",
+      "urn": "urn:srf:video:87e51329-07eb-46ca-84cd-09df251f7fd4",
       "type": "Standalone"
     }
   }
