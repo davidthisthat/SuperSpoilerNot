@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-14T22:30:29.066Z",
+  "lastUpdated": "2026-02-15T16:10:28.452Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -993,6 +993,13 @@
       "foundAt": "2026-02-14T22:30:29.066Z",
       "title": "YB schickt schwaches Winterthur mit 6:1 nach Hause",
       "urn": "urn:srf:video:ab90ff6b-2f77-40f3-826f-7f19443ee27d",
+      "type": "Standalone"
+    },
+    "25_FC Thun - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:60dff584-caea-425e-b393-9ec0bbf6d787",
+      "foundAt": "2026-02-15T16:10:28.452Z",
+      "title": "Thun feiert gegen Sion den 8. Sieg in Serie",
+      "urn": "urn:srf:video:60dff584-caea-425e-b393-9ec0bbf6d787",
       "type": "Standalone"
     }
   }
