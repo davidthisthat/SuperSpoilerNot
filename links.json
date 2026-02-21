@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-21T19:25:28.539Z",
+  "lastUpdated": "2026-02-21T22:10:36.107Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1021,6 +1021,13 @@
       "foundAt": "2026-02-21T19:25:17.286Z",
       "title": "Servette und St. Gallen trennen sich 1:1",
       "urn": "urn:srf:video:308b4f67-6cf5-4d5c-8850-657f087c04e5",
+      "type": "Standalone"
+    },
+    "26_Grasshoppers - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:8b5af2d7-c1a2-41cc-9222-2b0bf38954a8",
+      "foundAt": "2026-02-21T22:10:36.107Z",
+      "title": "FCZ entscheidet Zürcher Derby für sich",
+      "urn": "urn:srf:video:8b5af2d7-c1a2-41cc-9222-2b0bf38954a8",
       "type": "Standalone"
     }
   }
