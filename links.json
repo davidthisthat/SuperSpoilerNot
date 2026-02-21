@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-15T18:45:26.000Z",
+  "lastUpdated": "2026-02-21T19:25:28.539Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1014,6 +1014,13 @@
       "foundAt": "2026-02-15T18:45:26.000Z",
       "title": "Nächstes Elfmeterdrama um Shaqiri: FCB nur mit 1:1 gegen Lugano",
       "urn": "urn:srf:video:87e51329-07eb-46ca-84cd-09df251f7fd4",
+      "type": "Standalone"
+    },
+    "26_Servette FC - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:308b4f67-6cf5-4d5c-8850-657f087c04e5",
+      "foundAt": "2026-02-21T19:25:17.286Z",
+      "title": "Servette und St. Gallen trennen sich 1:1",
+      "urn": "urn:srf:video:308b4f67-6cf5-4d5c-8850-657f087c04e5",
       "type": "Standalone"
     }
   }
