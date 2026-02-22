@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-21T22:10:36.107Z",
+  "lastUpdated": "2026-02-22T15:40:20.820Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1028,6 +1028,13 @@
       "foundAt": "2026-02-21T22:10:36.107Z",
       "title": "FCZ entscheidet Zürcher Derby für sich",
       "urn": "urn:srf:video:8b5af2d7-c1a2-41cc-9222-2b0bf38954a8",
+      "type": "Standalone"
+    },
+    "26_FC Sion - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:2bbc08a5-9ea0-4343-b7f1-e1d0a1a5e082",
+      "foundAt": "2026-02-22T15:40:20.819Z",
+      "title": "Nivokazi schiesst Sion mit Hattrick zum Heimerfolg gegen YB",
+      "urn": "urn:srf:video:2bbc08a5-9ea0-4343-b7f1-e1d0a1a5e082",
       "type": "Standalone"
     }
   }
