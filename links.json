@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-22T15:40:20.820Z",
+  "lastUpdated": "2026-02-22T18:40:31.408Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1035,6 +1035,13 @@
       "foundAt": "2026-02-22T15:40:20.819Z",
       "title": "Nivokazi schiesst Sion mit Hattrick zum Heimerfolg gegen YB",
       "urn": "urn:srf:video:2bbc08a5-9ea0-4343-b7f1-e1d0a1a5e082",
+      "type": "Standalone"
+    },
+    "26_FC Lugano - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0728b516-9703-4c33-8e2d-df99b2652973",
+      "foundAt": "2026-02-22T18:40:21.355Z",
+      "title": "Lugano schlägt Lausanne mit 2:1",
+      "urn": "urn:srf:video:0728b516-9703-4c33-8e2d-df99b2652973",
       "type": "Standalone"
     }
   }
