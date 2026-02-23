@@ -212,6 +212,10 @@
         .refresh-icon.spinning {
             animation: spin 0.8s linear;
         }
+        .refresh-icon.done {
+            background: rgba(0, 200, 0, 0.4) !important;
+            transition: background 0.3s;
+        }
         @keyframes spin {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
@@ -267,25 +271,24 @@
             margin: 5px 0 20px 0;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-        .mobile-only {
-            display: none;
+        .matchday-refresh {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            width: 42px;
+            height: 42px;
+            font-size: 28px;
+            border: 2px solid white;
         }
         @media (max-width: 600px) {
             .matchday-header {
                 gap: 25px;
                 align-items: center;
             }
-            .mobile-only {
-                display: inline-flex;
-                background: rgba(255, 255, 255, 0.15);
-                color: white;
-                width: 70px;
-                height: 70px;
-                font-size: 50px;
-                border: 3px solid white;
-            }
-            .header-icons .refresh-icon {
-                display: none;
+            .matchday-refresh {
+                width: 36px;
+                height: 36px;
+                font-size: 24px;
             }
         }
         /* Info-Overlay */
@@ -598,6 +601,7 @@
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
+            vertical-align: baseline;
         }
         /* Team-Overlay mit Rasen-Hintergrund */
         .team-overlay {
@@ -659,14 +663,24 @@
             font-size: 22px;
             cursor: pointer;
         }
-        .team-match:hover {
-            background: rgba(0, 0, 0, 0.75);
+        @media (hover: hover) {
+            .team-match:hover {
+                background: rgba(0, 0, 0, 0.75);
+            }
+        }
+        .team-match-row {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: space-between;
         }
         .team-match.no-link {
             cursor: default;
         }
-        .team-match.no-link:hover {
-            background: rgba(0, 0, 0, 0.6);
+        @media (hover: hover) {
+            .team-match.no-link:hover {
+                background: rgba(0, 0, 0, 0.6);
+            }
         }
         .team-match.no-link .team-pairing {
             color: #aaa;
@@ -696,7 +710,7 @@
             }
             .team-match {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: stretch;
                 padding: 12px 15px;
                 font-size: 18px;
             }
@@ -706,13 +720,18 @@
                 margin-bottom: 5px;
                 color: rgba(255,255,255,0.8);
             }
+            .team-match-row {
+                width: 100%;
+            }
             .team-pairing {
                 padding-left: 0;
                 font-size: 18px;
+                flex: 1;
             }
             .team-result {
                 font-size: 18px;
-                margin-top: 5px;
+                flex: 0 0 auto;
+                padding-left: 8px;
             }
         }
     </style>
@@ -765,7 +784,6 @@
             <div class="header-subtitle">SRF-Zusammenfassungen ohne Spoiler</div>
         </div>
         <div class="header-icons">
-            <div class="refresh-icon" onclick="refreshData()" title="Aktualisieren">↻</div>
             <div class="info-icon" onclick="showInfoOverlay()">i</div>
         </div>
     </div>
@@ -774,7 +792,7 @@
         <!-- Titel mit mobilem Refresh-Button -->
         <div class="matchday-header">
             <h1 id="matchday-title">Spieltag</h1>
-            <div class="refresh-icon mobile-only" onclick="refreshData()" title="Aktualisieren">↻</div>
+            <div class="refresh-icon matchday-refresh" onclick="refreshData()" title="Aktualisieren">↻</div>
         </div>
         
         <div class="matchday-nav">
@@ -789,9 +807,9 @@
         <!-- Teammodus & Tabelle -->
         <div class="extra-buttons">
             <label class="pill">
-                <span>Team</span>
+                <span>Dein Team</span>
                 <select id="team-select" onchange="showTeamMatches()">
-                    <option value="">···</option>
+                    <option value="" style="font-size: 16px;">...</option>
                 </select>
             </label>
         </div>
@@ -816,8 +834,14 @@
                 const cacheBuster = '?t=' + Date.now();
                 
                 // Spielplan mit Cache-Busting (wichtig für iOS Home Screen App)
-                const spielplanRes = await fetch('spielplan.json' + cacheBuster);
-                spielplan = await spielplanRes.json();
+                const spielplanUrl = 'https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/spielplan.json?t=' + Date.now();
+                try {
+                    const spielplanRes = await fetch(spielplanUrl);
+                    spielplan = await spielplanRes.json();
+                } catch (e) {
+                    const spielplanRes = await fetch('spielplan.json' + cacheBuster);
+                    spielplan = await spielplanRes.json();
+                }
                 
                 // Links von GitHub laden (Cache-Busting mit Timestamp)
                 const linksUrl = 'https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/links.json?t=' + Date.now();
@@ -843,7 +867,7 @@
 
         // Daten manuell aktualisieren (für iOS Home Screen App)
         async function refreshData() {
-            const refreshIcon = document.querySelector('.refresh-icon');
+            const refreshIcon = document.querySelector('.matchday-refresh');
             refreshIcon.classList.add('spinning');
             
             try {
@@ -854,7 +878,8 @@
                 
                 // Spielplan neu laden
                 const cacheBuster = '?t=' + Date.now();
-                const spielplanRes = await fetch('spielplan.json' + cacheBuster, { cache: 'no-store' });
+                const spielplanUrl = 'https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/spielplan.json?t=' + Date.now();
+                const spielplanRes = await fetch(spielplanUrl, { cache: 'no-store' });
                 spielplan = await spielplanRes.json();
                 
                 // Ansicht aktualisieren
@@ -863,9 +888,13 @@
                 console.error('Fehler beim Aktualisieren:', error);
             }
             
-            // Animation stoppen nach Abschluss
+            // Animation stoppen, kurz grün aufleuchten
             setTimeout(() => {
                 refreshIcon.classList.remove('spinning');
+                refreshIcon.classList.add('done');
+                setTimeout(() => {
+                    refreshIcon.classList.remove('done');
+                }, 1000);
             }, 800);
         }
 
@@ -1066,11 +1095,12 @@
                 div.className = 'team-match' + (hasLink ? '' : ' no-link');
                 const resultDisplay = match.result ? `<div class="team-result">${match.result}</div>` : '';
                 
-                // Gleiche Struktur wie normale Ansicht
                 div.innerHTML = `
                     <div class="team-date-time">Spieltag ${match.matchday} | ${weekday}. ${day}.${month}.${year}</div>
-                    <div class="team-pairing">${match.home} - ${match.away}</div>
-                    ${resultDisplay}
+                    <div class="team-match-row">
+                        <div class="team-pairing">${match.home} - ${match.away}</div>
+                        ${resultDisplay}
+                    </div>
                 `;
                 
                 if (hasLink) {
