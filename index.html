@@ -126,7 +126,7 @@
             margin: 0;
             padding: 0;
             background-color: #000;
-            font-family: Consolas, 'Courier New', monospace;
+            font-family: 'VT323', 'Courier New', monospace;
             color: white;
             text-align: center;
             min-height: 100vh;
@@ -150,7 +150,7 @@
             text-align: center;
         }
         .header-title {
-            font-family: Consolas, 'Courier New', monospace;
+            font-family: 'VT323', 'Courier New', monospace;
             font-size: 74px;
             font-weight: normal;
             letter-spacing: 2px;
@@ -201,7 +201,7 @@
             border: 2px solid #fff;
             color: #fff;
             font-size: 22px;
-            font-family: Consolas, 'Courier New', monospace;
+            font-family: 'VT323', 'Courier New', monospace;
             font-style: normal;
             font-weight: normal;
             border-radius: 0;
@@ -238,6 +238,9 @@
             justify-content: center;
             gap: 15px;
         }
+        .mobile-compact-nav {
+            display: none;
+        }
         h1 {
             font-size: 52px;
             margin: 5px 0 20px 0;
@@ -258,7 +261,7 @@
             line-height: 1;
             transform: translateY(1px);
         }
-        @media (max-width: 600px) {
+        @media (max-width: 900px) {
             .matchday-header {
                 gap: 25px;
                 align-items: center;
@@ -268,6 +271,68 @@
                 height: 36px;
                 font-size: 24px;
                 transform: translateY(0);
+            }
+            .matchday-header,
+            .matchday-nav {
+                display: none;
+            }
+            .mobile-compact-nav {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 4px;
+                margin: 2px 0 10px 0;
+                white-space: nowrap;
+            }
+            .mobile-compact-nav button {
+                background: transparent;
+                color: #fff;
+                border: none;
+                font-family: Consolas, 'Courier New', monospace;
+                font-size: 16px;
+                line-height: 1;
+                padding: 4px 6px;
+                border-radius: 0;
+                cursor: pointer;
+            }
+            .mobile-compact-nav button:disabled {
+                opacity: 0.4;
+                cursor: not-allowed;
+            }
+            .mobile-compact-title {
+                color: #ffea00;
+                font-family: Consolas, 'Courier New', monospace;
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 1;
+                white-space: nowrap;
+            }
+        }
+        .rotate-warning {
+            display: none;
+        }
+        @media (max-width: 900px) and (orientation: portrait) {
+            .rotate-warning {
+                position: fixed;
+                inset: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 24px;
+                background: #000;
+                color: #ffea00;
+                font-family: Consolas, 'Courier New', monospace;
+                font-size: 24px;
+                text-align: center;
+                z-index: 20000;
+            }
+            .header,
+            .container,
+            .footer,
+            .team-overlay,
+            .info-overlay,
+            .cookie-banner {
+                display: none !important;
             }
         }
         /* Info-Overlay */
@@ -294,7 +359,7 @@
             border-radius: 0;
             max-width: 650px;
             margin: 20px;
-            font-family: Consolas, 'Courier New', monospace;
+            font-family: 'VT323', 'Courier New', monospace;
             font-size: 18px;
             line-height: 1.7;
             position: relative;
@@ -313,7 +378,7 @@
                 width: 100%;
                 margin: 0;
                 padding: 0;
-                font-family: Consolas, 'Courier New', monospace;
+                font-family: 'VT323', 'Courier New', monospace;
                 font-size: 34px;
                 line-height: 1.25;
                 color: white;
@@ -399,7 +464,7 @@
             padding: 8px 0;
             border-bottom: 1px solid rgba(255,255,255,0.2);
             font-size: 22px;
-            font-family: Consolas, 'Courier New', monospace;
+            font-family: 'VT323', 'Courier New', monospace;
         }
         .match.no-clip {
             opacity: 0.62;
@@ -409,7 +474,7 @@
             text-align: left;
             font-size: 20px;
             white-space: nowrap;
-            font-family: Consolas, 'Courier New', monospace;
+            font-family: 'VT323', 'Courier New', monospace;
             font-weight: normal;
             color: #fff;
         }
@@ -517,7 +582,7 @@
             font-size: 22px;
             cursor: pointer;
             border-radius: 0;
-            font-family: Consolas, 'Courier New', monospace;
+            font-family: 'VT323', 'Courier New', monospace;
         }
         .matchday-nav button:hover {
             background: #111;
@@ -535,7 +600,7 @@
         .footer {
             padding: 20px 0 25px 0;
             font-size: 24px;
-            font-family: Consolas, 'Courier New', monospace;
+            font-family: 'VT323', 'Courier New', monospace;
             background: #000;
             border-top: 2px solid #fff;
             text-align: center;
@@ -568,7 +633,7 @@
             padding: 7px 16px;
             border-radius: 0;
             font-size: 22px;
-            font-family: Consolas, 'Courier New', monospace;
+            font-family: 'VT323', 'Courier New', monospace;
             border: 2px solid #fff;
             cursor: pointer;
             transition: background 0.2s;
@@ -586,7 +651,7 @@
             background: transparent;
             border: none;
             font-size: 22px;
-            font-family: Consolas, 'Courier New', monospace;
+            font-family: 'VT323', 'Courier New', monospace;
             color: #fff;
             cursor: pointer;
             padding: 0;
@@ -744,6 +809,7 @@
     </style>
 </head>
 <body>
+    <div class="rotate-warning">Quer drehen, ansonsten spoilert SRF auch hier.</div>
 
     <!-- Team-Overlay -->
     <div class="team-overlay" id="team-overlay">
@@ -801,6 +867,11 @@
         <div class="matchday-header">
             <h1 id="matchday-title">Spieltag</h1>
             <div class="refresh-icon matchday-refresh" onclick="refreshData()" title="Aktualisieren">↻</div>
+        </div>
+        <div class="mobile-compact-nav">
+            <button id="mobile-prev-btn" onclick="changeMatchday(-1)">←</button>
+            <span id="mobile-matchday-title" class="mobile-compact-title">Spieltag</span>
+            <button id="mobile-next-btn" onclick="changeMatchday(1)">→</button>
         </div>
         
         <div class="matchday-nav">
@@ -990,23 +1061,33 @@
             // Navigation Buttons aktualisieren
             const prevBtn = document.getElementById('prev-btn');
             const nextBtn = document.getElementById('next-btn');
+            const mobilePrevBtn = document.getElementById('mobile-prev-btn');
+            const mobileNextBtn = document.getElementById('mobile-next-btn');
+            const mobileTitle = document.getElementById('mobile-matchday-title');
+            if (mobileTitle) {
+                mobileTitle.textContent = `Spieltag ${matchday.matchday}`;
+            }
             
             if (currentMatchdayIndex > 0) {
                 const prevMatchday = spielplan.matchdays[currentMatchdayIndex - 1].matchday;
                 prevBtn.textContent = `← Spieltag ${prevMatchday}`;
                 prevBtn.disabled = false;
+                if (mobilePrevBtn) mobilePrevBtn.disabled = false;
             } else {
                 prevBtn.textContent = '← Spieltag';
                 prevBtn.disabled = true;
+                if (mobilePrevBtn) mobilePrevBtn.disabled = true;
             }
             
             if (currentMatchdayIndex < spielplan.matchdays.length - 1) {
                 const nextMatchday = spielplan.matchdays[currentMatchdayIndex + 1].matchday;
                 nextBtn.textContent = `Spieltag ${nextMatchday} →`;
                 nextBtn.disabled = false;
+                if (mobileNextBtn) mobileNextBtn.disabled = false;
             } else {
                 nextBtn.textContent = 'Spieltag →';
                 nextBtn.disabled = true;
+                if (mobileNextBtn) mobileNextBtn.disabled = true;
             }
         }
 
