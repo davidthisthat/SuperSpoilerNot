@@ -126,7 +126,7 @@
             margin: 0;
             padding: 0;
             background-color: #000;
-            font-family: 'VT323', 'Courier New', monospace;
+            font-family: Consolas, 'Courier New', monospace;
             color: white;
             text-align: center;
             min-height: 100vh;
@@ -150,7 +150,7 @@
             text-align: center;
         }
         .header-title {
-            font-family: 'VT323', 'Courier New', monospace;
+            font-family: Consolas, 'Courier New', monospace;
             font-size: 74px;
             font-weight: normal;
             letter-spacing: 2px;
@@ -201,7 +201,7 @@
             border: 2px solid #fff;
             color: #fff;
             font-size: 22px;
-            font-family: 'VT323', 'Courier New', monospace;
+            font-family: Consolas, 'Courier New', monospace;
             font-style: normal;
             font-weight: normal;
             border-radius: 0;
@@ -248,13 +248,15 @@
         }
         .matchday-refresh {
             display: inline-flex;
-            background: #000;
+            background: transparent;
             color: white;
             width: 42px;
             height: 42px;
             font-size: 28px;
-            border: 2px solid white;
+            border: none;
             border-radius: 0;
+            line-height: 1;
+            transform: translateY(1px);
         }
         @media (max-width: 600px) {
             .matchday-header {
@@ -265,6 +267,7 @@
                 width: 36px;
                 height: 36px;
                 font-size: 24px;
+                transform: translateY(0);
             }
         }
         /* Info-Overlay */
@@ -291,7 +294,7 @@
             border-radius: 0;
             max-width: 650px;
             margin: 20px;
-            font-family: 'VT323', 'Courier New', monospace;
+            font-family: Consolas, 'Courier New', monospace;
             font-size: 18px;
             line-height: 1.7;
             position: relative;
@@ -310,7 +313,7 @@
                 width: 100%;
                 margin: 0;
                 padding: 0;
-                font-family: 'VT323', 'Courier New', monospace;
+                font-family: Consolas, 'Courier New', monospace;
                 font-size: 34px;
                 line-height: 1.25;
                 color: white;
@@ -396,7 +399,7 @@
             padding: 8px 0;
             border-bottom: 1px solid rgba(255,255,255,0.2);
             font-size: 22px;
-            font-family: 'VT323', 'Courier New', monospace;
+            font-family: Consolas, 'Courier New', monospace;
         }
         .match.no-clip {
             opacity: 0.62;
@@ -406,7 +409,7 @@
             text-align: left;
             font-size: 20px;
             white-space: nowrap;
-            font-family: 'VT323', 'Courier New', monospace;
+            font-family: Consolas, 'Courier New', monospace;
             font-weight: normal;
             color: #fff;
         }
@@ -514,7 +517,7 @@
             font-size: 22px;
             cursor: pointer;
             border-radius: 0;
-            font-family: 'VT323', 'Courier New', monospace;
+            font-family: Consolas, 'Courier New', monospace;
         }
         .matchday-nav button:hover {
             background: #111;
@@ -532,7 +535,7 @@
         .footer {
             padding: 20px 0 25px 0;
             font-size: 24px;
-            font-family: 'VT323', 'Courier New', monospace;
+            font-family: Consolas, 'Courier New', monospace;
             background: #000;
             border-top: 2px solid #fff;
             text-align: center;
@@ -562,14 +565,14 @@
         .pill {
             background: #000;
             color: #fff;
-            padding: 10px 25px;
+            padding: 7px 16px;
             border-radius: 0;
-            font-size: 30px;
-            font-family: 'VT323', 'Courier New', monospace;
+            font-size: 22px;
+            font-family: Consolas, 'Courier New', monospace;
             border: 2px solid #fff;
             cursor: pointer;
             transition: background 0.2s;
-            min-width: 100px;
+            min-width: 80px;
             text-align: center;
             display: inline-flex;
             align-items: center;
@@ -583,7 +586,7 @@
             background: transparent;
             border: none;
             font-size: 22px;
-            font-family: 'VT323', 'Courier New', monospace;
+            font-family: Consolas, 'Courier New', monospace;
             color: #fff;
             cursor: pointer;
             padding: 0;
@@ -640,10 +643,11 @@
             display: flex;
             align-items: center;
             background: transparent;
-            margin: 5px 0;
-            padding: 12px 0;
+            margin: 0;
+            padding: 8px 0;
             border-bottom: 1px solid rgba(255,255,255,0.2);
             font-size: 22px;
+            font-family: Consolas, 'Courier New', monospace;
             cursor: pointer;
         }
         @media (hover: hover) {
@@ -656,6 +660,8 @@
             flex: 1;
             align-items: center;
             justify-content: space-between;
+            min-width: 0;
+            padding-left: 20px;
         }
         .team-match.no-link {
             cursor: default;
@@ -669,53 +675,70 @@
             color: #fff;
         }
         .team-date-time {
-            flex: 0 0 300px;
+            flex: 0 0 250px;
             text-align: left;
-            font-size: 28px;
+            font-size: 20px;
             white-space: nowrap;
-            font-family: 'VT323', 'Courier New', monospace;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-family: Consolas, 'Courier New', monospace;
+            color: #fff;
+            font-weight: normal;
         }
         .team-pairing {
             flex: 1;
             text-align: left;
-            padding-left: 20px;
-            font-family: 'VT323', 'Courier New', monospace;
-            font-size: 40px;
+            padding-left: 0;
+            font-family: Consolas, 'Courier New', monospace;
+            font-size: 22px;
+            font-weight: normal;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-width: 0;
         }
         .team-result {
-            flex: 0 0 60px;
+            flex: 0 0 90px;
             text-align: right;
-            font-weight: bold;
-            font-size: 40px;
+            font-weight: normal;
+            font-size: inherit;
+            color: #fff;
+            padding-left: 8px;
+        }
+        .team-result.empty {
+            color: transparent;
         }
         @media (max-width: 600px) {
             .team-overlay-title {
                 font-size: 26px;
             }
             .team-match {
-                flex-direction: column;
-                align-items: stretch;
-                padding: 12px 15px;
-                font-size: 18px;
+                flex-direction: row;
+                align-items: center;
+                padding: 8px 0;
+                font-size: 14px;
             }
             .team-date-time {
-                flex: none;
+                flex: 0 0 90px;
                 font-size: 14px;
-                margin-bottom: 5px;
+                margin-bottom: 0;
                 color: rgba(255,255,255,0.8);
             }
             .team-match-row {
                 width: 100%;
+                min-width: 0;
+                padding-left: 8px;
             }
             .team-pairing {
-                padding-left: 0;
-                font-size: 18px;
+                font-size: 16px;
                 flex: 1;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             .team-result {
-                font-size: 18px;
-                flex: 0 0 auto;
-                padding-left: 8px;
+                font-size: inherit;
+                flex: 0 0 52px;
             }
         }
     </style>
@@ -1080,6 +1103,8 @@
                 const day = String(date.getDate()).padStart(2, '0');
                 const month = String(date.getMonth() + 1).padStart(2, '0');
                 const year = String(date.getFullYear()).slice(-2);
+                const compactDate = `${day}.${month} ${match.time || ''}`.trim();
+                const isMobile = window.innerWidth <= 600;
                 
                 const matchKey = `${match.matchday}_${match.home} - ${match.away}`;
                 const linkData = links.matches[matchKey];
@@ -1087,10 +1112,12 @@
                 
                 const div = document.createElement('div');
                 div.className = 'team-match' + (hasLink ? '' : ' no-link');
-                const resultDisplay = match.result ? `<div class="team-result">${match.result}</div>` : '';
+                const resultDisplay = match.result
+                    ? `<div class="team-result">${match.result}</div>`
+                    : `<div class="team-result empty">&nbsp;</div>`;
                 
                 div.innerHTML = `
-                    <div class="team-date-time">Spieltag ${match.matchday} | ${weekday}. ${day}.${month}.${year}</div>
+                    <div class="team-date-time">${isMobile ? compactDate : `Spieltag ${match.matchday} | ${weekday}. ${day}.${month}.${year}`}</div>
                     <div class="team-match-row">
                         <div class="team-pairing">${match.home} - ${match.away}</div>
                         ${resultDisplay}
