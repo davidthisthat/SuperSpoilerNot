@@ -1,7 +1,7 @@
 // Service Worker für No Spoiler League
 // Strategie: Network First - immer zuerst vom Server laden
 
-const CACHE_NAME = 'nospoiler-v2';
+const CACHE_NAME = 'nospoiler-v3';
 
 // Bei Installation: Nichts cachen, wir wollen immer frische Daten
 self.addEventListener('install', (event) => {
@@ -30,8 +30,7 @@ self.addEventListener('fetch', (event) => {
     
     // Für links.json und spielplan.json: IMMER vom Netzwerk
     if (url.pathname.includes('links.json') || 
-        url.pathname.includes('spielplan.json') ||
-        url.pathname.includes('tabelle.json')) {
+        url.pathname.includes('spielplan.json')) {
         event.respondWith(
             fetch(event.request, { cache: 'no-store' })
                 .catch(() => caches.match(event.request))

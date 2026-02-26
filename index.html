@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>No Spoiler League</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="apple-touch-icon" href="img/iconmobile.png">
+    
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -125,38 +125,18 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #228B22;
-            background-image: url('img/rasen-desktop.jpg');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            font-family: 'Arial Black', Arial, sans-serif;
+            background-color: #000;
+            font-family: 'VT323', 'Courier New', monospace;
             color: white;
             text-align: center;
             min-height: 100vh;
             touch-action: manipulation;
         }
-        body::after {
-            content: '';
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 150px;
-            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.4));
-            pointer-events: none;
-            z-index: 1;
-        }
-        @media (max-width: 768px) {
-            body {
-                background-image: url('img/rasen-mobile.jpg');
-                background-attachment: scroll;
-            }
-        }
         /* Header */
         .header {
-            background: white;
-            padding: 20px 20px;
+            background: #000;
+            border-bottom: 2px solid #fff;
+            padding: 20px 16px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -166,32 +146,23 @@
             z-index: 100;
         }
         .header-text {
+            flex: none;
             text-align: center;
         }
         .header-title {
-            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
-            font-size: 56px;
+            font-family: 'VT323', 'Courier New', monospace;
+            font-size: 74px;
             font-weight: normal;
-            letter-spacing: 4px;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            color: black;
-        }
-        .header-subtitle {
-            font-family: Arial, sans-serif;
-            font-size: 28px;
-            color: black;
-            margin-top: 8px;
-        }
-        @media (max-width: 768px) {
-            .header-subtitle {
-                font-size: 12px;
-                margin-top: 4px;
-            }
+            color: #fff;
+            line-height: 0.9;
         }
         .header-icons {
             display: flex;
             gap: 10px;
             align-items: center;
+            margin-left: 10px;
         }
         .refresh-icon {
             display: inline-flex;
@@ -226,21 +197,22 @@
             justify-content: center;
             width: 42px;
             height: 42px;
-            background: rgba(0, 0, 0, 0.1);
-            color: black;
-            font-size: 24px;
-            font-family: serif;
-            font-style: italic;
-            font-weight: bold;
-            border-radius: 50%;
+            background: #000;
+            border: 2px solid #fff;
+            color: #fff;
+            font-size: 22px;
+            font-family: 'VT323', 'Courier New', monospace;
+            font-style: normal;
+            font-weight: normal;
+            border-radius: 0;
             cursor: pointer;
         }
         .info-icon:hover {
-            background: rgba(0, 0, 0, 0.2);
+            background: #111;
         }
         @media (max-width: 768px) {
             .header-title {
-                font-size: 24px;
+                font-size: 42px;
                 letter-spacing: 2px;
             }
             .refresh-icon {
@@ -258,7 +230,7 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 10px;
-            padding-top: 20px;
+            padding-top: 34px;
         }
         .matchday-header {
             display: flex;
@@ -267,18 +239,22 @@
             gap: 15px;
         }
         h1 {
-            font-size: 70px;
+            font-size: 52px;
             margin: 5px 0 20px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            color: #ffea00;
+            text-shadow: none;
+            letter-spacing: 1px;
+            font-weight: normal;
         }
         .matchday-refresh {
             display: inline-flex;
-            background: rgba(255, 255, 255, 0.15);
+            background: #000;
             color: white;
             width: 42px;
             height: 42px;
             font-size: 28px;
             border: 2px solid white;
+            border-radius: 0;
         }
         @media (max-width: 600px) {
             .matchday-header {
@@ -308,13 +284,14 @@
             display: flex;
         }
         .info-overlay-content {
-            background: rgba(0, 0, 0, 0.95);
+            background: #000;
+            border: 2px solid #fff;
             color: white;
             padding: 30px;
-            border-radius: 12px;
+            border-radius: 0;
             max-width: 650px;
             margin: 20px;
-            font-family: Arial, sans-serif;
+            font-family: 'VT323', 'Courier New', monospace;
             font-size: 18px;
             line-height: 1.7;
             position: relative;
@@ -322,28 +299,22 @@
         }
         @media (min-width: 769px) {
             .info-overlay-content {
-                background: url('img/tv.png') no-repeat center center;
-                background-size: contain;
-                width: 95vw;
-                height: 95vh;
-                max-width: 1400px;
-                max-height: 1050px;
-                padding: 0;
+                width: min(980px, 95vw);
+                height: auto;
+                max-width: 980px;
+                max-height: none;
+                padding: 28px;
                 border-radius: 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
             }
             .info-overlay-content .info-text-wrapper {
-                width: 70%;
-                margin: 0 auto;
-                padding: 40px;
-                font-family: 'Courier New', Courier, monospace;
-                font-size: 22px;
-                line-height: 1.9;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: 'VT323', 'Courier New', monospace;
+                font-size: 34px;
+                line-height: 1.25;
                 color: white;
-                text-shadow: 0 0 3px rgba(255,255,255,0.5);
+                text-shadow: none;
             }
         }
         .info-overlay-close {
@@ -420,55 +391,69 @@
         .match {
             display: flex;
             align-items: center;
-            background: rgba(0, 0, 0, 0.45);
-            margin: 5px 0;
-            padding: 15px 20px;
-            border-radius: 8px;
+            background: transparent;
+            margin: 0;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
             font-size: 22px;
-            font-family: Arial, sans-serif;
+            font-family: 'VT323', 'Courier New', monospace;
+        }
+        .match.no-clip {
+            opacity: 0.62;
         }
         .date-time {
             flex: 0 0 250px;
             text-align: left;
             font-size: 20px;
             white-space: nowrap;
-            font-family: Arial, sans-serif;
+            font-family: 'VT323', 'Courier New', monospace;
             font-weight: normal;
+            color: #fff;
         }
         .pairing {
             flex: 1;
             text-align: left;
             padding-left: 20px;
-            font-weight: bold;
+            font-weight: normal;
+            font-size: 22px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-width: 0;
         }
         .match-row {
             display: flex;
             flex: 1;
             align-items: center;
             padding-left: 20px;
+            min-width: 0;
         }
         .match-row .pairing {
             padding-left: 0;
         }
         .result {
-            flex: 0 0 60px;
+            flex: 0 0 90px;
             text-align: right;
-            font-weight: bold;
-            font-size: 24px;
+            font-weight: normal;
+            font-size: inherit;
             margin-left: 15px;
+            color: #fff;
+        }
+        .result.empty {
+            color: transparent;
         }
         /* Hochformat Mobile: Datum über Paarung */
         @media (max-width: 600px) {
             .match {
-                flex-direction: column;
-                align-items: stretch;
-                padding: 10px 20px 10px 10px;
-                font-size: 16px;
+                flex-direction: row;
+                align-items: center;
+                padding: 8px 0;
+                font-size: 14px;
             }
             .date-time {
-                flex: none;
-                font-size: 13px;
-                margin-bottom: 4px;
+                flex: 0 0 90px;
+                font-size: 14px;
+                margin-bottom: 0;
                 color: rgba(255,255,255,0.8);
             }
             .match-row {
@@ -476,22 +461,27 @@
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
+                min-width: 0;
+                padding-left: 8px;
             }
             .pairing {
                 padding-left: 0;
                 font-size: 16px;
                 flex: 1;
                 min-width: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             .result {
-                font-size: 16px;
+                font-size: inherit;
                 margin-top: 0;
-                flex: 0 0 auto;
+                flex: 0 0 52px;
                 text-align: right;
                 padding-left: 8px;
             }
             h1 {
-                font-size: 32px;
+                font-size: 28px;
             }
             .matchday-nav button {
                 padding: 8px 12px;
@@ -504,10 +494,10 @@
             cursor: pointer;
         }
         .link:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
         .no-link {
-            color: #aaa;
+            color: #fff;
             cursor: default;
         }
         .matchday-nav {
@@ -517,17 +507,17 @@
             gap: 15px;
         }
         .matchday-nav button {
-            background: rgba(0, 0, 0, 0.4);
-            color: rgba(255, 255, 255, 0.9);
-            border: none;
-            padding: 12px 24px;
-            font-size: 19px;
+            background: #000;
+            color: #fff;
+            border: 2px solid #fff;
+            padding: 8px 16px;
+            font-size: 22px;
             cursor: pointer;
-            border-radius: 8px;
-            font-family: Arial, sans-serif;
+            border-radius: 0;
+            font-family: 'VT323', 'Courier New', monospace;
         }
         .matchday-nav button:hover {
-            background: rgba(0, 0, 0, 0.6);
+            background: #111;
         }
         .matchday-nav button:disabled {
             opacity: 0.4;
@@ -541,16 +531,17 @@
         }
         .footer {
             padding: 20px 0 25px 0;
-            font-size: 12px;
-            font-family: Arial, sans-serif;
-            background: white;
+            font-size: 24px;
+            font-family: 'VT323', 'Courier New', monospace;
+            background: #000;
+            border-top: 2px solid #fff;
             text-align: center;
             margin-top: 30px;
             position: relative;
             z-index: 10;
         }
         .footer a {
-            color: black;
+            color: white;
             text-decoration: none;
             margin: 0 15px;
         }
@@ -569,13 +560,13 @@
             flex-wrap: nowrap;
         }
         .pill {
-            background: rgba(255, 255, 255, 0.85);
-            color: rgba(0, 0, 0, 0.85);
+            background: #000;
+            color: #fff;
             padding: 10px 25px;
-            border-radius: 50px;
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            border: none;
+            border-radius: 0;
+            font-size: 30px;
+            font-family: 'VT323', 'Courier New', monospace;
+            border: 2px solid #fff;
             cursor: pointer;
             transition: background 0.2s;
             min-width: 100px;
@@ -586,14 +577,14 @@
             gap: 5px;
         }
         .pill:hover {
-            background: rgba(255, 255, 255, 0.95);
+            background: #111;
         }
         .pill select {
             background: transparent;
             border: none;
-            font-size: 14px;
-            font-family: Arial, sans-serif;
-            color: rgba(0, 0, 0, 0.85);
+            font-size: 22px;
+            font-family: 'VT323', 'Courier New', monospace;
+            color: #fff;
             cursor: pointer;
             padding: 0;
             margin: 0;
@@ -603,7 +594,7 @@
             appearance: none;
             vertical-align: baseline;
         }
-        /* Team-Overlay mit Rasen-Hintergrund */
+        /* Team-Overlay */
         .team-overlay {
             display: none;
             position: fixed;
@@ -611,17 +602,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #228B22;
-            background-image: url('img/rasen-desktop.jpg');
-            background-size: cover;
-            background-position: center;
+            background-color: #000;
             z-index: 1000;
             overflow-y: auto;
-        }
-        @media (max-width: 768px) {
-            .team-overlay {
-                background-image: url('img/rasen-mobile.jpg');
-            }
         }
         .team-overlay.active {
             display: block;
@@ -656,10 +639,10 @@
         .team-match {
             display: flex;
             align-items: center;
-            background: rgba(0, 0, 0, 0.6);
+            background: transparent;
             margin: 5px 0;
-            padding: 15px 20px;
-            border-radius: 5px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
             font-size: 22px;
             cursor: pointer;
         }
@@ -683,26 +666,27 @@
             }
         }
         .team-match.no-link .team-pairing {
-            color: #aaa;
+            color: #fff;
         }
         .team-date-time {
             flex: 0 0 300px;
             text-align: left;
-            font-size: 18px;
+            font-size: 28px;
             white-space: nowrap;
-            font-family: Arial, sans-serif;
+            font-family: 'VT323', 'Courier New', monospace;
         }
         .team-pairing {
             flex: 1;
             text-align: left;
             padding-left: 20px;
-            font-family: 'Arial Black', Arial, sans-serif;
+            font-family: 'VT323', 'Courier New', monospace;
+            font-size: 40px;
         }
         .team-result {
             flex: 0 0 60px;
             text-align: right;
             font-weight: bold;
-            font-size: 22px;
+            font-size: 40px;
         }
         @media (max-width: 600px) {
             .team-overlay-title {
@@ -764,14 +748,16 @@
                     <strong>Ohne Play SRF App:</strong><br>Smartphone quer drehen, Link anklicken, Blick auf Mitte/unten, Play drücken, Bildschirm vergrössern.
                 </div>
                 <div class="info-section info-desktop-only" style="border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 15px;">
-                    So geht's: Link anklicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.
+                    So geht's: Link anklicken, Blick nach unten rechts fokussieren, Bildschirm vergrössern.<br><br>
+                    Die Spielberichte sind ein paar Minuten nach Ausstrahlung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.<br><br>
+                    Mit dem Button «Dein Team» kannst du die Saison einzelner Teams nachverfolgen.
                 </div>
-                <div class="info-section">Die Spielberichte sind spätestens fünf Minuten nach Ausstrahlung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
+                <div class="info-section info-mobile-only">Die Spielberichte sind spätestens fünf Minuten nach Ausstrahlung online, Resultate und Tabelle werden vor dem nächsten Spieltag aktualisiert.</div>
                 <div class="info-section info-mobile-only">
                     <strong>Seite auf Smartphone installieren:</strong><br>Drei Punkte neben URL anklicken → Teilen → Zum Home-Bildschirm
                 </div>
-                <div class="info-section">
-                    Mit dem Button «Team» kannst du die Saison deines Teams nachverfolgen.
+                <div class="info-section info-mobile-only">
+                    Mit dem Button «Dein Team» kannst du die Saison deines Teams nachverfolgen.
                 </div>
             </div>
         </div>
@@ -781,7 +767,6 @@
     <div class="header">
         <div class="header-text">
             <span class="header-title">No Spoiler League</span>
-            <div class="header-subtitle">SRF-Zusammenfassungen ohne Spoiler</div>
         </div>
         <div class="header-icons">
             <div class="info-icon" onclick="showInfoOverlay()">i</div>
@@ -943,24 +928,33 @@
                 const year = String(date.getFullYear()).slice(-2); // "25" oder "26"
                 const dateStr = `${day}.${month}.${year}`;
                 const timeStr = match.time;
+                const compactDate = `${day}.${month} ${timeStr}`;
+                const isMobile = window.innerWidth <= 600;
                 
                 // Link suchen (mit Spieltag, um Hin-/Rückrunde zu unterscheiden)
                 const matchKey = `${matchday.matchday}_${match.home} - ${match.away}`;
                 const linkData = links.matches[matchKey];
+                const hasClip = !!(linkData && linkData.url);
+                if (!hasClip) {
+                    matchDiv.classList.add('no-clip');
+                }
                 
                 // Anzeige ohne Spieltag-Prefix
                 const displayName = `${match.home} - ${match.away}`;
-                const resultDisplay = match.result ? `<div class="result">${match.result}</div>` : '';
+                const fullName = `${match.home} - ${match.away}`;
+                const resultDisplay = match.result
+                    ? `<div class="result">${match.result}</div>`
+                    : `<div class="result empty">&nbsp;</div>`;
                 
                 let pairingHTML;
-                if (linkData && linkData.url) {
-                    pairingHTML = `<span class="link status-available" data-url="${linkData.url}">${displayName}</span>`;
+                if (hasClip) {
+                    pairingHTML = `<span class="link status-available" data-url="${linkData.url}" title="${fullName}">${displayName}</span>`;
                 } else {
-                    pairingHTML = `<span class="no-link">${displayName}</span>`;
+                    pairingHTML = `<span class="no-link" title="${fullName}">${displayName}</span>`;
                 }
                 
                 matchDiv.innerHTML = `
-                    <div class="date-time">${weekday}. | ${dateStr} | ${timeStr}</div>
+                    <div class="date-time">${isMobile ? compactDate : `${weekday}. | ${dateStr} | ${timeStr}`}</div>
                     <div class="match-row">
                         <div class="pairing">${pairingHTML}</div>
                         ${resultDisplay}
