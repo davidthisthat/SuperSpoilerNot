@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-26T10:56:00.000Z",
+  "lastUpdated": "2026-02-22T18:50:24.713Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -988,11 +988,67 @@
       "urn": "urn:srf:video:1e4cef04-9182-41e0-bcc6-f9d5131d99dc",
       "type": "Standalone"
     },
-    "26_FC Winterthur - FC Thun": {
-      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:399aad03-bb94-4a0e-a86e-d6396737b861",
-      "foundAt": "2026-02-26T10:56:00.000Z",
-      "title": "Thun bezwingt Winterthur mühelos",
-      "urn": "urn:srf:video:399aad03-bb94-4a0e-a86e-d6396737b861",
+    "25_BSC Young Boys - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:ab90ff6b-2f77-40f3-826f-7f19443ee27d",
+      "foundAt": "2026-02-14T22:30:29.066Z",
+      "title": "YB schickt schwaches Winterthur mit 6:1 nach Hause",
+      "urn": "urn:srf:video:ab90ff6b-2f77-40f3-826f-7f19443ee27d",
+      "type": "Standalone"
+    },
+    "25_FC Thun - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:60dff584-caea-425e-b393-9ec0bbf6d787",
+      "foundAt": "2026-02-15T16:10:28.452Z",
+      "title": "Thun feiert gegen Sion den 8. Sieg in Serie",
+      "urn": "urn:srf:video:60dff584-caea-425e-b393-9ec0bbf6d787",
+      "type": "Standalone"
+    },
+    "25_Lausanne-Sport - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:fc3f1745-7d22-4227-abc7-0c49f17ab3e6",
+      "foundAt": "2026-02-15T18:40:31.788Z",
+      "title": "Lausanne holt trotz langer Überzahl nur einen Punkt gegen Servette",
+      "urn": "urn:srf:video:fc3f1745-7d22-4227-abc7-0c49f17ab3e6",
+      "type": "Standalone"
+    },
+    "25_FC Basel - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:87e51329-07eb-46ca-84cd-09df251f7fd4",
+      "foundAt": "2026-02-15T18:45:26.000Z",
+      "title": "Nächstes Elfmeterdrama um Shaqiri: FCB nur mit 1:1 gegen Lugano",
+      "urn": "urn:srf:video:87e51329-07eb-46ca-84cd-09df251f7fd4",
+      "type": "Standalone"
+    },
+    "26_Servette FC - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:308b4f67-6cf5-4d5c-8850-657f087c04e5",
+      "foundAt": "2026-02-21T19:25:17.286Z",
+      "title": "Servette und St. Gallen trennen sich 1:1",
+      "urn": "urn:srf:video:308b4f67-6cf5-4d5c-8850-657f087c04e5",
+      "type": "Standalone"
+    },
+    "26_Grasshoppers - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:8b5af2d7-c1a2-41cc-9222-2b0bf38954a8",
+      "foundAt": "2026-02-21T22:10:36.107Z",
+      "title": "FCZ entscheidet Zürcher Derby für sich",
+      "urn": "urn:srf:video:8b5af2d7-c1a2-41cc-9222-2b0bf38954a8",
+      "type": "Standalone"
+    },
+    "26_FC Sion - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:2bbc08a5-9ea0-4343-b7f1-e1d0a1a5e082",
+      "foundAt": "2026-02-22T15:40:20.819Z",
+      "title": "Nivokazi schiesst Sion mit Hattrick zum Heimerfolg gegen YB",
+      "urn": "urn:srf:video:2bbc08a5-9ea0-4343-b7f1-e1d0a1a5e082",
+      "type": "Standalone"
+    },
+    "26_FC Lugano - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0728b516-9703-4c33-8e2d-df99b2652973",
+      "foundAt": "2026-02-22T18:40:21.355Z",
+      "title": "Lugano schlägt Lausanne mit 2:1",
+      "urn": "urn:srf:video:0728b516-9703-4c33-8e2d-df99b2652973",
+      "type": "Standalone"
+    },
+    "26_FC Luzern - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:cf16272f-62b6-451d-a315-4e5f0fa7bbf6",
+      "foundAt": "2026-02-22T18:50:24.713Z",
+      "title": "Luzern besiegt Basel in verrückter Partie",
+      "urn": "urn:srf:video:cf16272f-62b6-451d-a315-4e5f0fa7bbf6",
       "type": "Standalone"
     }
   }
