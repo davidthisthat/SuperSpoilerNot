@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-22T18:50:24.713Z",
+  "lastUpdated": "2026-02-27T07:52:11.636Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1049,6 +1049,13 @@
       "foundAt": "2026-02-22T18:50:24.713Z",
       "title": "Luzern besiegt Basel in verrückter Partie",
       "urn": "urn:srf:video:cf16272f-62b6-451d-a315-4e5f0fa7bbf6",
+      "type": "Standalone"
+    },
+    "26_FC Winterthur - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:399aad03-bb94-4a0e-a86e-d6396737b861",
+      "foundAt": "2026-02-27T07:52:11.634Z",
+      "title": "Thun bezwingt Winterthur mühelos",
+      "urn": "urn:srf:video:399aad03-bb94-4a0e-a86e-d6396737b861",
       "type": "Standalone"
     }
   }
