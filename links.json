@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-27T07:52:11.636Z",
+  "lastUpdated": "2026-02-28T19:30:45.646Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1056,6 +1056,13 @@
       "foundAt": "2026-02-27T07:52:11.634Z",
       "title": "Thun bezwingt Winterthur mühelos",
       "urn": "urn:srf:video:399aad03-bb94-4a0e-a86e-d6396737b861",
+      "type": "Standalone"
+    },
+    "27_FC Thun - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:96547349-11c9-425b-a07f-a0f6e47d9231",
+      "foundAt": "2026-02-28T19:30:45.646Z",
+      "title": "Thun feiert gegen Luzern den 10. Sieg in Serie",
+      "urn": "urn:srf:video:96547349-11c9-425b-a07f-a0f6e47d9231",
       "type": "Standalone"
     }
   }
