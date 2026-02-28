@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-28T19:30:45.646Z",
+  "lastUpdated": "2026-02-28T19:50:25.265Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1063,6 +1063,13 @@
       "foundAt": "2026-02-28T19:30:45.646Z",
       "title": "Thun feiert gegen Luzern den 10. Sieg in Serie",
       "urn": "urn:srf:video:96547349-11c9-425b-a07f-a0f6e47d9231",
+      "type": "Standalone"
+    },
+    "27_FC St. Gallen - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:2576b232-f108-4e10-a35f-b1a04e49c369",
+      "foundAt": "2026-02-28T19:50:25.265Z",
+      "title": "Vogt schiesst St. Gallen gegen Winterthur zum Sieg",
+      "urn": "urn:srf:video:2576b232-f108-4e10-a35f-b1a04e49c369",
       "type": "Standalone"
     }
   }
