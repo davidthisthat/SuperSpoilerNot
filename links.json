@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-01T10:19:40.573Z",
+  "lastUpdated": "2026-03-01T15:40:31.209Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1077,6 +1077,13 @@
       "foundAt": "2026-03-01T10:19:26.819Z",
       "title": "Nullnummer im Rhone-Derby",
       "urn": "urn:srf:video:7138655c-2333-4572-8184-39bebc451b12",
+      "type": "Standalone"
+    },
+    "27_Lausanne-Sport - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:94741dc6-56da-4d67-8cfd-6753d86d6510",
+      "foundAt": "2026-03-01T15:40:31.209Z",
+      "title": "Koloto schiesst den FCB zum knappen 2:1-Sieg in Lausanne",
+      "urn": "urn:srf:video:94741dc6-56da-4d67-8cfd-6753d86d6510",
       "type": "Standalone"
     }
   }
