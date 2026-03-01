@@ -911,32 +911,29 @@
         let links = null;
         let currentMatchdayIndex = 0;
 
+        async function fetchJsonWithFallback(primaryUrl, fallbackPath) {
+            // 1) Prefer GitHub/raw (fresh network request)
+            try {
+                const primaryRes = await fetch(primaryUrl, { cache: 'no-store' });
+                if (!primaryRes.ok) throw new Error(`Primary ${primaryRes.status}`);
+                return await primaryRes.json();
+            } catch (e) {
+                // 2) Fallback to local file with cache-buster
+                const fallbackUrl = `${fallbackPath}?t=${Date.now()}`;
+                const fallbackRes = await fetch(fallbackUrl, { cache: 'no-store' });
+                if (!fallbackRes.ok) throw new Error(`Fallback ${fallbackRes.status}`);
+                return await fallbackRes.json();
+            }
+        }
+
         // Daten laden
         async function loadData() {
             try {
-                // Cache-Busting Timestamp
-                const cacheBuster = '?t=' + Date.now();
-                
-                // Spielplan mit Cache-Busting (wichtig für iOS Home Screen App)
-                const spielplanUrl = 'https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/spielplan.json?t=' + Date.now();
-                try {
-                    const spielplanRes = await fetch(spielplanUrl);
-                    spielplan = await spielplanRes.json();
-                } catch (e) {
-                    const spielplanRes = await fetch('spielplan.json' + cacheBuster);
-                    spielplan = await spielplanRes.json();
-                }
-                
-                // Links von GitHub laden (Cache-Busting mit Timestamp)
-                const linksUrl = 'https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/links.json?t=' + Date.now();
-                try {
-                    const linksRes = await fetch(linksUrl);
-                    links = await linksRes.json();
-                } catch (e) {
-                    // Fallback: lokale Datei
-                    const linksRes = await fetch('links.json');
-                    links = await linksRes.json();
-                }
+                const spielplanUrl = `https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/spielplan.json?t=${Date.now()}`;
+                const linksUrl = `https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/links.json?t=${Date.now()}`;
+
+                spielplan = await fetchJsonWithFallback(spielplanUrl, 'spielplan.json');
+                links = await fetchJsonWithFallback(linksUrl, 'links.json');
                 
                 // Finde den aktuellen/nächsten Spieltag
                 findCurrentMatchday();
@@ -955,16 +952,11 @@
             refreshIcon.classList.add('spinning');
             
             try {
-                // Links immer frisch von GitHub laden
-                const linksUrl = 'https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/links.json?t=' + Date.now();
-                const linksRes = await fetch(linksUrl, { cache: 'no-store' });
-                links = await linksRes.json();
-                
-                // Spielplan neu laden
-                const cacheBuster = '?t=' + Date.now();
-                const spielplanUrl = 'https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/spielplan.json?t=' + Date.now();
-                const spielplanRes = await fetch(spielplanUrl, { cache: 'no-store' });
-                spielplan = await spielplanRes.json();
+                const linksUrl = `https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/links.json?t=${Date.now()}`;
+                const spielplanUrl = `https://raw.githubusercontent.com/davidthisthat/SuperSpoilerNot/main/spielplan.json?t=${Date.now()}`;
+
+                links = await fetchJsonWithFallback(linksUrl, 'links.json');
+                spielplan = await fetchJsonWithFallback(spielplanUrl, 'spielplan.json');
                 
                 // Ansicht aktualisieren
                 renderMatchday();
