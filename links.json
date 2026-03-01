@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-01T18:10:34.616Z",
+  "lastUpdated": "2026-03-01T18:45:21.009Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1091,6 +1091,13 @@
       "foundAt": "2026-03-01T18:10:23.796Z",
       "title": "Trotz 70-minütiger Unterzahl: GC gewinnt wieder einmal",
       "urn": "urn:srf:video:55818f96-7860-42c9-9e92-d987d7f29c5b",
+      "type": "Standalone"
+    },
+    "27_BSC Young Boys - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:6cd4d390-0fe3-4704-9d3d-6b35c38a9ae6",
+      "foundAt": "2026-03-01T18:45:21.009Z",
+      "title": "Lauper bricht den Bann: YB schlägt den FCZ nach langer Überzahl",
+      "urn": "urn:srf:video:6cd4d390-0fe3-4704-9d3d-6b35c38a9ae6",
       "type": "Standalone"
     }
   }
