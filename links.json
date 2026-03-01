@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-01T15:40:31.209Z",
+  "lastUpdated": "2026-03-01T18:10:34.616Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1084,6 +1084,13 @@
       "foundAt": "2026-03-01T15:40:31.209Z",
       "title": "Koloto schiesst den FCB zum knappen 2:1-Sieg in Lausanne",
       "urn": "urn:srf:video:94741dc6-56da-4d67-8cfd-6753d86d6510",
+      "type": "Standalone"
+    },
+    "27_Grasshoppers - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:55818f96-7860-42c9-9e92-d987d7f29c5b",
+      "foundAt": "2026-03-01T18:10:23.796Z",
+      "title": "Trotz 70-minütiger Unterzahl: GC gewinnt wieder einmal",
+      "urn": "urn:srf:video:55818f96-7860-42c9-9e92-d987d7f29c5b",
       "type": "Standalone"
     }
   }
