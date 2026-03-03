@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-01T18:45:21.009Z",
+  "lastUpdated": "2026-03-03T21:55:25.824Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1098,6 +1098,13 @@
       "foundAt": "2026-03-01T18:45:21.009Z",
       "title": "Lauper bricht den Bann: YB schlägt den FCZ nach langer Überzahl",
       "urn": "urn:srf:video:6cd4d390-0fe3-4704-9d3d-6b35c38a9ae6",
+      "type": "Standalone"
+    },
+    "28_FC Winterthur - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:b9ca2a1f-2f97-4b4a-94ab-759bc0de5be5",
+      "foundAt": "2026-03-03T21:55:25.824Z",
+      "title": "Winterthur muss sich in Unterzahl in Genf spät mit einem 1:1 begnügen",
+      "urn": "urn:srf:video:b9ca2a1f-2f97-4b4a-94ab-759bc0de5be5",
       "type": "Standalone"
     }
   }
