@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T22:30:46.487Z",
+  "lastUpdated": "2026-03-05T22:35:32.038Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1126,6 +1126,13 @@
       "foundAt": "2026-03-05T22:30:46.487Z",
       "title": "Witzig in der 95. Minute: St. Gallen knöpft Thun einen Punkt ab",
       "urn": "urn:srf:video:6b942a51-fc92-45f6-84a3-d2cc09742c57",
+      "type": "Standalone"
+    },
+    "28_FC Basel - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:221e1311-8a59-4e4d-a166-91c4019b8b9a",
+      "foundAt": "2026-03-05T22:35:32.038Z",
+      "title": "Basel feiert gegen GC einen knappen Heimsieg",
+      "urn": "urn:srf:video:221e1311-8a59-4e4d-a166-91c4019b8b9a",
       "type": "Standalone"
     }
   }
