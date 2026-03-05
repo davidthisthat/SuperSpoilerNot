@@ -4,10 +4,10 @@
       "keywords": ["FCB", "Basel", "FC Basel", "Rot-Blau", "Basler"]
     },
     "Grasshoppers": {
-      "keywords": ["GC", "Hoppers", "GCZ", "Grasshoppers", "Hoppers"]
+      "keywords": ["GC", "Hoppers", "GCZ", "Grasshoppers", "Hoppers", "Zürich"]
     },
     "FC Zürich": {
-      "keywords": ["FCZ", "FC Zürich"]
+      "keywords": ["FCZ", "FC Zürich", "Zürich"]
     },
     "BSC Young Boys": {
       "keywords": ["YB", "Young Boys", "Bern", "Berner", "BSC", "BSC Young Boys"]
@@ -19,7 +19,7 @@
       "keywords": ["Sion", "FC Sion", "Walliser"]
     },
     "Servette FC": {
-      "keywords": ["Servette", "Servette FC", "Genfer", "Servette-Genf"]
+      "keywords": ["Servette", "Servette FC", "Genfer", "Servette-Genf", "Genf"]
     },
    "FC Thun": {
       "keywords": ["Thun", "Thuner", "Oberländer", "Oberland", "FCT", "FC Thun"]
@@ -28,10 +28,10 @@
       "keywords": ["Luzern", "FC Luzern", "Luzerner"]
     },
     "FC Lugano": {
-      "keywords": ["Lugano", "Tessiner", "FC Lugano"]
+      "keywords": ["Lugano", "Tessiner", "FC Lugano", "Luganesi"]
     },
     "Lausanne-Sport": {
-      "keywords": ["Lausanner", "Lausanne-Sport", "LS"]
+      "keywords": ["Lausanner", "Lausanne-Sport", "Lausanne", "LS"]
     },
     "FC Winterthur": {
       "keywords": ["Winterthur", "FC Winterthur", "Winthi", "FCW", "Winterthurer"]
