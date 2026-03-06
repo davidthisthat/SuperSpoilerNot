@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-05T22:35:32.038Z",
+  "lastUpdated": "2026-03-06T11:22:11Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1133,6 +1133,13 @@
       "foundAt": "2026-03-05T22:35:32.038Z",
       "title": "Basel feiert gegen GC einen knappen Heimsieg",
       "urn": "urn:srf:video:221e1311-8a59-4e4d-a166-91c4019b8b9a",
+      "type": "Standalone"
+    },
+    "28_FC Zürich - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:115de74b-627e-43df-90f8-d9c3c7cbb2d0",
+      "foundAt": "2026-03-06T11:22:11Z",
+      "title": "Sow in der Nachspielzeit: Lausanne nimmt 3 Punkte aus Zürich mit",
+      "urn": "urn:srf:video:115de74b-627e-43df-90f8-d9c3c7cbb2d0",
       "type": "Standalone"
     }
   }
