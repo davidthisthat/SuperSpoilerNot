@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07T20:40:25.854Z",
+  "lastUpdated": "2026-03-07T22:15:27.095Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1154,6 +1154,13 @@
       "foundAt": "2026-03-07T20:40:25.854Z",
       "title": "Sion und Winterthur teilen die Punkte",
       "urn": "urn:srf:video:6282d811-77cd-43ba-a9a7-47aab4187ad7",
+      "type": "Standalone"
+    },
+    "29_FC Lugano - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:410c080a-8729-46ab-908b-3f810ace8623",
+      "foundAt": "2026-03-07T22:15:27.095Z",
+      "title": "Luzern gewinnt auswärts gegen Lugano",
+      "urn": "urn:srf:video:410c080a-8729-46ab-908b-3f810ace8623",
       "type": "Standalone"
     }
   }
