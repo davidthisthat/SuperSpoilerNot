@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-06T11:22:11Z",
+  "lastUpdated": "2026-03-07T20:40:25.854Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1140,6 +1140,20 @@
       "foundAt": "2026-03-06T11:22:11Z",
       "title": "Sow in der Nachspielzeit: Lausanne nimmt 3 Punkte aus Zürich mit",
       "urn": "urn:srf:video:115de74b-627e-43df-90f8-d9c3c7cbb2d0",
+      "type": "Standalone"
+    },
+    "29_Servette FC - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:5ca272ab-9cf8-4e1a-a70d-e5950506968f",
+      "foundAt": "2026-03-07T20:40:24.928Z",
+      "title": "Kadile schiesst Servette zum Sieg über den FCZ",
+      "urn": "urn:srf:video:5ca272ab-9cf8-4e1a-a70d-e5950506968f",
+      "type": "Standalone"
+    },
+    "29_FC Sion - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:6282d811-77cd-43ba-a9a7-47aab4187ad7",
+      "foundAt": "2026-03-07T20:40:25.854Z",
+      "title": "Sion und Winterthur teilen die Punkte",
+      "urn": "urn:srf:video:6282d811-77cd-43ba-a9a7-47aab4187ad7",
       "type": "Standalone"
     }
   }
