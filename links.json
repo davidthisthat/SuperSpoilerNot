@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-08T18:05:41.139Z",
+  "lastUpdated": "2026-03-08T18:30:29.995Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1175,6 +1175,13 @@
       "foundAt": "2026-03-08T18:05:41.139Z",
       "title": "Seoane: «Wenn Thun etwas auszeichnet, ist es ihre Beharrlichkeit»",
       "urn": "urn:srf:video:5a611dc5-eff2-4c8f-8072-c933741ffdb1",
+      "type": "Standalone"
+    },
+    "29_Grasshoppers - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:66371db2-91d7-4f77-ae60-1645ad5b107a",
+      "foundAt": "2026-03-08T18:30:29.995Z",
+      "title": "Lausanne holt Dreier bei GC",
+      "urn": "urn:srf:video:66371db2-91d7-4f77-ae60-1645ad5b107a",
       "type": "Standalone"
     }
   }
