@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-08T15:35:24.678Z",
+  "lastUpdated": "2026-03-08T18:05:41.139Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1168,6 +1168,13 @@
       "foundAt": "2026-03-08T15:35:24.678Z",
       "title": "St. Gallen lässt Basel keine Chance",
       "urn": "urn:srf:video:46192bc6-ed03-44bd-9ae9-623578c32e7f",
+      "type": "Standalone"
+    },
+    "29_BSC Young Boys - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:5a611dc5-eff2-4c8f-8072-c933741ffdb1",
+      "foundAt": "2026-03-08T18:05:41.139Z",
+      "title": "Seoane: «Wenn Thun etwas auszeichnet, ist es ihre Beharrlichkeit»",
+      "urn": "urn:srf:video:5a611dc5-eff2-4c8f-8072-c933741ffdb1",
       "type": "Standalone"
     }
   }
