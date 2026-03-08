@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-07T22:15:27.095Z",
+  "lastUpdated": "2026-03-08T15:35:24.678Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1161,6 +1161,13 @@
       "foundAt": "2026-03-07T22:15:27.095Z",
       "title": "Luzern gewinnt auswärts gegen Lugano",
       "urn": "urn:srf:video:410c080a-8729-46ab-908b-3f810ace8623",
+      "type": "Standalone"
+    },
+    "29_FC St. Gallen - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:46192bc6-ed03-44bd-9ae9-623578c32e7f",
+      "foundAt": "2026-03-08T15:35:24.678Z",
+      "title": "St. Gallen lässt Basel keine Chance",
+      "urn": "urn:srf:video:46192bc6-ed03-44bd-9ae9-623578c32e7f",
       "type": "Standalone"
     }
   }
