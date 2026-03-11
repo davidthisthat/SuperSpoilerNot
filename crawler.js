@@ -124,17 +124,30 @@ function isVideoDurationValid(video) {
 // Blacklist: Videos mit diesen Wörtern im Titel sind keine Spielberichte
 const TITLE_BLACKLIST = ['trainer', 'coach', 'interview', 'pressekonferenz', 'vorstellung', 'bilanz', 'analyse', 'vorschau', 'reaktion', 'stimmen'];
 
-// Erweiterte Blacklist: Auch in der Beschreibung prüfen (nur eindeutige Wörter)
-const DESCRIPTION_BLACKLIST = ['interview', 'stimmen', 'reaktion'];
+// Erweiterte Blacklist: Auch in der Beschreibung prüfen
+const DESCRIPTION_BLACKLIST = ['interview', 'stimmen', 'reaktion', 'spricht'];
+
+function hasQuotedTitle(title) {
+    // Interview-/Statement-Clips haben oft direkte Zitate im Titel
+    return /["«»„“]/.test(title || '');
+}
 
 function isNotBlacklisted(video) {
     const title = (video.title || '').toLowerCase();
+    if (hasQuotedTitle(video.title)) {
+        return false;
+    }
     for (const word of TITLE_BLACKLIST) {
         if (title.includes(word)) {
             return false;
         }
     }
     const description = (video.description || '').toLowerCase();
+    for (const word of TITLE_BLACKLIST) {
+        if (description.includes(word)) {
+            return false;
+        }
+    }
     for (const word of DESCRIPTION_BLACKLIST) {
         if (description.includes(word)) {
             return false;
