@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T19:40:32.827Z",
+  "lastUpdated": "2026-03-14T19:45:23.372Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1189,6 +1189,13 @@
       "foundAt": "2026-03-14T19:40:32.827Z",
       "title": "Sion bezwingt den FCZ 2:1",
       "urn": "urn:srf:video:a5cea07e-d84e-465e-94ed-e9a117c8ffbb",
+      "type": "Standalone"
+    },
+    "30_FC Thun - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:edf28358-5d86-49af-a957-c4b8ba7daa2f",
+      "foundAt": "2026-03-14T19:45:23.372Z",
+      "title": "Thun fertigt die Grasshoppers mit 5:1 ab",
+      "urn": "urn:srf:video:edf28358-5d86-49af-a957-c4b8ba7daa2f",
       "type": "Standalone"
     }
   }
