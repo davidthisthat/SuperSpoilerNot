@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-11T15:02:38.153Z",
+  "lastUpdated": "2026-03-14T19:40:32.827Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1182,6 +1182,13 @@
       "foundAt": "2026-03-08T18:30:29.995Z",
       "title": "Lausanne holt Dreier bei GC",
       "urn": "urn:srf:video:66371db2-91d7-4f77-ae60-1645ad5b107a",
+      "type": "Standalone"
+    },
+    "30_FC Zürich - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:a5cea07e-d84e-465e-94ed-e9a117c8ffbb",
+      "foundAt": "2026-03-14T19:40:32.827Z",
+      "title": "Sion bezwingt den FCZ 2:1",
+      "urn": "urn:srf:video:a5cea07e-d84e-465e-94ed-e9a117c8ffbb",
       "type": "Standalone"
     }
   }
