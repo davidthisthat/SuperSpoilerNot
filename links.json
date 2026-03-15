@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-14T19:45:23.372Z",
+  "lastUpdated": "2026-03-15T15:25:29.843Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1196,6 +1196,13 @@
       "foundAt": "2026-03-14T19:45:23.372Z",
       "title": "Thun fertigt die Grasshoppers mit 5:1 ab",
       "urn": "urn:srf:video:edf28358-5d86-49af-a957-c4b8ba7daa2f",
+      "type": "Standalone"
+    },
+    "30_Lausanne-Sport - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:88b97b92-6b72-44c2-a63b-ee6f2360ae4f",
+      "foundAt": "2026-03-15T15:25:29.843Z",
+      "title": "Sanches lässt YB durchatmen und sein Ex-Team verzweifeln",
+      "urn": "urn:srf:video:88b97b92-6b72-44c2-a63b-ee6f2360ae4f",
       "type": "Standalone"
     }
   }
