@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T15:25:29.843Z",
+  "lastUpdated": "2026-03-15T18:15:44.711Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1203,6 +1203,13 @@
       "foundAt": "2026-03-15T15:25:29.843Z",
       "title": "Sanches lässt YB durchatmen und sein Ex-Team verzweifeln",
       "urn": "urn:srf:video:88b97b92-6b72-44c2-a63b-ee6f2360ae4f",
+      "type": "Standalone"
+    },
+    "30_FC Luzern - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:af43c38e-5b71-4220-a22d-4e721e626148",
+      "foundAt": "2026-03-15T18:15:44.711Z",
+      "title": "Winterthur landet erlösenden Sieg in Luzern",
+      "urn": "urn:srf:video:af43c38e-5b71-4220-a22d-4e721e626148",
       "type": "Standalone"
     }
   }
