@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-21T19:30:42.009Z",
+  "lastUpdated": "2026-03-21T19:40:23.866Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1217,6 +1217,13 @@
       "foundAt": "2026-03-21T19:30:33.028Z",
       "title": "Servette fegt desaströses GC nach historischem Start vom Platz",
       "urn": "urn:srf:video:26a35745-c021-4133-8bd7-adc85800c30d",
+      "type": "Standalone"
+    },
+    "31_FC Zürich - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:85db59eb-6657-45f4-96ae-ae65740d0877",
+      "foundAt": "2026-03-21T19:40:23.866Z",
+      "title": "Ausgerechnet der FCZ stoppt die Thuner Serie der Ungeschlagenheit",
+      "urn": "urn:srf:video:85db59eb-6657-45f4-96ae-ae65740d0877",
       "type": "Standalone"
     }
   }
