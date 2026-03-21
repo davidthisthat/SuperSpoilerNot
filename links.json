@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-15T18:15:44.711Z",
+  "lastUpdated": "2026-03-21T19:30:42.009Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1210,6 +1210,13 @@
       "foundAt": "2026-03-15T18:15:44.711Z",
       "title": "Winterthur landet erlösenden Sieg in Luzern",
       "urn": "urn:srf:video:af43c38e-5b71-4220-a22d-4e721e626148",
+      "type": "Standalone"
+    },
+    "31_Servette FC - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:26a35745-c021-4133-8bd7-adc85800c30d",
+      "foundAt": "2026-03-21T19:30:33.028Z",
+      "title": "Servette fegt desaströses GC nach historischem Start vom Platz",
+      "urn": "urn:srf:video:26a35745-c021-4133-8bd7-adc85800c30d",
       "type": "Standalone"
     }
   }
