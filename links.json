@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-21T19:40:23.866Z",
+  "lastUpdated": "2026-03-21T22:10:23.633Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1224,6 +1224,13 @@
       "foundAt": "2026-03-21T19:40:23.866Z",
       "title": "Ausgerechnet der FCZ stoppt die Thuner Serie der Ungeschlagenheit",
       "urn": "urn:srf:video:85db59eb-6657-45f4-96ae-ae65740d0877",
+      "type": "Standalone"
+    },
+    "31_FC Sion - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:05339022-e22c-4f4d-88cb-ac85490dd0e4",
+      "foundAt": "2026-03-21T22:10:23.633Z",
+      "title": "Kein Sieger bei Sion vs. FCSG",
+      "urn": "urn:srf:video:05339022-e22c-4f4d-88cb-ac85490dd0e4",
       "type": "Standalone"
     }
   }
