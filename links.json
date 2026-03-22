@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-22T15:55:24.958Z",
+  "lastUpdated": "2026-03-22T17:55:30.501Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1238,6 +1238,13 @@
       "foundAt": "2026-03-22T15:55:24.958Z",
       "title": "Winterthur unterliegt Basel trotz zahlreicher Chancen",
       "urn": "urn:srf:video:932a2385-7823-4382-b50a-5990193eb9ee",
+      "type": "Standalone"
+    },
+    "31_BSC Young Boys - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:7c25d569-d94c-4ecc-900e-2b0933c7ee85",
+      "foundAt": "2026-03-22T17:55:30.501Z",
+      "title": "Lugano holt dank Penalty-Garant Grgic einen Punkt bei YB",
+      "urn": "urn:srf:video:7c25d569-d94c-4ecc-900e-2b0933c7ee85",
       "type": "Standalone"
     }
   }
