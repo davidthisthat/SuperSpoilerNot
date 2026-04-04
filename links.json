@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-04T18:30:46.838Z",
+  "lastUpdated": "2026-04-04T18:40:26.242Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1259,6 +1259,13 @@
       "foundAt": "2026-04-04T18:30:46.838Z",
       "title": "Dos Santos trifft gefühlvoll: Auch Lugano schlägt Thun",
       "urn": "urn:srf:video:6b08e624-cb28-43b8-acc2-0e3cdc97ff64",
+      "type": "Standalone"
+    },
+    "32_Lausanne-Sport - FC Winterthur": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:adb699ed-b48c-49b1-a186-bd2fb065267d",
+      "foundAt": "2026-04-04T18:40:26.242Z",
+      "title": "Winterthur muss in Lausanne eine 1:2-Niederlage einstecken",
+      "urn": "urn:srf:video:adb699ed-b48c-49b1-a186-bd2fb065267d",
       "type": "Standalone"
     }
   }
