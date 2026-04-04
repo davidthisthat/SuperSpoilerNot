@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-22T18:25:20.356Z",
+  "lastUpdated": "2026-04-04T18:30:46.838Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1252,6 +1252,13 @@
       "foundAt": "2026-03-22T18:25:20.356Z",
       "title": "Luzern verpasst trotz klarem Heimsieg die Championship Group",
       "urn": "urn:srf:video:f323a8ea-542d-46f1-a6c1-e30bf2dd1dd3",
+      "type": "Standalone"
+    },
+    "32_FC Lugano - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:6b08e624-cb28-43b8-acc2-0e3cdc97ff64",
+      "foundAt": "2026-04-04T18:30:46.838Z",
+      "title": "Dos Santos trifft gefühlvoll: Auch Lugano schlägt Thun",
+      "urn": "urn:srf:video:6b08e624-cb28-43b8-acc2-0e3cdc97ff64",
       "type": "Standalone"
     }
   }
