@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-04T18:40:26.242Z",
+  "lastUpdated": "2026-04-04T21:29:09.180Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1266,6 +1266,13 @@
       "foundAt": "2026-04-04T18:40:26.242Z",
       "title": "Winterthur muss in Lausanne eine 1:2-Niederlage einstecken",
       "urn": "urn:srf:video:adb699ed-b48c-49b1-a186-bd2fb065267d",
+      "type": "Standalone"
+    },
+    "32_FC Basel - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:fd2603f6-4168-4680-9703-61b57be63011",
+      "foundAt": "2026-04-04T21:29:09.180Z",
+      "title": "Wildes Duell zwischen Basel und YB endet ohne Sieger",
+      "urn": "urn:srf:video:fd2603f6-4168-4680-9703-61b57be63011",
       "type": "Standalone"
     }
   }
