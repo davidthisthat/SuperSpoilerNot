@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T17:00:56.973Z",
+  "lastUpdated": "2026-04-06T17:40:27.388Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1287,6 +1287,13 @@
       "foundAt": "2026-04-06T17:00:47.427Z",
       "title": "Effiziente Genfer lassen blassem Luzern keine Chance",
       "urn": "urn:srf:video:872a4f47-2a7c-4f4e-9bf5-1c528a12c3ea",
+      "type": "Standalone"
+    },
+    "32_FC St. Gallen - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:73a6cb51-7d2d-4699-a55b-597d76bff02a",
+      "foundAt": "2026-04-06T17:40:27.388Z",
+      "title": "Rückkehrer Vogt schiesst St. Gallen zum Sieg",
+      "urn": "urn:srf:video:73a6cb51-7d2d-4699-a55b-597d76bff02a",
       "type": "Standalone"
     }
   }
