@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-06T14:50:30.307Z",
+  "lastUpdated": "2026-04-06T17:00:56.973Z",
   "matches": {
     "19_FC Thun - FC Zürich": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:816a469a-e15c-40cd-9315-d0cdc9709e6b",
@@ -1280,6 +1280,13 @@
       "foundAt": "2026-04-06T14:50:30.307Z",
       "title": "GC hat auch gegen Sion keinen Stich – 5. Niederlage in Folge",
       "urn": "urn:srf:video:a45f956c-42fe-4483-ab57-c81b752be55b",
+      "type": "Standalone"
+    },
+    "32_Servette FC - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:872a4f47-2a7c-4f4e-9bf5-1c528a12c3ea",
+      "foundAt": "2026-04-06T17:00:47.427Z",
+      "title": "Effiziente Genfer lassen blassem Luzern keine Chance",
+      "urn": "urn:srf:video:872a4f47-2a7c-4f4e-9bf5-1c528a12c3ea",
       "type": "Standalone"
     }
   }
