@@ -1,7 +1,7 @@
 // Service Worker für No Spoiler League
 // Strategie: Network First - immer zuerst vom Server laden
 
-const CACHE_NAME = 'nospoiler-v4';
+const CACHE_NAME = 'nospoiler-v5';
 
 // Bei Installation: Nichts cachen, wir wollen immer frische Daten
 self.addEventListener('install', (event) => {

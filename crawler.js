@@ -181,26 +181,51 @@ function getDerbyKeywords(homeTeam, awayTeam, teamsData) {
 }
 
 // Finde Spiele die gesucht werden müssen
+function getSearchWindow(match) {
+    const MAX_SEARCH_HOURS = 6;
+
+    if (match.searchStart) {
+        let searchStartStr = match.searchStart;
+        if (!searchStartStr.includes('+') && !searchStartStr.includes('Z')) {
+            const tempDate = new Date(searchStartStr);
+            const tzOffset = getSwissTimezoneOffset(tempDate);
+            searchStartStr += tzOffset;
+        }
+        const searchTime = new Date(searchStartStr);
+        return {
+            start: searchTime,
+            end: new Date(searchTime.getTime() + MAX_SEARCH_HOURS * 60 * 60 * 1000)
+        };
+    }
+
+    if (!match.date) {
+        return null;
+    }
+
+    // Termine ohne Uhrzeit: ab Spieltag 12:00 für 3 Tage suchen
+    const tzOffset = getSwissTimezoneOffset(new Date(match.date));
+    const start = new Date(`${match.date}T12:00:00${tzOffset}`);
+    const end = new Date(start.getTime() + 3 * 24 * 60 * 60 * 1000);
+    return { start, end };
+}
+
 function getMatchesToSearch(spielplan, links, testMatchday = null) {
     const now = new Date();
     const matchesToSearch = [];
-    const MAX_SEARCH_HOURS = 6; // Maximal 6 Stunden nach searchStart suchen
-    
+    const CATCHUP_DAYS = 14;
+
     for (const matchday of spielplan.matchdays) {
         if (testMatchday !== null && matchday.matchday !== testMatchday) {
             continue;
         }
-        
+
         for (const match of matchday.matches) {
-            // Match-Key enthält jetzt den Spieltag, um Hin- und Rückrunde zu unterscheiden
             const matchKey = `${matchday.matchday}_${match.home} - ${match.away}`;
-            
-            // Überspringe wenn Link bereits gefunden
+
             if (links.matches[matchKey] && links.matches[matchKey].url) {
                 continue;
             }
-            
-            // Im Test-Modus: Ignoriere searchStart
+
             if (testMatchday !== null) {
                 matchesToSearch.push({
                     matchday: matchday.matchday,
@@ -209,33 +234,34 @@ function getMatchesToSearch(spielplan, links, testMatchday = null) {
                 });
                 continue;
             }
-            
-            // Prüfe ob Suchzeit erreicht ist UND nicht zu alt
-            if (match.searchStart) {
-                // searchStart ist in Schweizer Zeit - füge Zeitzone automatisch hinzu
-                let searchStartStr = match.searchStart;
-                if (!searchStartStr.includes('+') && !searchStartStr.includes('Z')) {
-                    // Bestimme Zeitzone basierend auf dem Datum
-                    const tempDate = new Date(searchStartStr);
-                    const tzOffset = getSwissTimezoneOffset(tempDate);
-                    searchStartStr += tzOffset;
-                }
-                const searchTime = new Date(searchStartStr);
-                const searchEndTime = new Date(searchTime.getTime() + MAX_SEARCH_HOURS * 60 * 60 * 1000);
-                
-                if (now >= searchTime && now <= searchEndTime) {
-                    matchesToSearch.push({
-                        matchday: matchday.matchday,
-                        ...match,
-                        matchKey
-                    });
-                } else if (now > searchEndTime) {
-                    console.log(`  ⏰ Timeout: ${matchKey} (Suche beendet nach ${MAX_SEARCH_HOURS}h)`);
-                }
+
+            const window = getSearchWindow(match);
+            if (!window) {
+                continue;
+            }
+
+            const inLiveWindow = now >= window.start && now <= window.end;
+            let inCatchupWindow = false;
+
+            if (!inLiveWindow && match.date) {
+                const matchDate = new Date(`${match.date}T00:00:00`);
+                matchDate.setHours(0, 0, 0, 0);
+                const daysSince = (now - matchDate) / (1000 * 60 * 60 * 24);
+                inCatchupWindow = daysSince >= 0 && daysSince <= CATCHUP_DAYS && now > window.end;
+            }
+
+            if (inLiveWindow || inCatchupWindow) {
+                matchesToSearch.push({
+                    matchday: matchday.matchday,
+                    ...match,
+                    matchKey
+                });
+            } else if (now > window.end && !inCatchupWindow) {
+                console.log(`  ⏰ Timeout: ${matchKey}`);
             }
         }
     }
-    
+
     return matchesToSearch;
 }
 

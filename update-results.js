@@ -6,7 +6,7 @@ const SPIELPLAN_FILE = path.join(__dirname, 'spielplan.json');
 // TheSportsDB - komplett gratis, kein API-Key nötig
 const API_BASE = 'https://www.thesportsdb.com/api/v1/json/3/eventsround.php';
 const LEAGUE_ID = 4675; // Swiss Super League
-const SEASON = '2025-2026';
+const SEASON = '2026-2027';
 
 // Mapping: TheSportsDB Teamnamen → spielplan.json Teamnamen
 const TEAM_MAP = {
@@ -19,9 +19,9 @@ const TEAM_MAP = {
     'Young Boys': 'BSC Young Boys',
     'Servette': 'Servette FC',
     'Lausanne-Sport': 'Lausanne-Sport',
-    'Winterthur': 'FC Winterthur',
     'Lugano': 'FC Lugano',
-    'Thun': 'FC Thun'
+    'Thun': 'FC Thun',
+    'Vaduz': 'FC Vaduz'
 };
 
 function mapTeamName(apiName) {
@@ -46,15 +46,28 @@ async function updateResults() {
         const matchesMissingResult = matchday.matches.filter(m => !m.result);
         if (matchesMissingResult.length === 0) continue;
 
-        // Resultate erst eintragen, wenn der NÄCHSTE Spieltag begonnen hat
+        // Resultate erst eintragen, wenn der nächste Spieltag begonnen hat
         const nextMatchday = spielplan.matchdays[i + 1];
-        if (!nextMatchday) continue; // Letzter Spieltag: warten bis Saison vorbei
+        let mayUpdate = false;
 
-        const nextFirstMatch = new Date(nextMatchday.matches[0].date);
-        nextFirstMatch.setHours(0, 0, 0, 0);
+        if (!nextMatchday) {
+            const lastMatchDate = matchday.matches.reduce((latest, match) => {
+                const matchDate = new Date(match.date);
+                return matchDate > latest ? matchDate : latest;
+            }, new Date(0));
+            lastMatchDate.setHours(0, 0, 0, 0);
+            mayUpdate = today > lastMatchDate;
+        } else {
+            const nextFirstMatch = new Date(nextMatchday.matches[0].date);
+            nextFirstMatch.setHours(0, 0, 0, 0);
+            mayUpdate = today >= nextFirstMatch;
+        }
 
-        if (today < nextFirstMatch) {
-            console.log(`Spieltag ${matchday.matchday}: Übersprungen (Spieltag ${nextMatchday.matchday} hat noch nicht begonnen)`);
+        if (!mayUpdate) {
+            const label = nextMatchday
+                ? `Spieltag ${nextMatchday.matchday} hat noch nicht begonnen`
+                : 'Letzter Spieltag ist noch nicht vorbei';
+            console.log(`Spieltag ${matchday.matchday}: Übersprungen (${label})`);
             continue;
         }
 
@@ -69,7 +82,7 @@ async function updateResults() {
 
             for (const event of events) {
                 // Nur abgeschlossene Spiele
-                if (event.strStatus !== 'Match Finished') continue;
+                if (event.strStatus !== 'Match Finished' && event.strStatus !== 'FT') continue;
 
                 const homeApi = mapTeamName(event.strHomeTeam);
                 const awayApi = mapTeamName(event.strAwayTeam);

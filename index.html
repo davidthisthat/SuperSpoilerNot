@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>No Spoiler League</title>
+    <title>No Spoiler League - Super League Highlights ohne Resultat-Spoiler</title>
+    <meta name="description" content="SRF Super League Highlights ohne Spoiler: Spielberichte ohne Resultat-Spoiler schauen &amp; Saison deines Teams nachverfolgen.">
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+    <link rel="canonical" href="https://nospoilerleague.ch/">
+    <meta property="og:title" content="No Spoiler League - Super League Highlights ohne Resultat-Spoiler">
+    <meta property="og:description" content="SRF Super League Highlights ohne Spoiler: Spielberichte ohne Resultat-Spoiler schauen &amp; Saison deines Teams nachverfolgen.">
+    <meta property="og:url" content="https://nospoilerleague.ch/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="No Spoiler League - Super League Highlights ohne Resultat-Spoiler">
+    <meta name="twitter:description" content="SRF Super League Highlights ohne Spoiler: Spielberichte ohne Resultat-Spoiler schauen &amp; Saison deines Teams nachverfolgen.">
     <link rel="icon" type="image/png" href="img/favicon.png">
     
     <link rel="manifest" href="manifest.json">
@@ -822,10 +832,10 @@
     </style>
 </head>
 <body>
-    <div class="rotate-warning">Quer drehen, ansonsten spoilert SRF auch hier.</div>
+    <div class="rotate-warning" data-nosnippet>Quer drehen, ansonsten spoilert SRF auch hier.</div>
 
     <!-- Team-Overlay -->
-    <div class="team-overlay" id="team-overlay">
+    <div class="team-overlay" id="team-overlay" data-nosnippet>
         <div class="team-overlay-content">
             <div class="team-overlay-header">
                 <span class="team-overlay-title" id="team-overlay-title">Team</span>
@@ -838,7 +848,7 @@
     </div>
 
     <!-- Info-Overlay -->
-    <div class="info-overlay" id="info-overlay" onclick="closeInfoOverlay(event)">
+    <div class="info-overlay" id="info-overlay" onclick="closeInfoOverlay(event)" data-nosnippet>
         <div class="info-overlay-content" onclick="event.stopPropagation()">
             <span class="info-overlay-close" onclick="closeInfoOverlay()">&times;</span>
             <div class="info-text-wrapper">
@@ -1239,7 +1249,7 @@
     </script>
 
     <!-- Cookie Banner -->
-    <div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner" id="cookie-banner" data-nosnippet>
         <span>Diese Seite verwendet Cookies zur Analyse. <a href="datenschutz.html">Mehr erfahren</a></span>
         <button class="cookie-btn accept" onclick="acceptCookies()">Akzeptieren</button>
         <button class="cookie-btn decline" onclick="declineCookies()">Ablehnen</button>

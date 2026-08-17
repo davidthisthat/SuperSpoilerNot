@@ -1,0 +1,16 @@
+name: Actions Keepalive
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 1 * *'
+
+permissions:
+  contents: read
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping
+        run: echo "Scheduled workflows aktiv halten – $(date -u)"
