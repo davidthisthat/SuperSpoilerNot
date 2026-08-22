@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22T18:37:07.820Z",
+  "lastUpdated": "2026-08-22T21:44:09.030Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -132,6 +132,13 @@
       "foundAt": "2026-08-22T18:37:07.820Z",
       "title": "Frühes Di-Giusto-Tor beschert Luzern den Sieg",
       "urn": "urn:srf:video:98af16ea-56e6-4edb-a94b-cce10ed2cc3c",
+      "type": "Standalone"
+    },
+    "4_FC Zürich - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:dbb4d541-6d50-4149-9e63-9160b0db6072",
+      "foundAt": "2026-08-22T21:44:09.030Z",
+      "title": "Basel siegt im Klassiker gegen den FCZ",
+      "urn": "urn:srf:video:dbb4d541-6d50-4149-9e63-9160b0db6072",
       "type": "Standalone"
     }
   }
