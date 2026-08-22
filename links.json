@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T08:04:39.359091Z",
+  "lastUpdated": "2026-08-22T18:37:07.820Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -125,6 +125,13 @@
       "foundAt": "2026-08-17T08:04:39.359090Z",
       "title": "Zwei Tore, zwei Assists: Sow schiesst Thun ab",
       "urn": "urn:srf:video:d07a019e-3af2-4ec7-a849-7f44ceb189d5",
+      "type": "Standalone"
+    },
+    "4_FC Luzern - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:98af16ea-56e6-4edb-a94b-cce10ed2cc3c",
+      "foundAt": "2026-08-22T18:37:07.820Z",
+      "title": "Frühes Di-Giusto-Tor beschert Luzern den Sieg",
+      "urn": "urn:srf:video:98af16ea-56e6-4edb-a94b-cce10ed2cc3c",
       "type": "Standalone"
     }
   }
