@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T19:44:23.446Z",
+  "lastUpdated": "2026-08-29T21:59:10.102Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -160,6 +160,13 @@
       "foundAt": "2026-08-29T19:44:23.446Z",
       "title": "10 Luzerner erkämpfen sich nach Fehlstart einen Punkt in Genf",
       "urn": "urn:srf:video:709b5cfe-bfb8-4e61-bdb5-00f4c802b767",
+      "type": "Standalone"
+    },
+    "5_BSC Young Boys - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:bf81aaf3-2885-4bee-bb52-f1ab80eb739f",
+      "foundAt": "2026-08-29T21:59:10.102Z",
+      "title": "6 Tore, aber kein Sieger: YB kann Basel nicht in die Knie zwingen",
+      "urn": "urn:srf:video:bf81aaf3-2885-4bee-bb52-f1ab80eb739f",
       "type": "Standalone"
     }
   }
