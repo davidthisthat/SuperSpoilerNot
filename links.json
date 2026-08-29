@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T14:47:38.056Z",
+  "lastUpdated": "2026-08-29T19:44:23.446Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -146,6 +146,20 @@
       "foundAt": "2026-08-23T14:47:38.056Z",
       "title": "Traumtore von Sène, Sanches und Gigovic: YB bodigt Vaduz",
       "urn": "urn:srf:video:2979dd25-7a3a-4e76-8cba-b6ac6715ed92",
+      "type": "Standalone"
+    },
+    "5_Lausanne-Sport - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e4ad2109-bb09-4d6b-99cb-3a3f7dc59af0",
+      "foundAt": "2026-08-29T19:44:21.153Z",
+      "title": "Der FCZ kantert Aarau nieder",
+      "urn": "urn:srf:video:e4ad2109-bb09-4d6b-99cb-3a3f7dc59af0",
+      "type": "Standalone"
+    },
+    "5_Servette FC - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:709b5cfe-bfb8-4e61-bdb5-00f4c802b767",
+      "foundAt": "2026-08-29T19:44:23.446Z",
+      "title": "10 Luzerner erkämpfen sich nach Fehlstart einen Punkt in Genf",
+      "urn": "urn:srf:video:709b5cfe-bfb8-4e61-bdb5-00f4c802b767",
       "type": "Standalone"
     }
   }
