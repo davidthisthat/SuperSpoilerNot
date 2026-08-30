@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T21:59:10.102Z",
+  "lastUpdated": "2026-08-30T18:11:57.195Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -167,6 +167,27 @@
       "foundAt": "2026-08-29T21:59:10.102Z",
       "title": "6 Tore, aber kein Sieger: YB kann Basel nicht in die Knie zwingen",
       "urn": "urn:srf:video:bf81aaf3-2885-4bee-bb52-f1ab80eb739f",
+      "type": "Standalone"
+    },
+    "5_FC Sion - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:a0053747-f571-42ab-b499-b3e534806f3c",
+      "foundAt": "2026-08-30T18:11:55.124Z",
+      "title": "Racioppi-Bock beschert Lugano drei Punkte im Wallis",
+      "urn": "urn:srf:video:a0053747-f571-42ab-b499-b3e534806f3c",
+      "type": "Standalone"
+    },
+    "5_FC St. Gallen - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:722c1475-f855-4856-b8b6-671dacdecf7b",
+      "foundAt": "2026-08-30T18:11:56.243Z",
+      "title": "Wildes 4:3 – Thun zeigt Meistergesicht und siegt in St. Gallen",
+      "urn": "urn:srf:video:722c1475-f855-4856-b8b6-671dacdecf7b",
+      "type": "Standalone"
+    },
+    "5_FC Vaduz - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0e52f409-8823-40af-8145-35f6d5da051f",
+      "foundAt": "2026-08-30T18:11:57.195Z",
+      "title": "Erster Saisonsieg: Vaduz behält gegen GC klar die Oberhand",
+      "urn": "urn:srf:video:0e52f409-8823-40af-8145-35f6d5da051f",
       "type": "Standalone"
     }
   }
