@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T18:11:57.195Z",
+  "lastUpdated": "2026-09-01T21:14:35.671Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -188,6 +188,13 @@
       "foundAt": "2026-08-30T18:11:57.195Z",
       "title": "Erster Saisonsieg: Vaduz behält gegen GC klar die Oberhand",
       "urn": "urn:srf:video:0e52f409-8823-40af-8145-35f6d5da051f",
+      "type": "Standalone"
+    },
+    "6_FC Zürich - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:3574aeac-a474-4eb3-bbf2-537182c861de",
+      "foundAt": "2026-09-01T21:14:35.671Z",
+      "title": "Jubilar Fassnacht schiesst den FCZ im Alleingang ab",
+      "urn": "urn:srf:video:3574aeac-a474-4eb3-bbf2-537182c861de",
       "type": "Standalone"
     }
   }
