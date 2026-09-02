@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T21:01:50.006Z",
+  "lastUpdated": "2026-09-02T23:18:51.816Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -209,6 +209,13 @@
       "foundAt": "2026-09-02T21:01:50.006Z",
       "title": "Thun und Lausanne spielen 0:0",
       "urn": "urn:srf:video:494c2fb9-558d-4f9f-a77a-c2022ca65874",
+      "type": "Standalone"
+    },
+    "6_Grasshoppers - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:47dbe777-ad79-4085-9c85-27be1cef30bd",
+      "foundAt": "2026-09-02T23:18:51.816Z",
+      "title": "Eine Legende trifft, eine andere schaut zu: GC schlägt St. Gallen",
+      "urn": "urn:srf:video:47dbe777-ad79-4085-9c85-27be1cef30bd",
       "type": "Standalone"
     }
   }
