@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T21:14:35.671Z",
+  "lastUpdated": "2026-09-02T21:01:50.006Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -195,6 +195,20 @@
       "foundAt": "2026-09-01T21:14:35.671Z",
       "title": "Jubilar Fassnacht schiesst den FCZ im Alleingang ab",
       "urn": "urn:srf:video:3574aeac-a474-4eb3-bbf2-537182c861de",
+      "type": "Standalone"
+    },
+    "6_FC Luzern - FC Vaduz": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:dfd45f1d-2951-4f40-bc7b-7d28c55226cb",
+      "foundAt": "2026-09-02T21:01:49.174Z",
+      "title": "Mit Verspätung: Toggenburger lässt Luzern jubeln",
+      "urn": "urn:srf:video:dfd45f1d-2951-4f40-bc7b-7d28c55226cb",
+      "type": "Standalone"
+    },
+    "6_FC Thun - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:494c2fb9-558d-4f9f-a77a-c2022ca65874",
+      "foundAt": "2026-09-02T21:01:50.006Z",
+      "title": "Thun und Lausanne spielen 0:0",
+      "urn": "urn:srf:video:494c2fb9-558d-4f9f-a77a-c2022ca65874",
       "type": "Standalone"
     }
   }
