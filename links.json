@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T23:18:51.816Z",
+  "lastUpdated": "2026-09-03T21:12:49.498Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -216,6 +216,20 @@
       "foundAt": "2026-09-02T23:18:51.816Z",
       "title": "Eine Legende trifft, eine andere schaut zu: GC schlägt St. Gallen",
       "urn": "urn:srf:video:47dbe777-ad79-4085-9c85-27be1cef30bd",
+      "type": "Standalone"
+    },
+    "6_FC Basel - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:905edc90-e7dd-4870-be4a-10c72ec3c1f3",
+      "foundAt": "2026-09-03T21:12:48.141Z",
+      "title": "Einmal mehr Boteli: Sion-Juwel dreht Spiel in Basel im Alleingang",
+      "urn": "urn:srf:video:905edc90-e7dd-4870-be4a-10c72ec3c1f3",
+      "type": "Standalone"
+    },
+    "6_FC Lugano - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:7ef4d5ca-dd61-42fd-99f7-79803bca2208",
+      "foundAt": "2026-09-03T21:12:49.498Z",
+      "title": "Perfekter Einstand: Ajeti schiesst Lugano zum Last-Minute-Sieg",
+      "urn": "urn:srf:video:7ef4d5ca-dd61-42fd-99f7-79803bca2208",
       "type": "Standalone"
     }
   }
