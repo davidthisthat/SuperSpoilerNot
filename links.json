@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T18:46:54.676Z",
+  "lastUpdated": "2026-09-05T20:54:25.678Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -237,6 +237,13 @@
       "foundAt": "2026-09-05T18:46:43.984Z",
       "title": "Vaduz feiert den 2. Saisonsieg",
       "urn": "urn:srf:video:8603909d-fc99-4b4b-9c2f-d68f7d720ea1",
+      "type": "Standalone"
+    },
+    "7_Grasshoppers - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:86621627-fac0-4da9-91ca-4de4ddfbfce7",
+      "foundAt": "2026-09-05T20:54:25.678Z",
+      "title": "FCZ Frauen siegen nach 0:2-Rückstand",
+      "urn": "urn:srf:video:86621627-fac0-4da9-91ca-4de4ddfbfce7",
       "type": "Standalone"
     }
   }
