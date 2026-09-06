@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06T15:46:41.250Z",
+  "lastUpdated": "2026-09-06T17:56:56.561Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -251,6 +251,20 @@
       "foundAt": "2026-09-06T15:46:41.250Z",
       "title": "Servette am Boden – FCSG stoppt seine Baisse",
       "urn": "urn:srf:video:52af0a23-5ec6-45f3-bd68-cfad388fd353",
+      "type": "Standalone"
+    },
+    "7_FC Basel - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:8609ecf5-0d34-4969-befe-cf65c8c49f76",
+      "foundAt": "2026-09-06T17:56:54.297Z",
+      "title": "Wende innert zwei Minuten: Lugano auch von Basel nicht zu stoppen",
+      "urn": "urn:srf:video:8609ecf5-0d34-4969-befe-cf65c8c49f76",
+      "type": "Standalone"
+    },
+    "7_FC Sion - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e9e91d77-cf34-48f0-961c-3926378ffece",
+      "foundAt": "2026-09-06T17:56:56.561Z",
+      "title": "Sion jubelt zu zehnt in der 94. Minute",
+      "urn": "urn:srf:video:e9e91d77-cf34-48f0-961c-3926378ffece",
       "type": "Standalone"
     }
   }
