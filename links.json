@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T20:54:25.678Z",
+  "lastUpdated": "2026-09-06T15:46:41.250Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -244,6 +244,13 @@
       "foundAt": "2026-09-05T20:54:25.678Z",
       "title": "FCZ Frauen siegen nach 0:2-Rückstand",
       "urn": "urn:srf:video:86621627-fac0-4da9-91ca-4de4ddfbfce7",
+      "type": "Standalone"
+    },
+    "7_Servette FC - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:52af0a23-5ec6-45f3-bd68-cfad388fd353",
+      "foundAt": "2026-09-06T15:46:41.250Z",
+      "title": "Servette am Boden – FCSG stoppt seine Baisse",
+      "urn": "urn:srf:video:52af0a23-5ec6-45f3-bd68-cfad388fd353",
       "type": "Standalone"
     }
   }
