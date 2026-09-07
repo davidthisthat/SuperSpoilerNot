@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06T17:56:56.561Z",
+  "lastUpdated": "2026-09-07T13:37:07.983Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -266,6 +266,13 @@
       "title": "Sion jubelt zu zehnt in der 94. Minute",
       "urn": "urn:srf:video:e9e91d77-cf34-48f0-961c-3926378ffece",
       "type": "Standalone"
+    },
+    "7_BSC Young Boys - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:42f59471-6e51-4d78-8bc6-40c3d6494173",
+      "foundAt": "2026-09-07T13:37:07.983Z",
+      "title": "Nächstes Torfestival, aber kein Sieger im Wankdorf",
+      "urn": "urn:srf:video:42f59471-6e51-4d78-8bc6-40c3d6494173",
+      "type": "Sendung"
     }
   }
 }
