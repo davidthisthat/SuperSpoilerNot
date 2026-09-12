@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-07T13:37:07.983Z",
+  "lastUpdated": "2026-09-12T18:46:02.065Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -273,6 +273,13 @@
       "title": "Nächstes Torfestival, aber kein Sieger im Wankdorf",
       "urn": "urn:srf:video:42f59471-6e51-4d78-8bc6-40c3d6494173",
       "type": "Sendung"
+    },
+    "8_FC Thun - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:951d50bf-89a0-45e5-a278-e739f3aa58a1",
+      "foundAt": "2026-09-12T18:46:02.065Z",
+      "title": "GC entführt drei Punkte aus Thun",
+      "urn": "urn:srf:video:951d50bf-89a0-45e5-a278-e739f3aa58a1",
+      "type": "Standalone"
     }
   }
 }
