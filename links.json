@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T18:46:02.065Z",
+  "lastUpdated": "2026-09-12T21:08:44.634Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -279,6 +279,20 @@
       "foundAt": "2026-09-12T18:46:02.065Z",
       "title": "GC entführt drei Punkte aus Thun",
       "urn": "urn:srf:video:951d50bf-89a0-45e5-a278-e739f3aa58a1",
+      "type": "Standalone"
+    },
+    "8_FC St. Gallen - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:cb2e1553-087e-4337-8050-796a93dc9e4c",
+      "foundAt": "2026-09-12T21:08:43.200Z",
+      "title": "Sion feiert in St. Gallen einen verdienten 3:0-Sieg",
+      "urn": "urn:srf:video:cb2e1553-087e-4337-8050-796a93dc9e4c",
+      "type": "Standalone"
+    },
+    "8_FC Lugano - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:105e5d21-1710-410e-942f-2506b7e75226",
+      "foundAt": "2026-09-12T21:08:44.634Z",
+      "title": "Kein Sieger im Spitzenkampf: Lugano hält YB auf Distanz",
+      "urn": "urn:srf:video:105e5d21-1710-410e-942f-2506b7e75226",
       "type": "Standalone"
     }
   }
