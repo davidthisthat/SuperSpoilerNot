@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T21:08:44.634Z",
+  "lastUpdated": "2026-09-13T17:50:56.700Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -293,6 +293,20 @@
       "foundAt": "2026-09-12T21:08:44.634Z",
       "title": "Kein Sieger im Spitzenkampf: Lugano hält YB auf Distanz",
       "urn": "urn:srf:video:105e5d21-1710-410e-942f-2506b7e75226",
+      "type": "Standalone"
+    },
+    "8_FC Zürich - FC Vaduz": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:956dc7bf-de64-4b62-970f-aa83269765be",
+      "foundAt": "2026-09-13T17:50:40.497Z",
+      "title": "FCZ feiert gegen Vaduz einen Last-Minute-Sieg",
+      "urn": "urn:srf:video:956dc7bf-de64-4b62-970f-aa83269765be",
+      "type": "Standalone"
+    },
+    "8_Lausanne-Sport - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:dfb8d707-8281-4c45-91eb-bfcc2c02aa07",
+      "foundAt": "2026-09-13T17:50:43.045Z",
+      "title": "Servette gewinnt Léman-Derby ohne Fan-Blöcke",
+      "urn": "urn:srf:video:dfb8d707-8281-4c45-91eb-bfcc2c02aa07",
       "type": "Standalone"
     }
   }
