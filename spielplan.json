@@ -377,28 +377,32 @@
           "time": "18:00",
           "home": "FC St. Gallen",
           "away": "FC Sion",
-          "searchStart": "2026-09-12T19:50:00"
+          "searchStart": "2026-09-12T19:50:00",
+          "result": "0:3"
         },
         {
           "date": "2026-09-12",
           "time": "18:00",
           "home": "FC Thun",
           "away": "Grasshoppers",
-          "searchStart": "2026-09-12T19:50:00"
+          "searchStart": "2026-09-12T19:50:00",
+          "result": "0:1"
         },
         {
           "date": "2026-09-12",
           "time": "20:30",
           "home": "FC Lugano",
           "away": "BSC Young Boys",
-          "searchStart": "2026-09-12T22:20:00"
+          "searchStart": "2026-09-12T22:20:00",
+          "result": "2:2"
         },
         {
           "date": "2026-09-13",
           "time": "14:00",
           "home": "FC Zürich",
           "away": "FC Vaduz",
-          "searchStart": "2026-09-13T15:50:00"
+          "searchStart": "2026-09-13T15:50:00",
+          "result": "2:1"
         },
         {
           "date": "2026-09-13",
@@ -412,7 +416,8 @@
           "time": "16:30",
           "home": "FC Luzern",
           "away": "FC Basel",
-          "searchStart": "2026-09-13T18:20:00"
+          "searchStart": "2026-09-13T18:20:00",
+          "result": "2:4"
         }
       ]
     },
