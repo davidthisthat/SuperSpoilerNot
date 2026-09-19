@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T17:50:56.700Z",
+  "lastUpdated": "2026-09-19T20:53:10.352Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -307,6 +307,27 @@
       "foundAt": "2026-09-13T17:50:43.045Z",
       "title": "Servette gewinnt Léman-Derby ohne Fan-Blöcke",
       "urn": "urn:srf:video:dfb8d707-8281-4c45-91eb-bfcc2c02aa07",
+      "type": "Standalone"
+    },
+    "9_FC Luzern - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:b137be7d-b9d5-4b0d-9c24-c872be1df8ef",
+      "foundAt": "2026-09-19T20:53:08.541Z",
+      "title": "Mikolajewski mit Hattrick: Luzern schlägt GC",
+      "urn": "urn:srf:video:b137be7d-b9d5-4b0d-9c24-c872be1df8ef",
+      "type": "Standalone"
+    },
+    "9_BSC Young Boys - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:ed3600d4-d661-41fe-a383-99a5aaf431df",
+      "foundAt": "2026-09-19T20:53:09.681Z",
+      "title": "Essende trifft und trifft: YB schlägt Servette nach 0:2-Rückstand",
+      "urn": "urn:srf:video:ed3600d4-d661-41fe-a383-99a5aaf431df",
+      "type": "Standalone"
+    },
+    "9_FC Sion - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:dc67df66-e7d5-45c8-8a3b-82471e6d8980",
+      "foundAt": "2026-09-19T20:53:10.352Z",
+      "title": "Trotz Boteli-Tor: Sions Siegesserie reisst gegen den FCZ",
+      "urn": "urn:srf:video:dc67df66-e7d5-45c8-8a3b-82471e6d8980",
       "type": "Standalone"
     }
   }
