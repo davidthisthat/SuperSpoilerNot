@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-20T17:14:16.747Z",
+  "lastUpdated": "2026-09-20T19:27:55.629Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -335,6 +335,20 @@
       "foundAt": "2026-09-20T17:13:57.224Z",
       "title": "Thun findet im Kellerduell gegen Vaduz zum Siegen zurück",
       "urn": "urn:srf:video:d53ab70c-cc69-4e1e-a178-4d76906be5bb",
+      "type": "Standalone"
+    },
+    "9_FC Basel - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:53199aa1-dbee-49df-a9ac-647440df93c2",
+      "foundAt": "2026-09-20T19:27:54.680Z",
+      "title": "1:3 gegen St. Gallen: Basels Euphorie schon wieder verflogen",
+      "urn": "urn:srf:video:53199aa1-dbee-49df-a9ac-647440df93c2",
+      "type": "Standalone"
+    },
+    "9_Lausanne-Sport - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:b5f03986-3c44-4228-9814-699af2dba7c1",
+      "foundAt": "2026-09-20T19:27:55.629Z",
+      "title": "Lugano deklassiert Gastgeber Lausanne",
+      "urn": "urn:srf:video:b5f03986-3c44-4228-9814-699af2dba7c1",
       "type": "Standalone"
     }
   }
