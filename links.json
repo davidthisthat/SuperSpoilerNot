@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19T20:53:10.352Z",
+  "lastUpdated": "2026-09-20T17:14:16.747Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -328,6 +328,13 @@
       "foundAt": "2026-09-19T20:53:10.352Z",
       "title": "Trotz Boteli-Tor: Sions Siegesserie reisst gegen den FCZ",
       "urn": "urn:srf:video:dc67df66-e7d5-45c8-8a3b-82471e6d8980",
+      "type": "Standalone"
+    },
+    "9_FC Vaduz - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:d53ab70c-cc69-4e1e-a178-4d76906be5bb",
+      "foundAt": "2026-09-20T17:13:57.224Z",
+      "title": "Thun findet im Kellerduell gegen Vaduz zum Siegen zurück",
+      "urn": "urn:srf:video:d53ab70c-cc69-4e1e-a178-4d76906be5bb",
       "type": "Standalone"
     }
   }
