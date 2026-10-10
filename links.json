@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10T19:09:00.103Z",
+  "lastUpdated": "2026-10-10T22:29:31.388Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -363,6 +363,13 @@
       "foundAt": "2026-10-10T19:09:00.103Z",
       "title": "FCZ trotzt dem strömenden Regen und dreht Partie gegen Thun",
       "urn": "urn:srf:video:350ade04-3144-41f0-8f0e-d837818f6834",
+      "type": "Standalone"
+    },
+    "10_FC Lugano - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:ccd4fd9a-4201-4534-854f-af735545e1ac",
+      "foundAt": "2026-10-10T22:29:31.388Z",
+      "title": "Lange Pause ohne Folgen: 9. Sieg im 10. Spiel für Lugano",
+      "urn": "urn:srf:video:ccd4fd9a-4201-4534-854f-af735545e1ac",
       "type": "Standalone"
     }
   }
