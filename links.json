@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10T22:29:31.388Z",
+  "lastUpdated": "2026-10-11T18:52:56.310Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -370,6 +370,20 @@
       "foundAt": "2026-10-10T22:29:31.388Z",
       "title": "Lange Pause ohne Folgen: 9. Sieg im 10. Spiel für Lugano",
       "urn": "urn:srf:video:ccd4fd9a-4201-4534-854f-af735545e1ac",
+      "type": "Standalone"
+    },
+    "10_Grasshoppers - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:853376da-6443-47ae-9f79-a29a0984f7c8",
+      "foundAt": "2026-10-11T18:52:46.060Z",
+      "title": "Für einmal ohne Gegentor: YB gewinnt bei GC",
+      "urn": "urn:srf:video:853376da-6443-47ae-9f79-a29a0984f7c8",
+      "type": "Sendung"
+    },
+    "10_FC St. Gallen - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:82bc1c0f-62be-49cf-b422-db415c46b160",
+      "foundAt": "2026-10-11T18:52:47.105Z",
+      "title": "Für Lausanne gibt es auch in St. Gallen nichts zu holen",
+      "urn": "urn:srf:video:82bc1c0f-62be-49cf-b422-db415c46b160",
       "type": "Standalone"
     }
   }
