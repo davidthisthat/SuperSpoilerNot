@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T19:38:49.408Z",
+  "lastUpdated": "2026-10-24T21:53:19.002Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -398,6 +398,13 @@
       "foundAt": "2026-10-24T19:38:49.408Z",
       "title": "Knapper FCZ-Sieg dank Kénys Geniestreich und FCL-Chancenwucher",
       "urn": "urn:srf:video:69951465-3521-4dc1-a80f-8485d4a2de05",
+      "type": "Standalone"
+    },
+    "11_BSC Young Boys - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:f57f37f9-f625-4fd1-bdfb-4599e41e2682",
+      "foundAt": "2026-10-24T21:53:19.002Z",
+      "title": "YB beendet St. Gallens Serie in Wankdorf",
+      "urn": "urn:srf:video:f57f37f9-f625-4fd1-bdfb-4599e41e2682",
       "type": "Standalone"
     }
   }
