@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-11T18:52:56.310Z",
+  "lastUpdated": "2026-10-24T19:38:49.408Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -384,6 +384,20 @@
       "foundAt": "2026-10-11T18:52:47.105Z",
       "title": "Für Lausanne gibt es auch in St. Gallen nichts zu holen",
       "urn": "urn:srf:video:82bc1c0f-62be-49cf-b422-db415c46b160",
+      "type": "Standalone"
+    },
+    "11_Servette FC - FC Vaduz": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:7539dfb8-bd60-4f40-b5aa-6a883b16174f",
+      "foundAt": "2026-10-24T19:38:13.514Z",
+      "title": "Servette siegt dank Traumtor – Vaduz weiter ohne Auswärtspunkte",
+      "urn": "urn:srf:video:7539dfb8-bd60-4f40-b5aa-6a883b16174f",
+      "type": "Standalone"
+    },
+    "11_FC Zürich - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:69951465-3521-4dc1-a80f-8485d4a2de05",
+      "foundAt": "2026-10-24T19:38:49.408Z",
+      "title": "Knapper FCZ-Sieg dank Kénys Geniestreich und FCL-Chancenwucher",
+      "urn": "urn:srf:video:69951465-3521-4dc1-a80f-8485d4a2de05",
       "type": "Standalone"
     }
   }
