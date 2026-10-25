@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T17:08:38.985Z",
+  "lastUpdated": "2026-10-25T19:35:15.816Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -412,6 +412,20 @@
       "foundAt": "2026-10-25T17:08:38.985Z",
       "title": "Lugano feiert in Thun den 10. Sieg im 11. Spiel",
       "urn": "urn:srf:video:fca5dda0-2528-4237-9ff9-9e57e879caeb",
+      "type": "Standalone"
+    },
+    "11_FC Basel - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:5d6c82b5-8204-489b-842c-bb3173453ff2",
+      "foundAt": "2026-10-25T19:35:14.604Z",
+      "title": "GC holt sich mit Kampf und zwei Goalies ein 0:0 in Basel",
+      "urn": "urn:srf:video:5d6c82b5-8204-489b-842c-bb3173453ff2",
+      "type": "Standalone"
+    },
+    "11_FC Sion - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:8c5c6bf2-0eb7-414b-9971-3c19b20d3f20",
+      "foundAt": "2026-10-25T19:35:15.816Z",
+      "title": "Minimalistisches Sion kehrt gegen Lausanne zum Siegen zurück",
+      "urn": "urn:srf:video:8c5c6bf2-0eb7-414b-9971-3c19b20d3f20",
       "type": "Standalone"
     }
   }
