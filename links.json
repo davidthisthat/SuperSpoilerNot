@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T21:53:19.002Z",
+  "lastUpdated": "2026-10-25T17:08:38.985Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -405,6 +405,13 @@
       "foundAt": "2026-10-24T21:53:19.002Z",
       "title": "YB beendet St. Gallens Serie in Wankdorf",
       "urn": "urn:srf:video:f57f37f9-f625-4fd1-bdfb-4599e41e2682",
+      "type": "Standalone"
+    },
+    "11_FC Thun - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:fca5dda0-2528-4237-9ff9-9e57e879caeb",
+      "foundAt": "2026-10-25T17:08:38.985Z",
+      "title": "Lugano feiert in Thun den 10. Sieg im 11. Spiel",
+      "urn": "urn:srf:video:fca5dda0-2528-4237-9ff9-9e57e879caeb",
       "type": "Standalone"
     }
   }
