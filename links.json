@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T20:40:45.225Z",
+  "lastUpdated": "2026-11-01T16:26:15.076Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -433,6 +433,13 @@
       "foundAt": "2026-10-31T20:40:45.225Z",
       "title": "Lee rettet GC im Kellerduell gegen Vaduz einen späten Punkt",
       "urn": "urn:srf:video:de364421-dada-4c43-bdd0-a21beaae1fe8",
+      "type": "Standalone"
+    },
+    "12_FC Luzern - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:0a4e5676-ec80-4e15-8099-9643f4de0cd4",
+      "foundAt": "2026-11-01T16:25:51.196Z",
+      "title": "Luzern und Sion spielen in einer chancenarmen Partie unentschieden",
+      "urn": "urn:srf:video:0a4e5676-ec80-4e15-8099-9643f4de0cd4",
       "type": "Standalone"
     }
   }
