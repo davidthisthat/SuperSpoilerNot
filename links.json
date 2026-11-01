@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-01T16:26:15.076Z",
+  "lastUpdated": "2026-11-01T20:41:14.925Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -441,6 +441,34 @@
       "title": "Luzern und Sion spielen in einer chancenarmen Partie unentschieden",
       "urn": "urn:srf:video:0a4e5676-ec80-4e15-8099-9643f4de0cd4",
       "type": "Standalone"
+    },
+    "12_Lausanne-Sport - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:33fe0cf7-6322-4cc8-bfc4-e3bda216f166",
+      "foundAt": "2026-11-01T20:41:11.201Z",
+      "title": "Thun mit Schlussspurt zum Sieg in Lausanne",
+      "urn": "urn:srf:video:33fe0cf7-6322-4cc8-bfc4-e3bda216f166",
+      "type": "Standalone"
+    },
+    "12_FC Lugano - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c80e9083-47fc-406f-bd4e-8d7db62e6888",
+      "foundAt": "2026-11-01T20:41:11.858Z",
+      "title": "Lugano schlägt den FCB dank 2 frühen Toren mit 2:1",
+      "urn": "urn:srf:video:c80e9083-47fc-406f-bd4e-8d7db62e6888",
+      "type": "Standalone"
+    },
+    "12_FC St. Gallen - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:4239cc90-9701-459a-b304-1ad2a8f59673",
+      "foundAt": "2026-11-01T20:41:14.511Z",
+      "title": "Rückblick auf Samstag: FCSG einziger Sieger",
+      "urn": "urn:srf:video:4239cc90-9701-459a-b304-1ad2a8f59673",
+      "type": "Sendung"
+    },
+    "12_BSC Young Boys - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:d08b504d-d3b8-4ca6-8ae8-7912ec647644",
+      "foundAt": "2026-11-01T20:41:14.925Z",
+      "title": "YB bricht gegen den FCZ ein",
+      "urn": "urn:srf:video:d08b504d-d3b8-4ca6-8ae8-7912ec647644",
+      "type": "Sendung"
     }
   }
 }
