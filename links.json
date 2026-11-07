@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-01T20:41:14.925Z",
+  "lastUpdated": "2026-11-07T22:10:35.357Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -469,6 +469,20 @@
       "title": "YB bricht gegen den FCZ ein",
       "urn": "urn:srf:video:d08b504d-d3b8-4ca6-8ae8-7912ec647644",
       "type": "Sendung"
+    },
+    "13_FC Luzern - BSC Young Boys": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:fd943a8e-7c4e-454a-b866-9e0779028e35",
+      "foundAt": "2026-11-07T22:10:02.174Z",
+      "title": "Dank Essende und viel Dusel: YB gewinnt in Luzern",
+      "urn": "urn:srf:video:fd943a8e-7c4e-454a-b866-9e0779028e35",
+      "type": "Standalone"
+    },
+    "13_FC Vaduz - FC Sion": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:fb8da568-ac4c-46ec-b57a-5dae22cfddc8",
+      "foundAt": "2026-11-07T22:10:35.357Z",
+      "title": "Früher Doppelpack: Boteli-Ersatz Nivokazi ebnet Sion den Weg",
+      "urn": "urn:srf:video:fb8da568-ac4c-46ec-b57a-5dae22cfddc8",
+      "type": "Standalone"
     }
   }
 }
