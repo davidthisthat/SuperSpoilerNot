@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08T19:09:28.501Z",
+  "lastUpdated": "2026-11-08T22:52:11.168Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -504,6 +504,13 @@
       "title": "Spätes Eigentor: Basel muss sich in Thun mit 3:3 begnügen",
       "urn": "urn:srf:video:bf127d83-555b-4efe-ac88-1bda1fe08cbe",
       "type": "Standalone"
+    },
+    "13_Grasshoppers - Lausanne-Sport": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:3ef438aa-42c0-4b17-b541-a729750df501",
+      "foundAt": "2026-11-08T22:52:11.168Z",
+      "title": "WSL: Klare Siege für GC und Aarau",
+      "urn": "urn:srf:video:3ef438aa-42c0-4b17-b541-a729750df501",
+      "type": "Sendung"
     }
   }
 }
