@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-07T22:10:35.357Z",
+  "lastUpdated": "2026-11-08T19:09:28.501Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -482,6 +482,27 @@
       "foundAt": "2026-11-07T22:10:35.357Z",
       "title": "Früher Doppelpack: Boteli-Ersatz Nivokazi ebnet Sion den Weg",
       "urn": "urn:srf:video:fb8da568-ac4c-46ec-b57a-5dae22cfddc8",
+      "type": "Standalone"
+    },
+    "13_Servette FC - FC Zürich": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:47b100c2-3577-4bc7-9ace-2547a0e81b16",
+      "foundAt": "2026-11-08T19:09:24.210Z",
+      "title": "0:0 in Genf: FCZ verlängert eine Serie und beendet eine andere",
+      "urn": "urn:srf:video:47b100c2-3577-4bc7-9ace-2547a0e81b16",
+      "type": "Standalone"
+    },
+    "13_FC St. Gallen - FC Lugano": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:c2580632-4a16-49b6-bf04-74c99532acb3",
+      "foundAt": "2026-11-08T19:09:26.601Z",
+      "title": "St. Galler Gala gegen dezimierte Luganesi",
+      "urn": "urn:srf:video:c2580632-4a16-49b6-bf04-74c99532acb3",
+      "type": "Standalone"
+    },
+    "13_FC Thun - FC Basel": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:bf127d83-555b-4efe-ac88-1bda1fe08cbe",
+      "foundAt": "2026-11-08T19:09:28.501Z",
+      "title": "Spätes Eigentor: Basel muss sich in Thun mit 3:3 begnügen",
+      "urn": "urn:srf:video:bf127d83-555b-4efe-ac88-1bda1fe08cbe",
       "type": "Standalone"
     }
   }
