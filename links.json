@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08T22:52:11.168Z",
+  "lastUpdated": "2026-11-21T23:35:49.292Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -511,6 +511,27 @@
       "title": "WSL: Klare Siege für GC und Aarau",
       "urn": "urn:srf:video:3ef438aa-42c0-4b17-b541-a729750df501",
       "type": "Sendung"
+    },
+    "14_FC Lugano - Grasshoppers": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:a26096fd-b6e5-44ef-976f-86216346c661",
+      "foundAt": "2026-11-21T23:35:38.254Z",
+      "title": "Lugano setzt sich gegen GC mit 2:1 durch",
+      "urn": "urn:srf:video:a26096fd-b6e5-44ef-976f-86216346c661",
+      "type": "Standalone"
+    },
+    "14_FC Sion - Servette FC": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:d12e892f-f289-45ab-82ca-de05cff4bab1",
+      "foundAt": "2026-11-21T23:35:39.014Z",
+      "title": "Dank Köpfchen den Bann gebrochen: Sion besiegt den Servette-Fluch",
+      "urn": "urn:srf:video:d12e892f-f289-45ab-82ca-de05cff4bab1",
+      "type": "Standalone"
+    },
+    "14_BSC Young Boys - FC Thun": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:20c053fa-fa61-4c23-8084-a76afa5f4aca",
+      "foundAt": "2026-11-21T23:35:40.524Z",
+      "title": "YB dreht Rückstand und zittert sich zum Derbysieg",
+      "urn": "urn:srf:video:20c053fa-fa61-4c23-8084-a76afa5f4aca",
+      "type": "Standalone"
     }
   }
 }
