@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-21T23:35:49.292Z",
+  "lastUpdated": "2026-11-22T18:56:30.460Z",
   "matches": {
     "1_Lausanne-Sport - Grasshoppers": {
       "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:e074c25d-3f1f-46ca-ac0c-186911f7d232",
@@ -531,6 +531,27 @@
       "foundAt": "2026-11-21T23:35:40.524Z",
       "title": "YB dreht Rückstand und zittert sich zum Derbysieg",
       "urn": "urn:srf:video:20c053fa-fa61-4c23-8084-a76afa5f4aca",
+      "type": "Standalone"
+    },
+    "14_FC Basel - FC Luzern": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:93b97f5f-8fd8-4ed0-a8a5-183d04326849",
+      "foundAt": "2026-11-22T18:56:27.215Z",
+      "title": "Basel verliert zuhause gegen Luzern mit 0:2",
+      "urn": "urn:srf:video:93b97f5f-8fd8-4ed0-a8a5-183d04326849",
+      "type": "Standalone"
+    },
+    "14_Lausanne-Sport - FC Vaduz": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:5aee1602-2299-4f83-b0c3-263de531b7fe",
+      "foundAt": "2026-11-22T18:56:28.329Z",
+      "title": "Lausanne und Vaduz trennen sich mit 2:2",
+      "urn": "urn:srf:video:5aee1602-2299-4f83-b0c3-263de531b7fe",
+      "type": "Standalone"
+    },
+    "14_FC Zürich - FC St. Gallen": {
+      "url": "https://www.srf.ch/play/tv/-/video/-?urn=urn:srf:video:98bfde30-58ed-4960-a63f-a88b4e76f2bd",
+      "foundAt": "2026-11-22T18:56:30.460Z",
+      "title": "Hunziker-Doppelpack reicht nicht: Hack rettet dem FCZ einen Punkt",
+      "urn": "urn:srf:video:98bfde30-58ed-4960-a63f-a88b4e76f2bd",
       "type": "Standalone"
     }
   }
